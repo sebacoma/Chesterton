@@ -1,0 +1,31 @@
+/* src/app/components/header/header.component.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  
+  nav a {
+    color: #4a5568; /* text-gray-700 */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav a:hover {
+    color: #4299e1; /* text-blue-500 */
+  }
+  
+  @media (max-width: 768px) {
+    .md\\:hidden {
+      display: none;
+    }
+  
+    .md\\:flex {
+      display: flex;
+    }
+  
+    .md\\:hidden + div {
+      display: block;
+    }
+  }
