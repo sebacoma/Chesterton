@@ -1,1 +1,13 @@
-<p>home works!</p>
+<!-- src/app/pages/home/home.component.html -->
+<div class="relative w-full h-64">
+    <div *ngFor="let slide of slides; let i = index" [ngClass]="{'hidden': activeSlide !== i}" class="absolute inset-0 transition-opacity duration-500">
+      <img [src]="slide" class="w-full h-full object-cover">
+    </div>
+    <button (click)="prevSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2">
+      &#10094;
+    </button>
+    <button (click)="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2">
+      &#10095;
+    </button>
+  </div>
+  

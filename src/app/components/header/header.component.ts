@@ -19,6 +19,8 @@ export class HeaderComponent {
   }
 
   toggleSubMenu(menu: 'isInicioOpen' | 'isNosotrosOpen' | 'isProductosOpen' | 'isServiciosOpen' | 'isBlogOpen' | 'isContactoOpen') {
+    console.log(`Toggling ${menu}`); // Debugging statement
     this[menu] = !this[menu];
+    console.log(`${menu} is now ${this[menu]}`); // Debugging statement
   }
 }
