@@ -46,10 +46,6 @@
   <!-- Menú desplegable en vista móvil -->
   <div *ngIf="isMenuOpen" class="mobile-menu md:hidden">
     <nav class="flex flex-col space-y-4 mt-4">
-      <button (click)="toggleSubMenu('isInicioOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Inicio</button>
-      <div *ngIf="isInicioOpen" class="pl-4">
-        <!-- Agrega elementos del submenú de Inicio aquí si es necesario -->
-      </div>
       <button (click)="toggleSubMenu('isNosotrosOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Nosotros</button>
       <div *ngIf="isNosotrosOpen" class="pl-4">
         <!-- Agrega elementos del submenú de Nosotros aquí si es necesario -->

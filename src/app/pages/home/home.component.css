@@ -117,14 +117,18 @@
   padding-right: 1rem;
 }
 
+/* Assuming the missing selector is .some-class */
+.some-class {
+  flex: 1;
+  padding-right: 1rem;
+}
+
 .historia-container {
   background-image: url('../../../assets/Picture6.jpg'); /* Corrected path to the image */
   background-size: cover; /* Cover the entire container */
   background-blend-mode: overlay; /* Blend the background color and image */
   padding: 1rem 0; /* Padding around the content, no padding on left and right */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
   display: flex; /* Flexbox for centering content */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
@@ -134,7 +138,6 @@
 .text-red-600 {
   color: #f8f4f4;
 }
-
 .font-bold {
   font-weight: bold;
 }
@@ -148,3 +151,8 @@
 .text-xl {
   font-size: 2rem; /* Adjust the size as needed */
 }
+
+.text-red-700 {
+  color: #d04242;
+}
+

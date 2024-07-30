@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router'; // Import the Router module
 
 @Component({
   selector: 'app-home',
@@ -6,9 +7,38 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  slides = ['assets/Picture10.jpg','assets/Picture1.png','assets/Picture2.png','assets/Picture3.png','assets/Picture4.png','assets/Picture5.png','assets/Picture6.jpg','assets/Picture7.jpg','assets/Picture8.jpg','assets/Picture9.jpg'];
+  slides = [
+    'assets/Picture10.jpg', 'assets/Picture1.png', 'assets/Picture2.png', 'assets/Picture3.png', 
+    'assets/Picture4.png', 'assets/Picture5.png', 'assets/Picture6.jpg', 'assets/Picture7.jpg', 
+    'assets/Picture8.jpg', 'assets/Picture9.jpg'
+  ];
   activeSlide = 0;
   autoplayInterval: any;
+
+  solutions = [
+    {
+      title: 'Solución 1',
+      description: 'Descripción de la solución 1.',
+      image: 'assets/Picture6.jpg'
+    },
+    {
+      title: 'Solución 2',
+      description: 'Descripción de la solución 2.',
+      image: 'assets/Picture7.jpg'
+    },
+    {
+      title: 'Solución 3',
+      description: 'Descripción de la solución 3.',
+      image: 'assets/Picture8.jpg'
+    },
+    {
+      title: 'Solución 4',
+      description: 'Descripción de la solución 4.',
+      image: 'assets/Picture9.jpg'
+    }
+    // Agrega más soluciones según sea necesario
+  ];
+
 
   ngOnInit() {
     this.startAutoplay();
@@ -33,7 +63,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   startAutoplay() {
     this.autoplayInterval = setInterval(() => {
       this.nextSlide();
-    }, 3000); // Change slide every 3 seconds
+    }, 3000); // Cambia la imagen cada 3 segundos
   }
 
   pauseAutoplay() {

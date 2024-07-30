@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SellosMecanicosComponent } from './productos/sellos-mecanicos/sellos-mecanicos.component';
-import { SellosHidraulicosNeumaticosComponent } from './productos/sellos-hidraulicos-neumaticos/sellos-hidraulicos-neumaticos.component';
-import { EmpaquetadurasMecanicasJuntasComponent } from './productos/empaquetaduras-mecanicas-juntas/empaquetaduras-mecanicas-juntas.component';
-import { JuntasExpansionComponent } from './productos/juntas-expansion/juntas-expansion.component';
-import { ProteccionRodamientosComponent } from './productos/proteccion-rodamientos/proteccion-rodamientos.component';
+import { SellosMecanicosComponent } from './pages/productos/sellos-mecanicos/sellos-mecanicos.component';
+import { SellosHidraulicosNeumaticosComponent } from './pages/productos/sellos-hidraulicos-neumaticos/sellos-hidraulicos-neumaticos.component';
+import { EmpaquetadurasMecanicasJuntasComponent } from './pages/productos/empaquetaduras-mecanicas-juntas/empaquetaduras-mecanicas-juntas.component';
+import { JuntasExpansionComponent } from './pages/productos/juntas-expansion/juntas-expansion.component';
+import { ProteccionRodamientosComponent } from './pages/productos/proteccion-rodamientos/proteccion-rodamientos.component';
+import { CondicionesComponent } from './pages/condiciones/condiciones.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProteccionRodamientosComponent } from './productos/proteccion-rodamient
     SellosHidraulicosNeumaticosComponent,
     EmpaquetadurasMecanicasJuntasComponent,
     JuntasExpansionComponent,
-    ProteccionRodamientosComponent
+    ProteccionRodamientosComponent,
+    CondicionesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

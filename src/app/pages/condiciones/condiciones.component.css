@@ -1,0 +1,59 @@
+.cgv-container {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  main {
+    line-height: 1.6;
+  }
+  
+  .intro {
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    margin-bottom: 15px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  .section h1 {
+    color: #e22828;
+    margin-bottom: 10px;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+    color: #e22828;
+    margin-bottom: 10px;
+  }
+  
+  .section h3 {
+    font-size: 1.2rem;
+    color: #9c1212;
+    margin-top: 15px;
+  }
+  
+  .section p {
+    margin: 10px 0;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  

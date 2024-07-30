@@ -1,0 +1,74 @@
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .footer .footer-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .footer .footer-section h1.logo-text {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .footer .footer-section .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  
+  .footer .footer-section .socials a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer .footer-section .socials img.social-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer .footer-bottom {
+    background: #24262b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+  }
+  
+  @media (max-width: 768px) {
+    .footer .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer .footer-section {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .footer .footer-section a.conditions-link {
+    color: #e31212;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .footer-section a.conditions-link:hover {
+    color: #982727; /* Change to desired hover color */
+  }
+  
+  /* Add other necessary CSS here */
+  
