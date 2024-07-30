@@ -57,4 +57,38 @@
   .right-0 {
     right: 0;
   }
+  .text-red-600 {
+    color: #d60e07; /* Rojo para el texto */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-gray-800 {
+    color: #282f3b; /* Color del texto para la descripción */
+  }
+  .about-section {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 1rem; /* Espacio entre la descripción y la imagen */
+  }
+  
+  .description {
+    flex: 1;
+    padding-right: 1rem; /* Espacio entre la descripción y la imagen */
+  }
+  
+  .w-48 {
+    width: 25rem; /* Tamaño de la imagen, ajusta según necesites */
+  }
+  
+  .h-auto {
+    height: auto;
+  }
+  
+  .object-cover {
+    object-fit: cover;
+  }
+  
   

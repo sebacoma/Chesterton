@@ -1,31 +1,48 @@
 /* src/app/components/header/header.component.css */
 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+nav a {
+  color: #4a5568; /* text-gray-700 */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  color: #4299e1; /* text-blue-500 */
+}
+
+@media (max-width: 768px) {
+  .md\\:hidden {
+    display: none;
+  }
+
+  .md\\:flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
   }
-  
-  nav a {
-    color: #4a5568; /* text-gray-700 */
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+
+  .md\\:hidden + div {
+    display: block;
   }
-  
-  nav a:hover {
-    color: #4299e1; /* text-blue-500 */
-  }
-  
-  @media (max-width: 768px) {
-    .md\\:hidden {
-      display: none;
-    }
-  
-    .md\\:flex {
-      display: flex;
-    }
-  
-    .md\\:hidden + div {
-      display: block;
-    }
-  }
+}
+/* Styles for the submenu */
+.nav-menu {
+display: none;
+}
+
+.nav-menu.open {
+display: block;
+}
+
+.nav-menu a {
+display: block;
+padding: 0.5rem 1rem;
+}
+
+.nav-menu a:hover {
+background-color: #f0f0f0;
+}

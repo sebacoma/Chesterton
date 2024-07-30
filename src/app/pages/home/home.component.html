@@ -1,13 +1,23 @@
-<!-- src/app/pages/home/home.component.html -->
-<div class="relative w-full h-64">
-    <div *ngFor="let slide of slides; let i = index" [ngClass]="{'hidden': activeSlide !== i}" class="absolute inset-0 transition-opacity duration-500">
-      <img [src]="slide" class="w-full h-full object-cover">
-    </div>
-    <button (click)="prevSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2">
-      &#10094;
-    </button>
-    <button (click)="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2">
-      &#10095;
-    </button>
+<div class="relative w-full h-96" (mouseenter)="pauseAutoplay()" (mouseleave)="startAutoplay()">
+  <div *ngFor="let slide of slides; let i = index" [ngClass]="{'hidden': activeSlide !== i}" class="absolute inset-0 transition-opacity duration-500">
+    <img [src]="slide" class="w-full h-full object-cover">
   </div>
-  
+  <button (click)="prevSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2">
+    &#10094;
+  </button>
+  <button (click)="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2">
+    &#10095;
+  </button>
+  <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
+    <span *ngFor="let slide of slides; let i = index" (click)="goToSlide(i)" [ngClass]="{'bg-gray-800': activeSlide === i, 'bg-gray-400': activeSlide !== i}" class="cursor-pointer w-3 h-3 rounded-full"></span>
+  </div>
+</div>
+<div class="about-section p-4 flex items-center">
+  <div class="description flex-1 pr-4">
+    <h2 class="text-red-600 font-bold">Historia</h2>
+    <p class="text-gray-800">
+      La Compañía A.W. Chesterton fue fundada en 1884 en el puerto de Boston, impulsada por la audaz visión y el espíritu empresarial de su fundador. Desde sus inicios, ha sido una historia de emprendimiento, trabajo duro y perseverancia. La empresa se ha destacado por su independencia, liderazgo y logros. Su enfoque ha estado siempre en proporcionar el servicio y apoyo necesarios para una industria en desarrollo, un compromiso que mantiene en su segundo siglo de operación.
+    </p>
+  </div>
+  <img src="assets/History.png" alt="Imagen de la Compañía A.W. Chesterton" class="w-48 h-auto object-cover">
+</div>
