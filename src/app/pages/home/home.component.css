@@ -155,4 +155,50 @@
 .text-red-700 {
   color: #d04242;
 }
+.industries-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.industries-section h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.industries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.industry-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+.industry-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.industry-box h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.industry-box p {
+  font-size: 1rem;
+  color: #777;
+}
+  
 

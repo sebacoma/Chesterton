@@ -23,7 +23,7 @@
 </div>
 <!-- Nueva sección "Soluciones" -->
 <div class="solutions-section p-4">
-  <h2 class="text-center text-2xl font-bold mb-4">Nuestras Soluciones</h2>
+  <h2 class="text-center text-2xl font-bold mb-4 text-red-700">Nuestras Soluciones</h2>
   <div class="solutions-grid grid grid-cols-1 md:grid-cols-3 gap-4">
     <div *ngFor="let solution of solutions" class="solution-card">
       <img [src]="solution.image" alt="{{solution.title}}" class="w-full h-48 object-cover">
@@ -32,7 +32,29 @@
     </div>
   </div>
 </div>
-<!-- Include the existing carousel and solutions sections here -->
+
+<div class="industries-section">
+  <h2 class="text-center text-2xl font-bold mb-4 text-red-700">Industrias</h2>
+  <div class="industries-container">
+    <div class="industry-box">
+      <img src="assets/Picture8.jpg" alt="Mineria">
+      <h3>Mineria</h3>
+      <p>Descripción breve de la Industria 1.</p>
+    </div>
+    <div class="industry-box">
+      <img src="assets/Picture8.jpg" alt="Energia">
+      <h3>Energia</h3>
+      <p>Descripción breve de la Industria 2.</p>
+    </div>
+    <div class="industry-box">
+      <img src="assets/Picture8.jpg" alt="Sanitaria">
+      <h3>Sanitaria</h3>
+      <p>Descripción breve de la Industria 3.</p>
+    </div>
+    <!-- Agrega más cajas según sea necesario -->
+  </div>
+</div>
+
 
 
 
