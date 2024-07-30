@@ -5,12 +5,33 @@
     </div>
     <!-- Menú de escritorio -->
     <nav class="desktop-menu hidden md:flex space-x-4">
-      <a href="/" class="text-gray-700 hover:text-blue-500">Inicio</a>
-      <a href="/about" class="text-gray-700 hover:text-blue-500">Nosotros</a>
-      <a href="#" (click)="toggleSubMenu('isProductosOpen')" class="text-gray-700 hover:text-blue-500">Productos</a>
-      <a href="/services" class="text-gray-700 hover:text-blue-500">Servicios</a>
-      <a href="/blog" class="text-gray-700 hover:text-blue-500">Blog</a>
-      <a href="/contact" class="text-gray-700 hover:text-blue-500">Contacto</a>
+      <div *ngIf="isInicioOpen" class="pl-4">
+        <!-- Agrega elementos del submenú de Inicio aquí si es necesario -->
+      </div>
+      <button (click)="toggleSubMenu('isNosotrosOpen')" class="toggle-button">Nosotros</button>
+      <div *ngIf="isNosotrosOpen" class="submenu">
+        <!-- Agrega elementos del submenú de Nosotros aquí si es necesario -->
+      </div>
+      <button (click)="toggleSubMenu('isProductosOpen')" class="toggle-button">Productos</button>
+      <div *ngIf="isProductosOpen" class="text-gray-700 hover:text-blue-500 w-full text-left">
+        <a href="/productos/sellos-mecanicos" class="submenu-item">Sellos Mecánicos</a>
+        <a href="/productos/sellos-hidraulicos-neumaticos" class="submenu-item">Sellos Hidráulicos y Neumáticos</a>
+        <a href="/productos/empaquetaduras-mecanicas-juntas" class="submenu-item">Empaquetaduras Mecánicas y Juntas</a>
+        <a href="/productos/juntas-expansion" class="submenu-item">Juntas de Expansión</a>
+        <a href="/productos/proteccion-rodamientos" class="submenu-item">Protección de Rodamientos</a>
+      </div>
+      <button (click)="toggleSubMenu('isServiciosOpen')" class="toggle-button">Servicios</button>
+      <div *ngIf="isServiciosOpen" class="submenu">
+        <!-- Agrega elementos del submenú de Servicios aquí si es necesario -->
+      </div>
+      <button (click)="toggleSubMenu('isBlogOpen')" class="toggle-button">Historia</button>
+      <div *ngIf="isBlogOpen" class="submenu">
+        <!-- Agrega elementos del submenú de Blog aquí si es necesario -->
+      </div>
+      <button (click)="toggleSubMenu('isContactoOpen')" class="toggle-button">Contacto</button>
+      <div *ngIf="isContactoOpen" class="submenu">
+        <!-- Agrega elementos del submenú de Contacto aquí si es necesario -->
+      </div>
     </nav>
     <!-- Botón de menú en móvil -->
     <div class="md:hidden">
@@ -34,7 +55,7 @@
         <!-- Agrega elementos del submenú de Nosotros aquí si es necesario -->
       </div>
       <button (click)="toggleSubMenu('isProductosOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Productos</button>
-      <div *ngIf="isProductosOpen" class="desktop-submenu">
+      <div *ngIf="isProductosOpen" class="pl-4">
         <a href="/productos/sellos-mecanicos" class="block text-gray-700 hover:text-blue-500">Sellos Mecánicos</a>
         <a href="/productos/sellos-hidraulicos-neumaticos" class="block text-gray-700 hover:text-blue-500">Sellos Hidráulicos y Neumáticos</a>
         <a href="/productos/empaquetaduras-mecanicas-juntas" class="block text-gray-700 hover:text-blue-500">Empaquetaduras Mecánicas y Juntas</a>
@@ -45,7 +66,7 @@
       <div *ngIf="isServiciosOpen" class="pl-4">
         <!-- Agrega elementos del submenú de Servicios aquí si es necesario -->
       </div>
-      <button (click)="toggleSubMenu('isBlogOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Blog</button>
+      <button (click)="toggleSubMenu('isBlogOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Historia</button>
       <div *ngIf="isBlogOpen" class="pl-4">
         <!-- Agrega elementos del submenú de Blog aquí si es necesario -->
       </div>
@@ -57,13 +78,4 @@
   </div>
 
   <!-- Submenú de Productos en vista de escritorio -->
-  <div class="hidden md:block">
-    <div *ngIf="isProductosOpen" class="absolute mt-2 bg-white shadow-lg">
-      <a href="/productos/sellos-mecanicos" class="block text-gray-700 hover:text-blue-500">Sellos Mecánicos</a>
-      <a href="/productos/sellos-hidraulicos-neumaticos" class="block text-gray-700 hover:text-blue-500">Sellos Hidráulicos y Neumáticos</a>
-      <a href="/productos/empaquetaduras-mecanicas-juntas" class="block text-gray-700 hover:text-blue-500">Empaquetaduras Mecánicas y Juntas</a>
-      <a href="/productos/juntas-expansion" class="block text-gray-700 hover:text-blue-500">Juntas de Expansión</a>
-      <a href="/productos/proteccion-rodamientos" class="block text-gray-700 hover:text-blue-500">Protección de Rodamientos</a>
-    </div>
-  </div>
 </header>

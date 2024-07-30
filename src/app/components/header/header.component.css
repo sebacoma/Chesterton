@@ -16,6 +16,51 @@ nav a:hover {
   color: #4299e1; /* text-blue-500 */
 }
 
+.menu-item {
+  color: #4a5568; /* text-gray-700 */
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.menu-item:hover {
+  color: #4299e1; /* hover:text-blue-500 */
+  background-color: #edf2f7; /* hover:bg-gray-100 */
+}
+
+.desktop-submenu {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1000;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.desktop-submenu .submenu-item {
+  display: block;
+  color: #4a5568; /* text-gray-700 */
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.desktop-submenu .submenu-item:hover {
+  color: #4299e1; /* hover:text-blue-500 */
+  background-color: #edf2f7; /* hover:bg-gray-100 */
+}
+
+/* Show submenu when parent is hovered */
+.menu-item:hover + .desktop-submenu,
+.desktop-submenu:hover {
+  max-height: 500px; /* Adjust based on the number of submenu items */
+  padding: 10px;
+}
+
 @media (max-width: 768px) {
   .md\\:hidden {
     display: none;
@@ -26,23 +71,6 @@ nav a:hover {
   }
 
   .md\\:hidden + div {
-    display: block;
+    display: none;
   }
-}
-/* Styles for the submenu */
-.nav-menu {
-display: none;
-}
-
-.nav-menu.open {
-display: block;
-}
-
-.nav-menu a {
-display: block;
-padding: 0.5rem 1rem;
-}
-
-.nav-menu a:hover {
-background-color: #f0f0f0;
 }
