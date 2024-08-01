@@ -14,11 +14,10 @@ export class HeaderComponent {
   isBlogOpen = false;
   isContactoOpen = false;
 
-  toggleSubMenu(menu: 'isInicioOpen' | 'isNosotrosOpen' | 'isProductosOpen' | 'isServiciosOpen' | 'isBlogOpen' | 'isContactoOpen') {
-    console.log(`Toggling ${menu}`); // Depuración
+  toggleSubMenu(menu: 'isNosotrosOpen' | 'isProductosOpen' | 'isServiciosOpen' | 'isBlogOpen' | 'isContactoOpen') {
     this[menu] = !this[menu];
-    console.log(`${menu} is now ${this[menu]}`); // Depuración
   }
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }

@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       title: 'Mineria',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod, necessitatibus laudantium labore veniam. Perferendis nobis quos iure debitis tempora recusandae.',
-      image: 'assets/Mineria.jpg'
+      image: 'assets/Picture4.png'
     },
     {
       title: 'Energia',

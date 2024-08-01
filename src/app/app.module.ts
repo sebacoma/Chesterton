@@ -12,6 +12,7 @@ import { JuntasExpansionComponent } from './pages/productos/juntas-expansion/jun
 import { ProteccionRodamientosComponent } from './pages/productos/proteccion-rodamientos/proteccion-rodamientos.component';
 import { CondicionesComponent } from './pages/condiciones/condiciones.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HistoriaComponent } from './pages/historia/historia.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
     JuntasExpansionComponent,
     ProteccionRodamientosComponent,
     CondicionesComponent,
-    FooterComponent
+    FooterComponent,
+    HistoriaComponent
   ],
   imports: [
     BrowserModule,

@@ -5,34 +5,22 @@
     </div>
     <!-- Menú de escritorio -->
     <nav class="desktop-menu hidden md:flex space-x-4">
-      <div *ngIf="isInicioOpen" class="pl-4">
-        <!-- Agrega elementos del submenú de Inicio aquí si es necesario -->
+      <a href="/" class="menu-item">Inicio</a>
+      <button (click)="toggleSubMenu('isProductosOpen')" class="menu-item">Productos</button>
+      <div *ngIf="isProductosOpen" class="desktop-submenu">
+        <a href="/productos/sellos-mecanicos" class="block text-gray-700 hover:text-blue-500">Sellos Mecánicos</a>
+        <a href="/productos/sellos-hidraulicos-neumaticos" class="block text-gray-700 hover:text-blue-500">Sellos Hidráulicos y Neumáticos</a>
+        <a href="/productos/empaquetaduras-mecanicas-juntas" class="block text-gray-700 hover:text-blue-500">Empaquetaduras Mecánicas y Juntas</a>
+        <a href="/productos/juntas-expansion" class="block text-gray-700 hover:text-blue-500">Juntas de Expansión</a>
+        <a href="/productos/proteccion-rodamientos" class="block text-gray-700 hover:text-blue-500">Protección de Rodamientos</a>
       </div>
-      <button (click)="toggleSubMenu('isNosotrosOpen')" class="toggle-button">Nosotros</button>
-      <div *ngIf="isNosotrosOpen" class="submenu">
-        <!-- Agrega elementos del submenú de Nosotros aquí si es necesario -->
-      </div>
-      <button (click)="toggleSubMenu('isProductosOpen')" class="toggle-button">Productos</button>
-      <div *ngIf="isProductosOpen" class="text-gray-700 hover:text-blue-500 w-full text-left">
-        <a href="/productos/sellos-mecanicos" class="submenu-item">Sellos Mecánicos</a>
-        <a href="/productos/sellos-hidraulicos-neumaticos" class="submenu-item">Sellos Hidráulicos y Neumáticos</a>
-        <a href="/productos/empaquetaduras-mecanicas-juntas" class="submenu-item">Empaquetaduras Mecánicas y Juntas</a>
-        <a href="/productos/juntas-expansion" class="submenu-item">Juntas de Expansión</a>
-        <a href="/productos/proteccion-rodamientos" class="submenu-item">Protección de Rodamientos</a>
-      </div>
-      <button (click)="toggleSubMenu('isServiciosOpen')" class="toggle-button">Servicios</button>
-      <div *ngIf="isServiciosOpen" class="submenu">
-        <!-- Agrega elementos del submenú de Servicios aquí si es necesario -->
-      </div>
-      <button (click)="toggleSubMenu('isBlogOpen')" class="toggle-button">Historia</button>
-      <div *ngIf="isBlogOpen" class="submenu">
-        <!-- Agrega elementos del submenú de Blog aquí si es necesario -->
-      </div>
-      <button (click)="toggleSubMenu('isContactoOpen')" class="toggle-button">Contacto</button>
-      <div *ngIf="isContactoOpen" class="submenu">
-        <!-- Agrega elementos del submenú de Contacto aquí si es necesario -->
-      </div>
+      <button (click)="toggleSubMenu('isServiciosOpen')" class="menu-item">Servicios</button>
+      <a href="/historia" class="menu-item">Historia</a>
+      <button (click)="toggleSubMenu('isContactoOpen')" class="menu-item">Contacto</button>
     </nav>
+
+
+
     <!-- Botón de menú en móvil -->
     <div class="md:hidden">
       <button (click)="toggleMenu()" class="text-gray-700 focus:outline-none">
@@ -42,36 +30,35 @@
       </button>
     </div>
   </div>
-
-  <!-- Menú desplegable en vista móvil -->
-  <div *ngIf="isMenuOpen" class="mobile-menu md:hidden">
-    <nav class="flex flex-col space-y-4 mt-4">
-      <button (click)="toggleSubMenu('isNosotrosOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Nosotros</button>
-      <div *ngIf="isNosotrosOpen" class="pl-4">
-        <!-- Agrega elementos del submenú de Nosotros aquí si es necesario -->
-      </div>
-      <button (click)="toggleSubMenu('isProductosOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Productos</button>
-      <div *ngIf="isProductosOpen" class="pl-4">
-        <a href="/productos/sellos-mecanicos" class="block text-gray-700 hover:text-blue-500">Sellos Mecánicos</a>
-        <a href="/productos/sellos-hidraulicos-neumaticos" class="block text-gray-700 hover:text-blue-500">Sellos Hidráulicos y Neumáticos</a>
-        <a href="/productos/empaquetaduras-mecanicas-juntas" class="block text-gray-700 hover:text-blue-500">Empaquetaduras Mecánicas y Juntas</a>
-        <a href="/productos/juntas-expansion" class="block text-gray-700 hover:text-blue-500">Juntas de Expansión</a>
-        <a href="/productos/proteccion-rodamientos" class="block text-gray-700 hover:text-blue-500">Protección de Rodamientos</a>
-      </div>
-      <button (click)="toggleSubMenu('isServiciosOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Servicios</button>
-      <div *ngIf="isServiciosOpen" class="pl-4">
-        <!-- Agrega elementos del submenú de Servicios aquí si es necesario -->
-      </div>
-      <button (click)="toggleSubMenu('isBlogOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Historia</button>
-      <div *ngIf="isBlogOpen" class="pl-4">
-        <!-- Agrega elementos del submenú de Blog aquí si es necesario -->
-      </div>
-      <button (click)="toggleSubMenu('isContactoOpen')" class="text-gray-700 hover:text-blue-500 w-full text-left">Contacto</button>
-      <div *ngIf="isContactoOpen" class="pl-4">
-        <!-- Agrega elementos del submenú de Contacto aquí si es necesario -->
-      </div>
-    </nav>
-  </div>
-
-  <!-- Submenú de Productos en vista de escritorio -->
+ 
+ <!-- Menú desplegable en vista móvil -->
+ <div *ngIf="isMenuOpen" class="mobile-menu md:hidden">
+  <nav class="flex flex-col space-y-4 mt-4">
+    <a href="/" class="text-gray-700 hover:text-red-500 w-full text-left">Inicio</a>
+    <button (click)="toggleSubMenu('isNosotrosOpen')" class="text-gray-700 hover:text-red-500 w-full text-left">Nosotros</button>
+    <div *ngIf="isNosotrosOpen" class="pl-4">
+      <!-- Agrega elementos del submenú de Nosotros aquí si es necesario -->
+    </div>
+    <button (click)="toggleSubMenu('isProductosOpen')" class="text-gray-700 hover:text-red-500 w-full text-left">Productos</button>
+    <div *ngIf="isProductosOpen" class="pl-4">
+      <a href="productos/sellos-mecanicos" class="block text-gray-700 hover:text-red-500">Sellos Mecánicos</a>
+      <a href="productos/sellos-hidraulicos-neumaticos" class="block text-gray-700 hover:text-red-500">Sellos Hidráulicos y Neumáticos</a>
+      <a href="productos/empaquetaduras-mecanicas-juntas" class="block text-gray-700 hover:text-red-500">Empaquetaduras Mecánicas y Juntas</a>
+      <a href="productos/juntas-expansion" class="block text-gray-700 hover:text-red-500">Juntas de Expansión</a>
+      <a href="productos/proteccion-rodamientos" class="block text-gray-700 hover:text-red-500">Protección de Rodamientos</a>
+    </div>
+    <button (click)="toggleSubMenu('isServiciosOpen')" class="text-gray-700 hover:text-red-500 w-full text-left">Servicios</button>
+    <div *ngIf="isServiciosOpen" class="pl-4">
+      <!-- Elementos del submenú de Servicios -->
+    </div>
+    <a href="/historia" class="text-gray-700 hover:text-red-500 w-full text-left">Historia</a>
+    <div *ngIf="isBlogOpen" class="pl-4">
+      <!-- Elementos del submenú de Blog -->
+    </div>
+    <button (click)="toggleSubMenu('isContactoOpen')" class="text-gray-700 hover:text-red-500 w-full text-left">Contacto</button>
+    <div *ngIf="isContactoOpen" class="pl-4">
+      <!-- Elementos del submenú de Contacto -->
+    </div>
+  </nav>
+</div>
 </header>
