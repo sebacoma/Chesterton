@@ -155,14 +155,15 @@
 .text-red-700 {
   color: #d04242;
 }
-.industries-section {
+
+/*industrias*/.industries-section {
   padding: 20px;
   background-color: #f9f9f9;
 }
 
 .industries-section h2 {
   font-size: 2rem;
-  color: #333;
+  color:#d04242;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -182,23 +183,62 @@
   margin: 10px;
   text-align: center;
   padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.industry-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(255,0,0,0.5) 50%, rgba(255,0,0,0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.industry-box:hover::before {
+  opacity: 1;
 }
 
 .industry-box img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+  z-index: 0;
 }
 
-.industry-box h3 {
+.industry-box:hover img {
+  transform: scale(1.05);
+}
+
+.industry-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  z-index: 2;
+}
+
+.industry-box:hover .industry-info {
+  opacity: 1;
+}
+
+.industry-info h3 {
   font-size: 1.5rem;
-  color: #555;
+  color: #fff; /* Cambiar el color del texto a blanco para mejor contraste */
   margin-top: 10px;
 }
 
-.industry-box p {
+.industry-info p {
   font-size: 1rem;
-  color: #777;
+  color: #fff; /* Cambiar el color del texto a blanco para mejor contraste */
 }
-  
-

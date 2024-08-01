@@ -39,6 +39,25 @@ export class HomeComponent implements OnInit, OnDestroy {
     // Agrega más soluciones según sea necesario
   ];
 
+  industries = [
+    {
+      title: 'Mineria',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod, necessitatibus laudantium labore veniam. Perferendis nobis quos iure debitis tempora recusandae.',
+      image: 'assets/Mineria.jpg'
+    },
+    {
+      title: 'Energia',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod, necessitatibus laudantium labore veniam. Perferendis nobis quos iure debitis tempora recusandae.',
+      image: 'assets/Picture2.png'
+    },
+    {
+      title: 'Sanitaria',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod, necessitatibus laudantium labore veniam. Perferendis nobis quos iure debitis tempora recusandae.',
+      image: 'assets/Picture7.jpg'
+    }
+    // Agrega más industrias según sea necesario
+  ];
+
 
   ngOnInit() {
     this.startAutoplay();
