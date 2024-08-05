@@ -143,7 +143,7 @@
 }
 
 .text-gray-800 {
-  color: #2d3748;
+  color: #1e242e;
 }
 .text-center {
   text-align: center;
@@ -243,3 +243,43 @@
   font-size: 1rem;
   color: #fff; /* Cambiar el color del texto a blanco para mejor contraste */
 }
+/* src/app/components/home/home.component.css */
+.branches-section {
+  padding: 1rem;
+}
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .branches-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.branch-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.branch-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.branch-card h3 {
+  margin: 0.5rem 0;
+}
+
+.branch-card p {
+  margin: 0.25rem 0;
+}
+

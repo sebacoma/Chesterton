@@ -21,6 +21,7 @@
     </div>
   </div>
 </div>
+
 <!--"Soluciones" -->
 <div class="solutions-section p-4">
   <h2 class="text-center text-2xl font-bold mb-4 text-red-700">Nuestras Soluciones</h2>
@@ -49,7 +50,25 @@
 <!-- "Industrias"-->
 
 
+<!-- "Certificaciones"-->
+<h2 class="text-center text-2xl font-bold mb-4 text-red-700">CERTIFICACIONES</h2>
+<img src="assets/CertificacionISO.png" alt="Certificaciones" >
+<img src="">
+<!-- "Certificaciones"-->
 
-
+<!-- "Sucursales"-->
+<div class="branches-section p-4">
+  <h2 class="text-center text-2xl font-bold mb-4 text-red-700">Sucursales</h2>
+  <div class="branches-grid grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div *ngFor="let branch of branches" class="branch-card text-center">
+      <img [src]="branch.image" alt="{{branch.title}}" class="w-full h-48 object-contain mx-auto">
+      <h3 class="text-lg font-semibold text-red-700 mt-4">{{branch.title}}</h3>
+      <p class="text-gray-800">{{branch.address}}</p>
+      <p class="text-gray-800">{{branch.phone}}</p>
+      <p class="text-gray-800">{{branch.email}}</p>
+    </div>
+  </div>
+</div>
+<!-- "Sucursales"-->
 
 

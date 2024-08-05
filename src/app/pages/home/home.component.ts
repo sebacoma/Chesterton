@@ -58,6 +58,29 @@ export class HomeComponent implements OnInit, OnDestroy {
     // Agrega más industrias según sea necesario
   ];
 
+  branches = [
+    {
+      title: 'Oficina Santiago',
+      address: 'Avenida Los Vientos #20090, Bodega B, Pudahuel, Santiago',
+      phone: '(2) 29 44 4631',
+      email: 'chile2@chesterton.com',
+      image: 'assets/sucursal1.png'
+    },
+    {
+      title: 'Oficina Concepción',
+      address: 'Camino a Coronel Km.10, #5580, Módulo 7-A Megacentro, San Pedro de la Paz, Concepción',
+      phone: '(41) 246 0300',
+      email: 'chile1@chesterton.com',
+      image: 'assets/sucursal2.png'
+    },
+    {
+      title: 'Oficina Antofagasta',
+      address: 'Avda. Edmundo Perez Zujovic, #5554, Antofagasta',
+      phone: '(55) 255 2090',
+      email: 'chile3@chesterton.com',
+      image: 'assets/sucursal3.png'
+    }
+  ];
 
   ngOnInit() {
     this.startAutoplay();
