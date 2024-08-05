@@ -243,6 +243,20 @@
   font-size: 1rem;
   color: #fff; /* Cambiar el color del texto a blanco para mejor contraste */
 }
+/* Estilo para la sección de certificaciones */
+.certifications-section {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 1rem; /* Espacio entre las imágenes */
+}
+
+.certification-image {
+  width: 180px; /* Ajusta el ancho según sea necesario */
+  height: 180px; /* Ajusta la altura según sea necesario */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+}
+
 /* src/app/components/home/home.component.css */
 .branches-section {
   padding: 1rem;

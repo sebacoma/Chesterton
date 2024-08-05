@@ -42,17 +42,17 @@ export class HomeComponent implements OnInit, OnDestroy {
   industries = [
     {
       title: 'Mineria',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod, necessitatibus laudantium labore veniam. Perferendis nobis quos iure debitis tempora recusandae.',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod,.',
       image: 'assets/Picture4.png'
     },
     {
       title: 'Energia',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod, necessitatibus laudantium labore veniam. Perferendis nobis quos iure debitis tempora recusandae.',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod,.',
       image: 'assets/Picture2.png'
     },
     {
       title: 'Sanitaria',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod, necessitatibus laudantium labore veniam. Perferendis nobis quos iure debitis tempora recusandae.',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod,.',
       image: 'assets/Picture7.jpg'
     }
     // Agrega más industrias según sea necesario
@@ -111,4 +111,5 @@ export class HomeComponent implements OnInit, OnDestroy {
   pauseAutoplay() {
     clearInterval(this.autoplayInterval);
   }
+  
 }
