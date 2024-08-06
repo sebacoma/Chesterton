@@ -124,11 +124,7 @@
 }
 
 .historia-container {
-  background-image: url('../../../assets/Picture6.jpg'); /* Corrected path to the image */
-  background-size: cover; /* Cover the entire container */
-  background-blend-mode: overlay; /* Blend the background color and image */
   padding: 1rem 0; /* Padding around the content, no padding on left and right */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   display: flex; /* Flexbox for centering content */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
@@ -160,6 +156,8 @@
 .industries-section {
   padding: 20px;
   background-color: #f9f9f9;
+  align-items: center;
+  justify-content: center;
 }
 
 .industries-section h2 {
@@ -173,6 +171,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 
 .industry-box {
@@ -183,7 +183,7 @@
   width: 30%;
   margin: 10px;
   text-align: center;
-  padding: 15px;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -295,5 +295,139 @@
 
 .branch-card p {
   margin: 0.25rem 0;
+}
+.solution-section h2 {
+  font-size: 2rem;
+  color:#d04242;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.solutions-section {
+  position: relative;
+  background-size: cover;
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+}
+
+.solutions-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure the background is behind the content */
+}
+
+.carousel-button {
+  background-color: #d85151; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Get the element to behave like a button */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Some margin */
+  transition-duration: 0.4s; /* 0.4 seconds transition effect to hover state */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+}
+.carousel-button:hover {
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+  border: 2px solid #d85151; /* Green border on hover */
+}
+
+.prev-button {
+  margin-right: auto; /* Align to the left */
+}
+
+.next-button {
+  margin-left: auto; /* Align to the right */
+}
+
+/* Solution card styles */
+.solution-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(30, 147, 149, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; /* Ensure background color is white */
+  margin: 10px; /* Add some margin between cards */
+  height: 400px; /* Increase the height of the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.solution-info {
+  padding: 30px; /* Increase padding for more content space */
+  text-align: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution-info h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.solution-info p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #666; /* Lighter color for the description */
+}
+
+/* Center the cards container */
+.solutions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Additional styles for layout */
+.big-background {
+  background-color: #e9e7e7;
+  padding-bottom: 50px; /* Add padding to make space for the guide */
+}
+
+/* Carousel guide styles */
+.carousel-guide {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-guide .indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-guide .indicator.active {
+  background-color: #d85151; /* Active indicator color */
+}
+
+@media (min-width: 768px) {
+  .solutions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 

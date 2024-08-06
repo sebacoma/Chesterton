@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router'; // Import the Router module
 
 @Component({
@@ -15,29 +16,38 @@ export class HomeComponent implements OnInit, OnDestroy {
   activeSlide = 0;
   autoplayInterval: any;
 
+  currentIndex = 0;
+  itemsPerPage = 3;
   solutions = [
-    {
-      title: 'Solución 1',
-      description: 'Descripción de la solución 1.',
-      image: 'assets/Picture6.jpg'
-    },
-    {
-      title: 'Solución 2',
-      description: 'Descripción de la solución 2.',
-      image: 'assets/Picture7.jpg'
-    },
-    {
-      title: 'Solución 3',
-      description: 'Descripción de la solución 3.',
-      image: 'assets/Picture8.jpg'
-    },
-    {
-      title: 'Solución 4',
-      description: 'Descripción de la solución 4.',
-      image: 'assets/Picture9.jpg'
-    }
-    // Agrega más soluciones según sea necesario
+    { title: 'Sellado Equipo estacionario', Image: 'assets/SelladoEquipoEstacionario.png' },
+    { title: 'Sellado Equipo rotatorio', Image: 'assets/SelladoEquipoEstacionario.png'},
+    { title: 'Sellado de Válvulas', Image: 'assets/SelladoEquipoEstacionario.png'},
+    { title: 'Sellado Cilindros Hidráulicos', Image: 'assets/SelladoEquipoEstacionario.png'},
+    { title: 'Protección de rodamiento', Image: 'assets/SelladoEquipoEstacionario.png'},
+    { title: 'Servicios de reparación', Image: 'assets/SelladoEquipoEstacionario.png'},
+    { title: 'Servicios instalación en detenciones de planta', Image: 'assets/SelladoEquipoEstacionario.png'},
+    { title: 'Servicios de monitoreo', Image: 'assets/SelladoEquipoEstacionario.png'},
+    { title: 'Diseño y fabricación local'}
   ];
+
+  get currentSolutions() {
+    return this.solutions.slice(this.currentIndex, this.currentIndex + this.itemsPerPage);
+  }
+
+  constructor() {}
+
+
+  prev() {
+    if (this.currentIndex > 0) {
+      this.currentIndex -= this.itemsPerPage;
+    }
+  }
+
+  next() {
+    if (this.currentIndex + this.itemsPerPage < this.solutions.length) {
+      this.currentIndex += this.itemsPerPage;
+    }
+  }
 
   industries = [
     {

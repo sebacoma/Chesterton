@@ -12,28 +12,46 @@
     <span *ngFor="let slide of slides; let i = index" (click)="goToSlide(i)" [ngClass]="{'bg-gray-800': activeSlide === i, 'bg-gray-400': activeSlide !== i}" class="cursor-pointer w-3 h-3 rounded-full"></span>
   </div>
 </div>
-<div class="about-section p-4 flex items-center">
+
+<!-- "Parrafo" -->
+<!-- "Parrafo" -->
+<div class="about-section p-4 flex items-center big-background">
   <div class="description flex-1 pr-4">
     <div class="historia-container">
-      <h2 class="text-red-600 font-bold text-center text-xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae quasi recusandae praesentium quidem magnam voluptas molestias error quod, necessitatibus laudantium labore veniam. Perferendis nobis quos iure debitis tempora recusandae.
+      <h2 class="text-red-800 font-bold text-center text-xl">
+        Diseñamos y fabricamos soluciones en sellado de fluido de alta tecnología con servicio local, enfocado en la mejora operacional y reducción de costos de las diversas industrias del país.
       </h2>
     </div>
   </div>
 </div>
+<!-- "Parrafo" -->
 
-<!--"Soluciones" -->
-<div class="solutions-section p-4">
+<div class="solutions-section big-background">
   <h2 class="text-center text-2xl font-bold mb-4 text-red-700">Nuestras Soluciones</h2>
+  <div class="flex justify-between items-center mb-4">
+    <button (click)="prev()" [disabled]="currentIndex === 0" class="carousel-button prev-button">
+      &#10094; Prev
+    </button>
+    <button (click)="next()" [disabled]="currentIndex + itemsPerPage >= solutions.length" class="carousel-button next-button">
+      Next &#10095;
+    </button>
+  </div>
   <div class="solutions-grid grid grid-cols-1 md:grid-cols-3 gap-4">
-    <div *ngFor="let solution of solutions" class="solution-card">
-      <img [src]="solution.image" alt="{{solution.title}}" class="w-full h-48 object-cover">
-      <h3 class="text-lg font-semibold text-red-700 text-center">{{solution.title}}</h3>
-      <p class="text-gray-700 text-center">{{solution.description}}</p>
+    <div *ngFor="let solution of currentSolutions" class="solution-card">
+      <div class="solution-info">
+        <h3>{{solution.title}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-guide">
+    <div *ngFor="let solution of solutions; let i = index" 
+         class="indicator" 
+         [class.active]="i === currentIndex" 
+         (click)="goToSlide(i)">
     </div>
   </div>
 </div>
-<!--"Soluciones" -->
+
 <!-- "Industrias"-->
 <div class="industries-section">
   <h2 class="text-center text-2xl font-bold mb-4 text-red-700">Industrias</h2>
@@ -48,15 +66,6 @@
   </div>
 </div>
 <!-- "Industrias"-->
-
-
-<!-- "Certificaciones"-->
-<h2 class="text-center text-2xl font-bold mb-4 text-red-700">CERTIFICACIONES</h2>
-<div class="certifications-section flex justify-center items-center gap-4">
-  <img id="firstImage" src="assets/CertificacionISO.png" alt="Certificaciones" class="certification-image">
-  <img id="secondImage" src="assets/Certificacion-SICEP.png" alt="Certificaciones" class="certification-image">
-</div>
-<!-- "Certificaciones"-->
 
 <!-- "Sucursales"-->
 <div class="branches-section p-4">
@@ -73,4 +82,10 @@
 </div>
 <!-- "Sucursales"-->
 
-
+<!-- "Certificaciones"-->
+<h2 class="text-center text-2xl font-bold mb-4 text-red-700">CERTIFICACIONES</h2>
+<div class="certifications-section flex justify-center items-center gap-4">
+  <img id="firstImage" src="assets/CertificacionISO.png" alt="Certificaciones" class="certification-image">
+  <img id="secondImage" src="assets/Certificacion-SICEP.png" alt="Certificaciones" class="certification-image">
+</div>
+<!-- "Certificaciones"-->
