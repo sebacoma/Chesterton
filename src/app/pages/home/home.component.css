@@ -152,70 +152,33 @@
   color: #d04242;
 }
 
-/*industrias*/
-.industries-section {
-  padding: 20px;
-  background-color: #f9f9f9;
-  align-items: center;
-  justify-content: center;
-}
-
-.industries-section h2 {
-  font-size: 2rem;
-  color:#d04242;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.industries-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: center;
-}
-
 .industry-box {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  margin: 10px;
+  width: 100%;
+  height: 100%;
   text-align: center;
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.industry-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(255,0,0,0.5) 50%, rgba(255,0,0,0) 100%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-}
-
-.industry-box:hover::before {
-  opacity: 1;
+.industry-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .industry-box img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  z-index: 0;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
 .industry-box:hover img {
-  transform: scale(1.05);
+  opacity: 0.6; /* Reduce la opacidad para hacer visible el color de fondo */
 }
 
 .industry-info {
@@ -235,14 +198,75 @@
 
 .industry-info h3 {
   font-size: 1.5rem;
-  color: #fff; /* Cambiar el color del texto a blanco para mejor contraste */
+  color: #fff; /* Color del texto en blanco */
   margin-top: 10px;
 }
 
 .industry-info p {
   font-size: 1rem;
-  color: #fff; /* Cambiar el color del texto a blanco para mejor contraste */
+  color: #fff; /* Color del texto en blanco */
 }
+
+.industry-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(255,0,0,0.5) 50%, rgba(255,0,0,0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.industry-box:hover::before {
+  opacity: 1;
+}
+
+
+/* Botones de navegación del carrusel */
+button {
+  background-color: #2d3748; /* Color de fondo del botón */
+  border: none;
+  color: white; /* Color del texto */
+  padding: 0.5rem; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Comportamiento en bloque */
+  font-size: 1rem; /* Tamaño de fuente */
+  margin: 0.5rem; /* Margen alrededor del botón */
+  transition-duration: 0.4s; /* Transición al pasar el ratón */
+  cursor: pointer; /* Cursor tipo puntero */
+  border-radius: 50%; /* Bordes redondeados */
+}
+
+button:hover {
+  background-color: #ffffff; /* Color de fondo al pasar el ratón */
+  color: #2d3748; /* Color del texto al pasar el ratón */
+  border: 2px solid #2d3748; /* Borde al pasar el ratón */
+}
+
+.carousel-guide {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.carousel-guide .indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-guide .indicator.active {
+  background-color: #d85151; /* Color del indicador activo */
+}
+
 /* Estilo para la sección de certificaciones */
 .certifications-section {
   display: flex;
@@ -321,25 +345,44 @@
   z-index: -1; /* Ensure the background is behind the content */
 }
 
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%; /* Ajustar al tamaño del contenedor del carrusel */
+}
+
+.indicator-line {
+  width: 20px;
+  height: 4px;
+  background-color: #d1d5db; /* Gris (bg-gray-300) */
+  transition: background-color 0.3s ease;
+}
+
+.indicator-line.active {
+  background-color: #3b82f6; /* Azul (bg-blue-500) */
+}
+
 .carousel-button {
-  background-color: #d85151; /* Green background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Centered text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Get the element to behave like a button */
-  font-size: 16px; /* Increase font size */
-  margin: 4px 2px; /* Some margin */
-  transition-duration: 0.4s; /* 0.4 seconds transition effect to hover state */
-  cursor: pointer; /* Pointer/hand icon */
-  border-radius: 12px; /* Rounded corners */
+  background-color: #ef4444; /* Red-600 */
+  color: #ffffff; /* White */
+  padding: 0.75rem; /* p-3 */
+  border-radius: 9999px; /* rounded-full */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  transition: background-color 0.3s ease;
 }
+
 .carousel-button:hover {
-  background-color: white; /* White background on hover */
-  color: black; /* Black text on hover */
-  border: 2px solid #d85151; /* Green border on hover */
+  background-color: #dc2626; /* Red-700 */
 }
+
+.carousel-button:focus {
+  outline: none;
+}
+
 
 .prev-button {
   margin-right: auto; /* Align to the left */
@@ -398,36 +441,115 @@
   align-items: center; /* Center vertically */
 }
 
-/* Additional styles for layout */
 .big-background {
   background-color: #e9e7e7;
   padding-bottom: 50px; /* Add padding to make space for the guide */
+
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
 }
 
-/* Carousel guide styles */
-.carousel-guide {
+.carousel-inner {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  transition: transform 0.5s ease-in-out;
 }
 
-.carousel-guide .indicator {
-  width: 10px;
-  height: 10px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin: 0 5px;
+.carousel-item {
+  flex-shrink: 0;
+  width: 33.3333%; /* Para mostrar 3 elementos por vez */
+  padding: 0.5rem; /* Espacio entre elementos */
+}
+
+button {
+  background-color: #d85151; /* Botón de color rojo */
+  border: none;
+  color: white;
+  padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 50%;
 }
 
-.carousel-guide .indicator.active {
-  background-color: #d85151; /* Active indicator color */
+button:hover {
+  background-color: #c34a4a;
 }
 
-@media (min-width: 768px) {
-  .solutions-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.industry-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
+.industry-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(255,0,0,0.5) 50%, rgba(255,0,0,0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.industry-box:hover::before {
+  opacity: 1;
+}
+
+.industry-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.industry-box:hover img {
+  transform: scale(1.05);
+}
+
+.industry-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  z-index: 2;
+}
+
+.industry-box:hover .industry-info {
+  opacity: 1;
+}
+
+.industry-info h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.industry-info p {
+  font-size: 1rem;
+  color: #fff;
+}
+/* Estilo para los indicadores */
+.indicators .indicator-line {
+  width: 20px;
+  height: 4px;
+  background-color: #d1d5db; /* Gris (bg-gray-300) */
+  transition: background-color 0.3s ease;
+}
+
+.indicators .indicator-line.active {
+  background-color: #ff2020; /* Azul (bg-blue-500) */
+}

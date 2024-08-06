@@ -21,14 +21,17 @@
   
   .intro {
     margin-bottom: 20px;
+    justify-content: center;
   }
   
   .intro p {
     margin-bottom: 15px;
+    text-align: justify;
   }
   
   .section {
     margin-bottom: 30px;
+    justify-content: center;
   }
   .section h1 {
     color: #e22828;
@@ -48,6 +51,7 @@
   
   .section p {
     margin: 10px 0;
+    text-align: justify;
   }
   
   footer {
