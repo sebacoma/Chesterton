@@ -392,16 +392,16 @@ button:hover {
   margin-left: auto; /* Align to the right */
 }
 
-/* Solution card styles */
+/* Solución al iluminarse */
 .solution-card {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(30, 147, 149, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff; /* Ensure background color is white */
-  margin: 10px; /* Add some margin between cards */
-  height: 400px; /* Increase the height of the card */
+  background-color: #fff;
+  margin: 10px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -409,11 +409,30 @@ button:hover {
 
 .solution-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(216, 65, 65, 0.2);
+}
+
+.solution-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(255,0,0,0.5) 50%, rgba(255,0,0,0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.solution-card:hover::before {
+  opacity: 1;
 }
 
 .solution-info {
-  padding: 30px; /* Increase padding for more content space */
+  position: relative;
+  z-index: 1;
+  padding: 30px;
   text-align: center;
   color: #333;
   display: flex;
@@ -430,16 +449,16 @@ button:hover {
 .solution-info p {
   font-size: 1rem;
   margin-top: 10px;
-  color: #666; /* Lighter color for the description */
+  color: #666;
 }
 
-/* Center the cards container */
 .solutions-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
 }
+
 
 .big-background {
   background-color: #e9e7e7;
