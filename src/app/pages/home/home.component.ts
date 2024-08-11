@@ -58,16 +58,16 @@ export class HomeComponent implements OnInit, OnDestroy {
     carouselElement.style.transform = `translateX(${translateX}px)`;
   }
   industries = [
-    { title: 'Industria 1', description: 'Descripción de la industria 1', image: 'assets/Picture1.png' },
-    { title: 'Industria 2', description: 'Descripción de la industria 2', image: 'assets/Picture1.png' },
-    { title: 'Industria 3', description: 'Descripción de la industria 3', image: 'assets/Picture1.png' },
-    { title: 'Industria 4', description: 'Descripción de la industria 4', image: 'assets/Picture1.png' },
-    { title: 'Industria 5', description: 'Descripción de la industria 5', image: 'assets/Picture1.png' },
-    { title: 'Industria 6', description: 'Descripción de la industria 6', image: 'assets/Picture1.png' },
-    { title: 'Industria 7', description: 'Descripción de la industria 7', image: 'assets/Picture1.png' },
-    { title: 'Industria 8', description: 'Descripción de la industria 8', image: 'assets/Picture1.png' },
-    { title: 'Industria 9', description: 'Descripción de la industria 9', image: 'assets/Picture1.png' },
-    { title: 'Industria 10', description: 'Descripción de la industria 10', image: 'assets/Picture1.png' }
+    { title: 'Mineria', description: 'Descripción de la industria 1', image: 'assets/dall-e mineria.webp' },
+    { title: 'Pulpa y Papel', description: 'Descripción de la industria 2', image: 'assets/dall-e pulpa.webp' },
+    { title: 'Alimentos y Bebida', description: 'Descripción de la industria 3', image: 'assets/dall-e alimento.webp' },
+    { title: 'Termoelectrica', description: 'Descripción de la industria 4', image: 'assets/dall-e termo.webp' },
+    { title: 'Hidroelectrica', description: 'Descripción de la industria 5', image: 'assets/dall-e hidro.webp' },
+    { title: 'Tratamiento de agua', description: 'Descripción de la industria 6', image: 'assets/dall-e agua.webp' },
+    { title: 'Naval', description: 'Descripción de la industria 7', image: 'assets/dall-e naval.webp' },
+    { title: 'Química', description: 'Descripción de la industria 8', image: 'assets/dall-e quimica.webp' },
+    { title: 'Petroquímica', description: 'Descripción de la industria 9', image: 'assets/dall-e petro.webp' },
+    { title: 'Fabricacion de Equipo Original', description: 'Descripción de la industria 10', image: 'assets/dall-e original.webp' }
   ];
   activeIndustrySlide = 0;
   industryAutoplayInterval: any;

@@ -1,6 +1,9 @@
 .relative {
   position: relative;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 
 .absolute {
@@ -348,38 +351,36 @@ button:hover {
 }
 
 .carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
+
 
 .carousel-item {
   flex-shrink: 0;
   width: 100%; /* Ajustar al tamaño del contenedor del carrusel */
 }
 
-.indicator-line {
-  width: 20px;
-  height: 4px;
-  background-color: #d1d5db; /* Gris (bg-gray-300) */
-  transition: background-color 0.3s ease;
+.indicators .indicator-line {
+  width: 25px;
+  height: 5px;
+  background-color: #ff2020; /* Rojo brillante */
 }
+
 
 .indicator-line.active {
   background-color: #3b82f6; /* Azul (bg-blue-500) */
 }
 
 .carousel-button {
-  background-color: #ef4444; /* Red-600 */
-  color: #ffffff; /* White */
-  padding: 0.75rem; /* p-3 */
-  border-radius: 9999px; /* rounded-full */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
-  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .carousel-button:hover {
-  background-color: #dc2626; /* Red-700 */
+  transform: scale(1.1);
+  background-color: #dc2626; /* Rojo oscuro */
 }
+
 
 .carousel-button:focus {
   outline: none;
