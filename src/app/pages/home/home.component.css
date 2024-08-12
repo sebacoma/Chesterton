@@ -102,11 +102,32 @@ body {
   background-color: #cbd5e0;
 }
 
-.about-section {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
+.header-image {
+  width: 100%;
+  max-height: 600px; /* Limita la altura máxima de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+  display: block;
+  margin-bottom: 1rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about-section h3, 
+.about-section p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.about-section.visible h3, 
+.about-section.visible p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 .description {
   flex: 1;

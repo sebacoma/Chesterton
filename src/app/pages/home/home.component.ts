@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router'; // Import the Router module
 
@@ -10,6 +10,29 @@ import { Router } from '@angular/router'; // Import the Router module
 
 export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
+
+  ngOnInit(): void {
+    this.checkScroll();
+    this.startAutoplay();
+    this.startIndustryAutoplay();
+  }
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.checkScroll();
+  }
+
+  private checkScroll() {
+    const aboutSection = document.querySelector('.about-section');
+    if (aboutSection) {
+      const position = aboutSection.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (position < windowHeight) {
+        aboutSection.classList.add('visible');
+      }
+    }
+  }
+  
   
   slides = [
     'assets/Picture10.jpg', 'assets/Picture1.png', 'assets/Picture2.png', 'assets/Picture3.png', 
@@ -82,10 +105,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.titleService.setTitle('Home - Chesterton Chile');
   }
 
-  ngOnInit(): void {
-    this.startAutoplay();
-    this.startIndustryAutoplay();
-  }
+
 
   ngOnDestroy(): void {
     this.stopAutoplay();

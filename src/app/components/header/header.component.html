@@ -14,7 +14,8 @@
         <a href="/productos/juntas-expansion" class="block text-gray-700 hover:text-blue-500">Juntas de Expansión</a>
         <a href="/productos/proteccion-rodamientos" class="block text-gray-700 hover:text-blue-500">Protección de Rodamientos</a>
       </div>
-      <button (click)="toggleSubMenu('isServiciosOpen')" class="menu-item">Servicios</button>
+      <a class="menu-item" (click)="scrollToSection('#about-section')">Soluciones</a>
+
       <a href="/historia" class="menu-item">Historia</a>
       <button (click)="toggleSubMenu('isContactoOpen')" class="menu-item">Contacto</button>
     </nav>
@@ -47,18 +48,12 @@
       <a href="productos/juntas-expansion" class="block text-gray-700 hover:text-red-500">Juntas de Expansión</a>
       <a href="productos/proteccion-rodamientos" class="block text-gray-700 hover:text-red-500">Protección de Rodamientos</a>
     </div>
-    <button (click)="toggleSubMenu('isServiciosOpen')" class="text-gray-700 hover:text-red-500 w-full text-left">Servicios</button>
+    <a (click)="scrollToSection('#about-section')" class="text-gray-700 hover:text-red-500 w-full text-left">Soluciones</a>
     <div *ngIf="isServiciosOpen" class="pl-4">
       <!-- Elementos del submenú de Servicios -->
     </div>
     <a href="/historia" class="text-gray-700 hover:text-red-500 w-full text-left">Historia</a>
-    <div *ngIf="isBlogOpen" class="pl-4">
-      <!-- Elementos del submenú de Blog -->
-    </div>
-    <button (click)="toggleSubMenu('isContactoOpen')" class="text-gray-700 hover:text-red-500 w-full text-left">Contacto</button>
-    <div *ngIf="isContactoOpen" class="pl-4">
-      <!-- Elementos del submenú de Contacto -->
-    </div>
+    <a class="text-gray-700 hover:text-red-500 w-full text-left">Contacto</a>
   </nav>
 </div>
 </header>

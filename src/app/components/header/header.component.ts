@@ -17,6 +17,10 @@ export class HeaderComponent {
   toggleSubMenu(menu: 'isNosotrosOpen' | 'isProductosOpen' | 'isServiciosOpen' | 'isBlogOpen' | 'isContactoOpen') {
     this[menu] = !this[menu];
   }
+  scrollToSection(section: string) {
+    document.querySelector(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
+  
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
