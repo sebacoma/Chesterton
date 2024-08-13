@@ -219,4 +219,16 @@ export class HomeComponent implements OnInit, OnDestroy {
     const offset = this.activeIndustrySlide * itemWidth;
     carouselElement.style.transform = `translateX(-${offset}px)`;
   }
+  showFirstPart = true;
+  displayedIndustries = this.industries.slice(0, 6); // Muestra las primeras 6 industrias
+
+  toggleIndustries() {
+    this.showFirstPart = !this.showFirstPart;
+
+    if (this.showFirstPart) {
+      this.displayedIndustries = this.industries.slice(0, 6); // Muestra las primeras 6 industrias
+    } else {
+      this.displayedIndustries = this.industries.slice(6); // Muestra las últimas 4 industrias
+    }
+  }
 }
