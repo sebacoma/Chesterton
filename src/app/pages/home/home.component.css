@@ -1,8 +1,41 @@
 .relative {
   position: relative;
+
+}
+h-screen {
+  height: 100vh; /* Asegura que el carrusel ocupe toda la altura de la pantalla */
 }
 body {
   font-family: 'Roboto', sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+.intro-section {
+  background-image: url('/assets/sellosFluido.jpg'); /* Ruta relativa dentro del proyecto Angular */
+  background-size: cover; /* Asegura que la imagen cubra toda el área */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-color: rgba(0, 0, 0, 0.6); /* Color de fondo oscuro con opacidad */
+  background-blend-mode: darken; /* Mezcla el color oscuro con la imagen */
+  color: white; /* Color del texto en blanco */
+  padding: 2rem; /* Espaciado interno para centrar el texto */
+  text-align: center; /* Centrar texto */
+  margin-bottom: 2rem; /* Espacio inferior para separar de otros elementos */
+}
+
+.intro-text {
+  font-size: 2rem; /* Ajuste del tamaño del texto principal */
+  font-weight: bold; /* Negrita para destacar */
+  line-height: 1.5; /* Espaciado entre líneas */
+  margin-bottom: 1rem; /* Espacio entre el título y el subtítulo */
+}
+
+.intro-subtext {
+  font-size: 1.25rem; /* Tamaño más pequeño para el subtítulo */
+  font-weight: normal; /* Texto normal para el subtítulo */
+  opacity: 0.8; /* Un poco menos opaco para diferenciarlo del título */
 }
 
 
@@ -30,7 +63,9 @@ body {
 }
 
 .object-cover {
-  object-fit: cover;
+  object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
+  width: 100%;
+  height: 100%;
 }
 
 .bg-gray-800 {
@@ -113,12 +148,20 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.about-section {
+  text-align: center;
+  background-color: #f5f5f5; /* Gris claro para un fondo más suave */
+  margin: 0; /* Asegura que el texto esté bien centrado */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+}
 
 .about-section h3, 
 .about-section p {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    background-color: aqua;
+    padding: 0%;
 }
 
 .about-section.visible h3, 
@@ -141,7 +184,7 @@ html {
 }
 
 .historia-container {
-  padding: 1rem 0; /* Padding around the content, no padding on left and right */
+  padding:  0; /* Padding around the content, no padding on left and right */
   display: flex; /* Flexbox for centering content */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
@@ -154,6 +197,10 @@ html {
 .font-bold {
   font-weight: bold;
 }
+.main-container {
+  margin-left: 2rem; /* Puedes ajustar a 2rem o más si necesitas más espacio */
+  margin-right: 2rem; /* Puedes ajustar a 2rem o más si necesitas más espacio */
+} 
 
 .text-gray-800 {
   color: #1e242e;
@@ -162,7 +209,22 @@ html {
   text-align: center;
 }
 .text-xl {
-  font-size: 2rem; /* Adjust the size as needed */
+  font-size: 1.25rem; 
+}
+.text-4xl {
+  font-size: 2rem; /* Reducido para un aspecto más sobrio */
+}
+
+.text-3xl {
+  font-size: 1.5rem; /* Ajuste para los subtítulos */
+}
+
+.text-2xl {
+  font-size: 1.25rem;
+}
+
+p, a {
+  font-size: 1rem; /* Tamaño de texto para párrafos y enlaces */
 }
 
 .text-red-700 {
@@ -395,6 +457,7 @@ button:hover {
 .carousel-button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 1rem;
 }
 
 .carousel-button:hover {
@@ -596,4 +659,4 @@ button:hover {
 
 .indicators .indicator-line.active {
   background-color: #ff2020; /* Azul (bg-blue-500) */
-}
+} 

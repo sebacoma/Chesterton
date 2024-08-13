@@ -39,6 +39,30 @@ export class HomeComponent implements OnInit, OnDestroy {
     'assets/Picture4.png', 'assets/Picture5.png', 'assets/Picture6.jpg', 'assets/Picture7.jpg', 
     'assets/Picture8.jpg', 'assets/Picture9.jpg'
   ];
+  // slides = [
+  //   {
+  //     image: 'assets/Picture10.jpg',
+  //     description: 'Descripción 1...'
+  //   },
+  //   {
+  //     image: 'assets/Picture6.jpg',
+  //     description: 'Descripción 2...'
+  //   },
+  //   {
+  //     image: 'assets/Picture10.jpg',
+  //     description: 'Descripción 3...'
+  //   },
+  //   {
+  //     image: 'assets/Picture10.jpg',
+  //     description: 'Descripción 4...'
+  //   },
+  //   {
+  //     image: 'assets/Picture10.jpg',
+  //     description: 'Descripción 5...'
+  //   }
+  // ];
+  
+  
   
   activeSlide = 0;
   autoplayInterval: any;
@@ -81,24 +105,24 @@ export class HomeComponent implements OnInit, OnDestroy {
     carouselElement.style.transform = `translateX(${translateX}px)`;
   }
   industries = [
-    { title: 'Mineria', description: 'Descripción de la industria 1', image: 'assets/dall-e mineria.webp' },
-    { title: 'Pulpa y Papel', description: 'Descripción de la industria 2', image: 'assets/dall-e pulpa.webp' },
-    { title: 'Alimentos y Bebida', description: 'Descripción de la industria 3', image: 'assets/dall-e alimento.webp' },
-    { title: 'Termoelectrica', description: 'Descripción de la industria 4', image: 'assets/dall-e termo.webp' },
-    { title: 'Hidroelectrica', description: 'Descripción de la industria 5', image: 'assets/dall-e hidro.webp' },
-    { title: 'Tratamiento de agua', description: 'Descripción de la industria 6', image: 'assets/dall-e agua.webp' },
-    { title: 'Naval', description: 'Descripción de la industria 7', image: 'assets/dall-e naval.webp' },
-    { title: 'Química', description: 'Descripción de la industria 8', image: 'assets/dall-e quimica.webp' },
-    { title: 'Petroquímica', description: 'Descripción de la industria 9', image: 'assets/dall-e petro.webp' },
-    { title: 'Fabricacion de Equipo Original', description: 'Descripción de la industria 10', image: 'assets/dall-e original.webp' }
+    { title: 'Mineria', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e mineria.webp' },
+    { title: 'Pulpa y Papel', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e pulpa.webp' },
+    { title: 'Alimentos y Bebida', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e alimento.webp' },
+    { title: 'Termoelectrica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e termo.webp' },
+    { title: 'Hidroelectrica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e hidro.webp' },
+    { title: 'Tratamiento de agua', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e agua.webp' },
+    { title: 'Naval', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e naval.webp' },
+    { title: 'Química', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e quimica.webp' },
+    { title: 'Petroquímica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e petro.webp' },
+    { title: 'Fabricacion de Equipo Original', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e original.webp' }
   ];
   activeIndustrySlide = 0;
   industryAutoplayInterval: any;
   numVisibleSlides = 3;
   branches = [
-    { title: 'Oficina Santiago', address: 'Avenida Los Vientos #20090, Bodega B, Pudahuel, Santiago', phone: ' (2) 29 44 4631', email: 'chile2@chesterton.com', image: 'assets/sucursal1.png' },
-    { title: 'Oficina Concepción', address: 'Camino a Coronel Km.10, #5580, Módulo 7-A Megacentro, San Pedro de la Paz, Concepción', phone: ' (41) 246 0300', email: ' chile1@chesterton.com', image: 'assets/sucursal2.png' },
-    { title: 'Oficina Antofagasta', address: 'Avda. Edmundo Perez Zujovic, #5554, Antofagasta', phone: ' (55) 255 2090', email: ' chile3@chesterton.com', image: 'assets/sucursal3.png' }
+    { title: 'Oficina Antofagasta', address: 'Avda. Edmundo Perez Zujovic, #5554, Antofagasta', phone: ' (55) 255 2090', email: ' chile3@chesterton.com', image: 'assets/antofa.webp' },
+    { title: 'Oficina Santiago', address: 'Avenida Los Vientos #20090, Bodega B, Pudahuel, Santiago', phone: ' (2) 29 44 4631', email: 'chile2@chesterton.com', image: 'assets/santaigo.webp' },
+    { title: 'Oficina Concepción', address: 'Camino a Coronel Km.10, #5580, Módulo 7-A Megacentro, San Pedro de la Paz, Concepción', phone: ' (41) 246 0300', email: ' chile1@chesterton.com', image: 'assets/conce.webp' }
   ];
 
   constructor(private titleService: Title, private router: Router) {
