@@ -127,8 +127,12 @@ h-screen {
 
 .carousel-inner {
   display: flex;
+
   transition: transform 0.5s ease-in-out;
   gap: 1rem; /* Espacio entre elementos */
+  margin: 10px auto;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .carousel-item {
@@ -209,8 +213,8 @@ h-screen {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #ffffff;
   margin: 2.5px auto;
-  width: 80%;
-  height: 400px;
+  width: 70%;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,7 +257,6 @@ h-screen {
 
 /* Sección de Industrias */
 .industries-section {
-  margin-top: 12rem;
   text-align: center;
   background-color: #f5f5f5; /* Gris claro para un fondo más suave */
   padding: 30px;
@@ -336,12 +339,11 @@ h-screen {
   color: white;
   padding: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ajuste la altura a 100% de la pantalla */
+  height: 110vh auto; /* Ajuste la altura a 100% de la pantalla */
 }
 
 .intro-text {
