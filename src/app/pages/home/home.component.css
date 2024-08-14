@@ -211,7 +211,7 @@ h-screen {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(30, 147, 149, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #ffffff;
+  background-color: #f9f1f1;
   margin: 2.5px auto;
   width: 70%;
   height: 350px;
@@ -337,7 +337,7 @@ h-screen {
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
   color: white;
-  padding: 2rem;
+  padding: 6rem;
   text-align: center;
   display: flex;
   flex-direction: column;
