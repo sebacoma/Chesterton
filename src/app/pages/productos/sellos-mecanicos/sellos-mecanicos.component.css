@@ -1,0 +1,75 @@
+.mechanical-seals-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .content-wrapper p {
+    flex: 1;
+    margin-right: 20px;
+    text-align: justify;
+  }
+  .content-wrapper h1 {
+    flex: 1;
+    font-size: 2em;
+    color: #d41616;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    padding-top: 20px;
+    color: #d41616;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #333;
+  }
+  .explore-section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .explore-section h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .explore-section ul {
+    list-style-type: disc;
+  }
+  
+  .explore-section ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .explore-section ul li a {
+    color: #fc0000;
+    text-decoration: none;
+  }
+  
+  .explore-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .image-section {
+    flex-shrink: 0;
+    margin-right: 0;
+  }
+  
+  .image-section img {
+    max-width: 60%;
+    height: auto;
+
+  }

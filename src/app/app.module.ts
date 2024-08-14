@@ -22,6 +22,16 @@ import { ServiciosReparacionComponent } from './pages/soluciones/servicios-repar
 import { ServiciosInstalacionDetencionDePlantaComponent } from './pages/soluciones/servicios-instalacion-detencion-de-planta/servicios-instalacion-detencion-de-planta.component';
 import { ServiciosDeMonitoreoComponent } from './pages/soluciones/servicios-de-monitoreo/servicios-de-monitoreo.component';
 import { DisenoFabricacionLocalComponent } from './pages/soluciones/diseno-fabricacion-local/diseno-fabricacion-local.component';
+import { SellosPartidosComponent } from './pages/productos/sellos/sellos-partidos/sellos-partidos.component';
+import { SellosCartuchoComponent } from './pages/productos/sellos/sellos-cartucho/sellos-cartucho.component';
+import { SellosCaseteComponent } from './pages/productos/sellos/sellos-casete/sellos-casete.component';
+import { SellosGasComponent } from './pages/productos/sellos/sellos-gas/sellos-gas.component';
+import { SellosFuelleComponent } from './pages/productos/sellos/sellos-fuelle/sellos-fuelle.component';
+import { SellosLodosComponent } from './pages/productos/sellos/sellos-lodos/sellos-lodos.component';
+import { SellosMezclaAgitadoresComponent } from './pages/productos/sellos/sellos-mezcla-agitadores/sellos-mezcla-agitadores.component';
+import { SellosComponentesComponent } from './pages/productos/sellos/sellos-componentes/sellos-componentes.component';
+import { SellosEspecializadosComponent } from './pages/productos/sellos/sellos-especializados/sellos-especializados.component';
+import { SellosSoporteSelladoComponent } from './pages/productos/sellos/sellos-soporte-sellado/sellos-soporte-sellado.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +54,17 @@ import { DisenoFabricacionLocalComponent } from './pages/soluciones/diseno-fabri
     ServiciosReparacionComponent,
     ServiciosInstalacionDetencionDePlantaComponent,
     ServiciosDeMonitoreoComponent,
-    DisenoFabricacionLocalComponent
+    DisenoFabricacionLocalComponent,
+    SellosPartidosComponent,
+    SellosCartuchoComponent,
+    SellosCaseteComponent,
+    SellosGasComponent,
+    SellosFuelleComponent,
+    SellosLodosComponent,
+    SellosMezclaAgitadoresComponent,
+    SellosComponentesComponent,
+    SellosEspecializadosComponent,
+    SellosSoporteSelladoComponent
   ],
   imports: [
     BrowserModule,
