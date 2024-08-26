@@ -9,7 +9,7 @@ export class SellosMecanicosComponent {
   seals = [
     { title: 'Sellos Partidos', link: 'sellos-partidos' },
     { title: 'Sellos de Cartucho', link: 'sellos-cartucho' },
-    { title: 'Sellos de Casete', link: 'sellos-casete' },
+    { title: 'Sellos de Cassette', link: 'sellos-casete' },
     { title: 'Sellos de Gas', link: 'sellos-gas' },
     { title: 'Sellos de Fuelle', link: 'sellos-fuelles' },
     { title: 'Sellos para Lodo', link: 'sellos-lodos' },
