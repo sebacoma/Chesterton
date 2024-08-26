@@ -25,6 +25,7 @@ import { SellosMezclaAgitadoresComponent } from './pages/productos/sellos/sellos
 import { SellosComponentesComponent } from './pages/productos/sellos/sellos-componentes/sellos-componentes.component';
 import { SellosEspecializadosComponent } from './pages/productos/sellos/sellos-especializados/sellos-especializados.component';
 import { SellosSoporteSelladoComponent } from './pages/productos/sellos/sellos-soporte-sellado/sellos-soporte-sellado.component';
+import { SellosFuelleComponent } from './pages/productos/sellos/sellos-fuelle/sellos-fuelle.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -48,6 +49,7 @@ const routes: Routes = [
   {path:'productos/sellos-mecanicos/sellos-cartucho',component:SellosCartuchoComponent},
   {path:'productos/sellos-mecanicos/sellos-casete',component:SellosCaseteComponent},
   {path:'productos/sellos-mecanicos/sellos-gas',component:SellosGasComponent},
+  {path:'productos/sellos-mecanicos/sellos-fuelles',component:SellosFuelleComponent},
   {path:'productos/sellos-mecanicos/sellos-lodos',component:SellosLodosComponent},
   {path:'productos/sellos-mecanicos/sellos-mezcla-agitadores',component:SellosMezclaAgitadoresComponent},
   {path:'productos/sellos-mecanicos/sellos-componentes',component:SellosComponentesComponent},

@@ -11,6 +11,7 @@ h-screen {
 
 .relative {
   position: relative;
+  overflow: hidden;
 }
 
 .flex {
@@ -144,6 +145,7 @@ h-screen {
 @media (max-width: 480px) {
   .carousel-item {
     width: 100%; /* For showing 1 element per view */
+    
   }
 }
 
@@ -213,7 +215,7 @@ h-screen {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #f9f1f1;
   margin: 2.5px auto;
-  width: 70%;
+  width: auto;
   height: 350px;
   display: flex;
   align-items: center;

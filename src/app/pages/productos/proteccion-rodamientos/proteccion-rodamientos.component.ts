@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./proteccion-rodamientos.component.css']
 })
 export class ProteccionRodamientosComponent {
-
+  seals = [
+    { title: 'Sellos Rotativos', link: 'sellos-partidos' },
+    { title: 'Sellos Activados por Resorte', link: 'sellos-partidos' }
+  ];
 }

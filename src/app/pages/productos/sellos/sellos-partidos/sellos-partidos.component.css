@@ -1,15 +1,25 @@
 .split-seals-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px;
-  }
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
   
-  .intro-section {
+.intro-section {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+  
+  .intro-section h1 {
+    color: crimson;
     flex: 1 1 100%;
     margin-bottom: 20px;
+    font-size: 2.5rem;
   }
-  
   .sidebar {
     flex: 1 1 30%;
     padding: 20px;
@@ -25,16 +35,7 @@
     margin-bottom: 15px;
   }
   
-  .resources h4 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .resources ul {
-    list-style: none;
-    padding-left: 0;
-  }
+
   
   .resources ul li {
     margin-bottom: 10px;
@@ -61,7 +62,7 @@
   
   .product-card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -69,6 +70,7 @@
     margin-bottom: 20px;
     transition: box-shadow 0.3s;
   }
+  
   
   .product-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -117,5 +119,17 @@
   
   .cta-button:hover {
     background-color: #e0a800;
+  }
+
+  @media (max-width: 768px) {
+    .split-seals-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .sidebar, .products-section {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
   }
   
