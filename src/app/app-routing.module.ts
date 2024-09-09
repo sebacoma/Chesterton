@@ -27,6 +27,10 @@ import { SellosEspecializadosComponent } from './pages/productos/sellos/sellos-e
 import { SellosSoporteSelladoComponent } from './pages/productos/sellos/sellos-soporte-sellado/sellos-soporte-sellado.component';
 import { SellosFuelleComponent } from './pages/productos/sellos/sellos-fuelle/sellos-fuelle.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { LimpiadoresComponent } from './pages/productos/hidraulicos/limpiadores/limpiadores.component';
+import { SellosParaVastagosComponent } from './pages/productos/hidraulicos/sellos-para-vastagos/sellos-para-vastagos.component';
+import { SellosPistonesComponent } from './pages/productos/hidraulicos/sellos-pistones/sellos-pistones.component';
+import { DispositivosAuxiliaresComponent } from './pages/productos/hidraulicos/dispositivos-auxiliares/dispositivos-auxiliares.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -57,7 +61,10 @@ const routes: Routes = [
   {path:'productos/sellos-mecanicos/sellos-componentes',component:SellosComponentesComponent},
   {path:'productos/sellos-mecanicos/sellos-especializados',component:SellosEspecializadosComponent},
   {path:'productos/sellos-mecanicos/sellos-soporte-sellado',component:SellosSoporteSelladoComponent},
-
+  {path:'productos/sellos-hidraulicos-neumaticos/limpiadores',component:LimpiadoresComponent},
+  {path:'productos/sellos-hidraulicos-neumaticos/sellos-vastagos',component:SellosParaVastagosComponent},
+  {path:'productos/sellos-hidraulicos-neumaticos/sellos-pistones',component:SellosPistonesComponent},
+  {path:'productos/sellos-hidraulicos-neumaticos/dispositivos-auxiliares',component:DispositivosAuxiliaresComponent},
 ];
 
 @NgModule({
