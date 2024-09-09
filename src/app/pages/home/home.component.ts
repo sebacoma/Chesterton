@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   
   
   slides = [
-    'assets/Picture10.jpg', 'assets/Picture1.png', 'assets/Picture2.png', 'assets/Picture3.png', 
+    'assets/Picture10.jpg', 'assets/Picture1.png', 'assets/Picture2.png', 'assets/Open-pit-mine.jpg',
     'assets/Picture4.png', 'assets/Picture5.png', 'assets/Picture6.jpg', 'assets/Picture7.jpg', 
     'assets/Picture8.jpg', 'assets/Picture9.jpg'
   ];

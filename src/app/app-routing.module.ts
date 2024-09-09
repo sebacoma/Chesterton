@@ -26,11 +26,13 @@ import { SellosComponentesComponent } from './pages/productos/sellos/sellos-comp
 import { SellosEspecializadosComponent } from './pages/productos/sellos/sellos-especializados/sellos-especializados.component';
 import { SellosSoporteSelladoComponent } from './pages/productos/sellos/sellos-soporte-sellado/sellos-soporte-sellado.component';
 import { SellosFuelleComponent } from './pages/productos/sellos/sellos-fuelle/sellos-fuelle.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'condiciones', component: CondicionesComponent},
   {path:'historia', component: HistoriaComponent},
+  {path:'contacto', component: ContactoComponent},
   {path:'productos/sellos-mecanicos', component: SellosMecanicosComponent},
   {path:'productos/sellos-hidraulicos-neumaticos', component: SellosHidraulicosNeumaticosComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas', component: EmpaquetadurasMecanicasJuntasComponent},

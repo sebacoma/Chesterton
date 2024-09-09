@@ -32,6 +32,8 @@ import { SellosMezclaAgitadoresComponent } from './pages/productos/sellos/sellos
 import { SellosComponentesComponent } from './pages/productos/sellos/sellos-componentes/sellos-componentes.component';
 import { SellosEspecializadosComponent } from './pages/productos/sellos/sellos-especializados/sellos-especializados.component';
 import { SellosSoporteSelladoComponent } from './pages/productos/sellos/sellos-soporte-sellado/sellos-soporte-sellado.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -64,10 +66,12 @@ import { SellosSoporteSelladoComponent } from './pages/productos/sellos/sellos-s
     SellosMezclaAgitadoresComponent,
     SellosComponentesComponent,
     SellosEspecializadosComponent,
-    SellosSoporteSelladoComponent
+    SellosSoporteSelladoComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
