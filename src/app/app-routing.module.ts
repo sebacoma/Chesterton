@@ -30,6 +30,11 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { LimpiadoresComponent } from './pages/productos/hidraulicos/limpiadores/limpiadores.component';
 import { SellosParaVastagosComponent } from './pages/productos/hidraulicos/sellos-para-vastagos/sellos-para-vastagos.component';
 import { DispositivosAuxiliaresComponent } from './pages/productos/hidraulicos/dispositivos-auxiliares/dispositivos-auxiliares.component';
+import { SellosValvulasComponent } from './pages/productos/empaquetaduras/sellos-valvulas/sellos-valvulas.component';
+import { SellosRotatoriosComponent } from './pages/productos/empaquetaduras/sellos-rotatorios/sellos-rotatorios.component';
+import { SelladoMultipropositoComponent } from './pages/productos/empaquetaduras/sellado-multiproposito/sellado-multiproposito.component';
+import { SelladoBridasComponent } from './pages/productos/empaquetaduras/sellado-bridas/sellado-bridas.component';
+import { EquipoEspecialComponent } from './pages/productos/empaquetaduras/equipo-especial/equipo-especial.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -63,6 +68,12 @@ const routes: Routes = [
   {path:'productos/sellos-hidraulicos-neumaticos/limpiadores',component:LimpiadoresComponent},
   {path:'productos/sellos-hidraulicos-neumaticos/sellos-vastagos',component:SellosParaVastagosComponent},
   {path:'productos/sellos-hidraulicos-neumaticos/dispositivos-auxiliares',component:DispositivosAuxiliaresComponent},
+  {path:'productos/empaquetaduras-mecanicas-juntas/sellos-valvulas',component:SellosValvulasComponent},
+  {path:'productos/empaquetaduras-mecanicas-juntas/sellos-rotatorios',component:SellosRotatoriosComponent},
+  {path:'productos/empaquetaduras-mecanicas-juntas/sellos-multiproposito',component:SelladoMultipropositoComponent},
+  {path:'productos/empaquetaduras-mecanicas-juntas/sellos-bridas',component:SelladoBridasComponent},
+  {path:'productos/empaquetaduras-mecanicas-juntas/equipo-especial',component:EquipoEspecialComponent},
+  
 ];
 
 @NgModule({

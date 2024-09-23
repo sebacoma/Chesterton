@@ -37,6 +37,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LimpiadoresComponent } from './pages/productos/hidraulicos/limpiadores/limpiadores.component';
 import { SellosParaVastagosComponent } from './pages/productos/hidraulicos/sellos-para-vastagos/sellos-para-vastagos.component';
 import { DispositivosAuxiliaresComponent } from './pages/productos/hidraulicos/dispositivos-auxiliares/dispositivos-auxiliares.component';
+import { SelladoMultipropositoComponent } from './pages/productos/empaquetaduras/sellado-multiproposito/sellado-multiproposito.component';
+import { SelladoBridasComponent } from './pages/productos/empaquetaduras/sellado-bridas/sellado-bridas.component';
+import { EquipoEspecialComponent } from './pages/productos/empaquetaduras/equipo-especial/equipo-especial.component';
+import { SellosValvulasComponent } from './pages/productos/empaquetaduras/sellos-valvulas/sellos-valvulas.component';
+import { SellosRotatoriosComponent } from './pages/productos/empaquetaduras/sellos-rotatorios/sellos-rotatorios.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +78,13 @@ import { DispositivosAuxiliaresComponent } from './pages/productos/hidraulicos/d
     ContactoComponent,
     LimpiadoresComponent,
     SellosParaVastagosComponent,
-    DispositivosAuxiliaresComponent
+    DispositivosAuxiliaresComponent,
+    SellosRotatoriosComponent,
+    SelladoMultipropositoComponent,
+    SelladoBridasComponent,
+    EquipoEspecialComponent,
+    SellosValvulasComponent,
+    SellosRotatoriosComponent
   ],
   imports: [
     BrowserModule,

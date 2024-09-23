@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class EmpaquetadurasMecanicasJuntasComponent {
   seals = [
-    { title: 'Sellado de equipos rotatorios', link: 'limpiadores' },
-    { title: 'Sellado Multipropósito', link: 'sellos-vastagos' },
-    { title: 'Sellado de Válvulas', link: 'dispositivos-auxiliares' },
-    { title: 'Sellado de Bridas', link: 'dispositivos-auxiliares' },
-    { title: 'Equipo Especial', link: 'dispositivos-auxiliares' },
+    { title: 'Sellado de equipos rotatorios', link: 'sellos-rotatorios' },
+    { title: 'Sellado Multipropósito', link: 'sellos-multiproposito' },
+    { title: 'Sellado de Válvulas', link: 'sellos-valvulas' },
+    { title: 'Sellado de Bridas', link: 'sellos-bridas' },
+    { title: 'Equipo Especial', link: 'equipo-especial' },
   ];
 }
