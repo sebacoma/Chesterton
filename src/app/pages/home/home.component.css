@@ -13,6 +13,7 @@ h-screen {
 .relative {
   position: relative;
   overflow: hidden;
+  
 }
 
 .flex {
@@ -347,7 +348,7 @@ h-screen {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 110vh auto; /* Ajuste la altura a 100% de la pantalla */
+  height: 100%; /* Ajuste la altura a 100% de la pantalla */
 }
 
 .intro-text {
@@ -464,6 +465,8 @@ h-screen {
   background-color: #f5f5f5; /* Gris claro para un fondo más suave */
   margin: 0; /* Asegura que el texto esté bien centrado */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+  width: 100%;
+  height: 100vh; /* Ajusta la altura a 100% de la pantalla */
 }
 
 .about-section h3, 

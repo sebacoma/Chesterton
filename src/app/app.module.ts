@@ -36,7 +36,6 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LimpiadoresComponent } from './pages/productos/hidraulicos/limpiadores/limpiadores.component';
 import { SellosParaVastagosComponent } from './pages/productos/hidraulicos/sellos-para-vastagos/sellos-para-vastagos.component';
-import { SellosPistonesComponent } from './pages/productos/hidraulicos/sellos-pistones/sellos-pistones.component';
 import { DispositivosAuxiliaresComponent } from './pages/productos/hidraulicos/dispositivos-auxiliares/dispositivos-auxiliares.component';
 
 @NgModule({
@@ -74,7 +73,6 @@ import { DispositivosAuxiliaresComponent } from './pages/productos/hidraulicos/d
     ContactoComponent,
     LimpiadoresComponent,
     SellosParaVastagosComponent,
-    SellosPistonesComponent,
     DispositivosAuxiliaresComponent
   ],
   imports: [

@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 export class SellosHidraulicosNeumaticosComponent {
   seals = [
     { title: 'Limpiadores', link: 'limpiadores' },
-    { title: 'Sellos para Vástagos', link: 'sellos-vastagos' },
-    { title: 'Sellos para Pistones', link: 'sellos-pistones' },
+    { title: 'Sellos para Vástagos y Pistones', link: 'sellos-vastagos' },
     { title: 'Dispositivos Auxiliares', link: 'dispositivos-auxiliares' }
   ];
 }

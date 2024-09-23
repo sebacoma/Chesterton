@@ -14,6 +14,13 @@
     font-size: 2em;
     color:#d04242;
 }
+.section p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .main {
     display: flex;
@@ -31,6 +38,7 @@
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+    align-items: center;
 }
 
 .intro p {
@@ -41,20 +49,24 @@
     margin: 0 auto;
 }
 .video-section {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si el contenedor tiene suficiente altura */
+    flex-direction: column;
     text-align: center;
     margin: 20px 0;
-  }
-  
-  .video-section h2 {
+}
+
+.video-section h2 {
     margin-bottom: 20px;
     color: #b91c1c; /* Tailwind's red-700 color */
     font-size: 1.5rem; /* Tailwind's text-2xl size */
     font-weight: bold; /* Tailwind's font-bold */
-  }
-  
-  .video-section video {
+}
+
+.video-section iframe {
     max-width: 100%;
-    height: auto;
+
     border: 2px solid #b91c1c; /* Tailwind's red-700 color */
     border-radius: 8px;
-  }
+}
