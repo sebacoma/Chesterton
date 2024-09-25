@@ -16,6 +16,6 @@ export class SellosMecanicosComponent {
     { title: 'Sellos para Mezcladores/Agitadores', link: 'sellos-mezcla-agitadores' },
     { title: 'Sellos de Componentes', link: 'sellos-componentes' },
     { title: 'Sellos Especializados', link: 'sellos-especializados' },
-    { title: 'Sistema de Soporte de Sellado', link: 'sellos-soporte-sellado' }
+    { title: 'Sistemas de Soporte de Sellado', link: 'sellos-soporte-sellado' }
   ];
 }

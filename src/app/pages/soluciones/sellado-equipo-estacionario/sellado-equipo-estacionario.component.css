@@ -1,0 +1,90 @@
+/* Estilo para el título de la solución */
+.solution-header {
+    padding: 2rem 0;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    text-align: center;
+}
+.header-image {
+    width: 100%;
+    max-height: 480px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+
+.solution-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d32f2f; /* Rojo oscuro */
+}
+
+.solution-header p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 1rem;
+    max-width: 800px; /* Limita el ancho del párrafo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para la sección de beneficios */
+.benefits-section {
+    padding: 2rem 0;
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d32f2f; /* Rojo oscuro */
+}
+
+.benefits-section ul {
+    margin-top: 1.5rem;
+    text-align: left;
+    display: inline-block;
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.benefits-section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    color: #333;
+}
+
+/* Estilo para la sección de casos de estudio */
+.case-studies-section {
+    padding: 2rem 0;
+    background-color: #f8f9fa; /* Fondo claro */
+    text-align: center;
+}
+
+.case-studies-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d32f2f; /* Rojo oscuro */
+}
+
+.case-study {
+    margin-top: 1.5rem;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-study h3 {
+    font-size: 1.75rem;
+    font-weight: semi-bold;
+    color: #d32f2f; /* Rojo oscuro */
+}
+
+.case-study p {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    color: #555;
+}
