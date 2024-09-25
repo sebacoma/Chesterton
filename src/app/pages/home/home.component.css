@@ -403,7 +403,7 @@ h-screen {
 /* Sección de Sucursales */
 .branches-section {
   padding: 1rem;
-  margin-top: 12rem;
+  margin-top: 4rem;
 }
 
 .branches-grid {
@@ -451,6 +451,7 @@ h-screen {
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   gap: 1rem; /* Espacio entre las imágenes */
+  margin-bottom: 4rem; /* Espacio adicional en la parte inferior */
 }
 
 .certification-image {

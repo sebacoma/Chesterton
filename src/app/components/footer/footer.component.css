@@ -47,6 +47,8 @@
     text-align: center;
     padding: 10px 0;
     font-size: 0.9em;
+    position: absolute;
+    width: inherit;
   }
   
   @media (max-width: 768px) {
