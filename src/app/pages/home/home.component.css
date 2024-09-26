@@ -9,6 +9,9 @@ h-screen {
   height: 100vh; /* Asegura que el carrusel ocupe toda la altura de la pantalla */
   overflow: hidden; /* Oculta el desbordamiento horizontal */
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .relative {
   position: relative;

@@ -11,6 +11,12 @@ import { Router } from '@angular/router'; // Import the Router module
 export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
 
+  goToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   ngOnInit(): void {
     this.checkScroll();
     this.startAutoplay();
