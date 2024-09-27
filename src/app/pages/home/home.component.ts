@@ -237,4 +237,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.displayedIndustries = this.industries.slice(6); // Muestra las últimas 4 industrias
     }
   }
+  getGoogleMapsLink(address: string): string {
+    return `https://www.google.com/maps?q=${encodeURIComponent(address)}`;
+  }
 }
