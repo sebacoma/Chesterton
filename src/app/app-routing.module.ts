@@ -73,7 +73,6 @@ const routes: Routes = [
   {path:'productos/empaquetaduras-mecanicas-juntas/sellos-multiproposito',component:SelladoMultipropositoComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas/sellos-bridas',component:SelladoBridasComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas/equipo-especial',component:EquipoEspecialComponent},
-  
 ];
 
 @NgModule({
