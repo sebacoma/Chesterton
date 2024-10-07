@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class EmpaquetadurasMecanicasJuntasComponent {
   seals = [
-    { title: 'Sellado de equipos rotatorios', link: 'sellos-rotatorios' },
+    { title: 'Sellado de Equipos Rotativos', link: 'sellos-rotatorios' },
     { title: 'Sellado Multipropósito', link: 'sellos-multiproposito' },
     { title: 'Sellado de Válvulas', link: 'sellos-valvulas' },
     { title: 'Sellado de Bridas', link: 'sellos-bridas' },
