@@ -240,4 +240,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   getGoogleMapsLink(address: string): string {
     return `https://www.google.com/maps?q=${encodeURIComponent(address)}`;
   }
+  scrollToSection(section: string) {
+    document.querySelector(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
