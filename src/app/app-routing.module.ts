@@ -35,6 +35,9 @@ import { SellosRotatoriosComponent } from './pages/productos/empaquetaduras/sell
 import { SelladoMultipropositoComponent } from './pages/productos/empaquetaduras/sellado-multiproposito/sellado-multiproposito.component';
 import { SelladoBridasComponent } from './pages/productos/empaquetaduras/sellado-bridas/sellado-bridas.component';
 import { EquipoEspecialComponent } from './pages/productos/empaquetaduras/equipo-especial/equipo-especial.component';
+import { MonitoreoDeEquiposComponent } from './pages/productos/monitoreo-de-equipos/monitoreo-de-equipos.component';
+import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/sistema-chesterton-connect/sistema-chesterton-connect.component';
+import { NubeChestertonConnectComponent } from './pages/productos/monitoreo/nube-chesterton-connect/nube-chesterton-connect.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -73,6 +76,9 @@ const routes: Routes = [
   {path:'productos/empaquetaduras-mecanicas-juntas/sellos-multiproposito',component:SelladoMultipropositoComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas/sellos-bridas',component:SelladoBridasComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas/equipo-especial',component:EquipoEspecialComponent},
+  {path:'productos/monitoreo-de-equipos',component:MonitoreoDeEquiposComponent},
+  {path:'productos/monitoreo-de-equipos/sistema-chesterton-connect',component:SistemaChestertonConnectComponent},
+  {path:'productos/monitoreo-de-equipos/nube-chesterton-connect',component:NubeChestertonConnectComponent},
 ];
 
 @NgModule({

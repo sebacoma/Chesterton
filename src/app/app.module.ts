@@ -42,6 +42,9 @@ import { SelladoBridasComponent } from './pages/productos/empaquetaduras/sellado
 import { EquipoEspecialComponent } from './pages/productos/empaquetaduras/equipo-especial/equipo-especial.component';
 import { SellosValvulasComponent } from './pages/productos/empaquetaduras/sellos-valvulas/sellos-valvulas.component';
 import { SellosRotatoriosComponent } from './pages/productos/empaquetaduras/sellos-rotatorios/sellos-rotatorios.component';
+import { MonitoreoDeEquiposComponent } from './pages/productos/monitoreo-de-equipos/monitoreo-de-equipos.component';
+import { NubeChestertonConnectComponent } from './pages/productos/monitoreo/nube-chesterton-connect/nube-chesterton-connect.component';
+import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/sistema-chesterton-connect/sistema-chesterton-connect.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +87,10 @@ import { SellosRotatoriosComponent } from './pages/productos/empaquetaduras/sell
     SelladoBridasComponent,
     EquipoEspecialComponent,
     SellosValvulasComponent,
-    SellosRotatoriosComponent
+    SellosRotatoriosComponent,
+    MonitoreoDeEquiposComponent,
+    NubeChestertonConnectComponent,
+    SistemaChestertonConnectComponent
   ],
   imports: [
     BrowserModule,
