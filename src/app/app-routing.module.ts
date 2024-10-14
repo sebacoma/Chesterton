@@ -72,7 +72,7 @@ const routes: Routes = [
   {path:'productos/sellos-hidraulicos-neumaticos/sellos-vastagos',component:SellosParaVastagosComponent},
   {path:'productos/sellos-hidraulicos-neumaticos/dispositivos-auxiliares',component:DispositivosAuxiliaresComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas/sellos-valvulas',component:SellosValvulasComponent},
-  {path:'productos/empaquetaduras-mecanicas-juntas/sellos-rotatorios',component:SellosRotatoriosComponent},
+  {path:'productos/sellos-hidraulicos-neumaticos/sellos-rotatorios',component:SellosRotatoriosComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas/sellos-multiproposito',component:SelladoMultipropositoComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas/sellos-bridas',component:SelladoBridasComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas/equipo-especial',component:EquipoEspecialComponent},
