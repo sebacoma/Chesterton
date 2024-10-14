@@ -338,14 +338,13 @@ html {
 
 /* Sección de Introducción */
 .intro-section {
-  background-image: url('/assets/Mineria.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(93, 81, 81, 0.6);
   background-blend-mode: darken;
   color: white;
-  padding: 6rem;
+  padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -361,7 +360,6 @@ html {
   padding-left: 10rem;
   padding-right: 10rem;
   line-height: 1.5; /* Espaciado entre líneas */
-  margin-bottom: 2rem; /* Espacio entre el título y el subtítulo */
 }
 
 .intro-subtext {
