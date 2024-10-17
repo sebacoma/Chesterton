@@ -447,19 +447,46 @@ html {
 }
 
 /* Sección de Certificaciones */
-.certifications-section {
+.certificaciones-container {
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  gap: 1rem; /* Espacio entre las imágenes */
-  margin-bottom: 4rem; /* Espacio adicional en la parte inferior */
+  justify-content: space-between;
+  align-items: flex-start; /* Alinear logos y texto desde el principio */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
 
-.certification-image {
-  width: 300px; /* Ajusta el ancho según sea necesario */
-  height: 200px; /* Ajusta la altura según sea necesario */
-  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+.certificaciones-logos {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Alinea los logos verticalmente */
+  gap: 20px; /* Espacio entre los logos */
 }
+
+.logo-certificacion {
+  max-width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: 150px;
+  margin-left: 100px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+.certificaciones-info strong {
+  color: red; /* Cambia el color a rojo */
+}
+.certificaciones-info {
+  flex: 2;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  padding-left: 40px;
+}
+
+.certificaciones-info p {
+  margin: 0;
+}
+
 
 /* Sección de Sobre Nosotros */
 .about-section {
