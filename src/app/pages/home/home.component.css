@@ -484,7 +484,8 @@ html {
 }
 
 .certificaciones-info p {
-  margin: 0;
+  margin-right: 50px;
+  margin: auto ;
 }
 
 
