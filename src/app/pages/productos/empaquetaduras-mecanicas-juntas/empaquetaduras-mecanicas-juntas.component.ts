@@ -10,6 +10,5 @@ export class EmpaquetadurasMecanicasJuntasComponent {
     { title: 'Sellado Multipropósito', link: 'sellos-multiproposito' },
     { title: 'Sellado de Válvulas', link: 'sellos-valvulas' },
     { title: 'Sellado de Bridas', link: 'sellos-bridas' },
-    { title: 'Equipo Especial', link: 'equipo-especial' },
   ];
 }

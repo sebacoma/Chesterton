@@ -39,7 +39,6 @@ import { SellosParaVastagosComponent } from './pages/productos/hidraulicos/sello
 import { DispositivosAuxiliaresComponent } from './pages/productos/hidraulicos/dispositivos-auxiliares/dispositivos-auxiliares.component';
 import { SelladoMultipropositoComponent } from './pages/productos/empaquetaduras/sellado-multiproposito/sellado-multiproposito.component';
 import { SelladoBridasComponent } from './pages/productos/empaquetaduras/sellado-bridas/sellado-bridas.component';
-import { EquipoEspecialComponent } from './pages/productos/empaquetaduras/equipo-especial/equipo-especial.component';
 import { SellosValvulasComponent } from './pages/productos/empaquetaduras/sellos-valvulas/sellos-valvulas.component';
 import { SellosRotatoriosComponent } from './pages/productos/empaquetaduras/sellos-rotatorios/sellos-rotatorios.component';
 import { MonitoreoDeEquiposComponent } from './pages/productos/monitoreo-de-equipos/monitoreo-de-equipos.component';
@@ -85,7 +84,6 @@ import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/s
     SellosRotatoriosComponent,
     SelladoMultipropositoComponent,
     SelladoBridasComponent,
-    EquipoEspecialComponent,
     SellosValvulasComponent,
     SellosRotatoriosComponent,
     MonitoreoDeEquiposComponent,
