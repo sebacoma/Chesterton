@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   slides = [
     'assets/Picture10.jpg', 'assets/Picture1.png', 'assets/Picture2.png', 'assets/Open-pit-mine.jpg',
     'assets/Picture5.png', 'assets/Picture6.jpg', 'assets/Picture02.png',
-    'assets/Picture9.jpg', 'assets/Picture03.jpg'
+    'assets/Picture9.jpg', 'assets/Picture03.jpg', 'assets/FoodandBeverage.jpg',
   ];
   // slides = [
   //   {
@@ -120,7 +120,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     { title: 'Naval', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e naval.webp' },
     { title: 'Química', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e quimica.webp' },
     { title: 'Petroquímica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e petro.webp' },
-    { title: 'Fabricacion de Equipo Original', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e original.webp' }
   ];
   activeIndustrySlide = 0;
   industryAutoplayInterval: any;
