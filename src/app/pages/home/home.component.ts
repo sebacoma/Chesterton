@@ -111,15 +111,15 @@ export class HomeComponent implements OnInit, OnDestroy {
     carouselElement.style.transform = `translateX(${translateX}px)`;
   }
   industries = [
-    { title: 'Mineria', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e mineria.webp' },
-    { title: 'Pulpa y Papel', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e pulpa.webp' },
-    { title: 'Alimentos y Bebida', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e alimento.webp' },
-    { title: 'Termoelectrica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e termo.webp' },
-    { title: 'Hidroelectrica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e hidro.webp' },
-    { title: 'Tratamiento de agua', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e agua.webp' },
-    { title: 'Naval', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e naval.webp' },
-    { title: 'Química', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e quimica.webp' },
-    { title: 'Petroquímica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e petro.webp' },
+    { title: 'Mineria', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/Mining.WebP', url:'https://chesterton.com/industries/process/mining' },
+    { title: 'Pulpa y Papel', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/PulpAndPaper.WebP', url:'https://chesterton.com/industries/process/pulp-and-paper' },
+    { title: 'Alimentos y Bebida', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/FoodAndBeverage.WebP', url:'https://chesterton.com/industries/process/food-and-beverage' },
+    { title: 'Termoelectrica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/FossilPower.WebP', url:'https://chesterton.com/industries/energy/fossil-power' },
+    { title: 'Hidroelectrica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/HydroPower.WebP', url:'https://chesterton.com/industries/energy/hydropower' },
+    { title: 'Tratamiento de agua', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/WaterAndWastewater.WebP', url:'https://chesterton.com/industries/process/water-and-wastewater' },
+    { title: 'Naval', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/dall-e naval.webp', url:'https://chesterton.com/industries/other-industries-served/marine' },
+    { title: 'Química', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/Chemical.WebP', url:'https://chesterton.com/industries/process/chemical' },
+    { title: 'Petroquímica', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Picture2.png', url:'https://chesterton.com/industries/process/refining' },
   ];
   activeIndustrySlide = 0;
   industryAutoplayInterval: any;

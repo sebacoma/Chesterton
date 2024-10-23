@@ -203,6 +203,7 @@ html {
 
 /* Sección de Nuestras Soluciones */
 .solutions-section {
+  margin-top: 10rem;
   background-color: #f0f0f0; /* Fondo gris claro */
   padding: 2rem;
   border-radius: 8px;
@@ -214,6 +215,7 @@ html {
 }
 
 .solution-card {
+
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -222,7 +224,7 @@ html {
   background-color: #f9f1f1;
   margin: 2.5px auto;
   width: auto;
-  height: 350px;
+  height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
