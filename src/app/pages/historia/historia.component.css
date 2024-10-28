@@ -63,7 +63,7 @@
 
 .video-section h2 {
     margin-bottom: 20px;
-    color: #b91c1c; /* Tailwind's red-700 color */
+    color: #4515b6; /* Tailwind's red-700 color */
     font-size: 1.5rem; /* Tailwind's text-2xl size */
     font-weight: bold; /* Tailwind's font-bold */
 }
@@ -71,6 +71,6 @@
 .video-section iframe {
     max-width: 100%;
 
-    border: 2px solid #b91c1c; /* Tailwind's red-700 color */
+    border: 2px solid hsl(246, 74%, 42%); /* Tailwind's red-700 color */
     border-radius: 8px;
 }
