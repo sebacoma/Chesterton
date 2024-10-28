@@ -10,6 +10,7 @@ import { Router } from '@angular/router'; // Import the Router module
 
 export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
+  Math= Math;
 
   goToSection(sectionId: string) {
     const section = document.getElementById(sectionId);
@@ -72,9 +73,9 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   activeSlide = 0;
   autoplayInterval: any;
-  itemsToShow = 3;
+  itemsToShow = 5;
   currentIndex = 0;
-  itemsPerPage = 3;
+  itemsPerPage = 5;
   solutions = [
     { id: 'sellado-equipo-estacionario', title: 'Sellado Equipo estacionario', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/valvula-de-aceite.png' },
     { id: 'sellado-equipo-rotatorio', title: 'Sellado Equipo rotatorio', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/ingenieria.png' },
@@ -91,25 +92,40 @@ export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('solutionsCarousel', { static: true })
   solutionsCarousel!: ElementRef;
 
-
+  ngAfterViewInit() {
+    // Esto asegura que el carrusel esté listo para la manipulación de DOM.
+    this.updateSolutionsCarousel();
+  }
   activeSlideSolution = 0;
+  get indicatorArray() {
+    return Array(Math.ceil(this.solutions.length / this.itemsPerPage)).fill(0);
+  }
 
   prevSlideSolution() {
-    this.activeSlideSolution = (this.activeSlideSolution > 0) ? this.activeSlideSolution - 1 : this.solutions.length - 1;
+    // Desplazarse hacia la izquierda y actualizar el carrusel
+    this.activeSlideSolution = (this.activeSlideSolution > 0) ? this.activeSlideSolution - 1 : this.indicatorArray.length - 1;
     this.updateSolutionsCarousel();
   }
 
   nextSlideSolution() {
-    this.activeSlideSolution = (this.activeSlideSolution < this.solutions.length - 1) ? this.activeSlideSolution + 1 : 0;
+    // Desplazarse hacia la derecha y actualizar el carrusel
+    this.activeSlideSolution = (this.activeSlideSolution < this.indicatorArray.length - 1) ? this.activeSlideSolution + 1 : 0;
     this.updateSolutionsCarousel();
   }
 
   updateSolutionsCarousel() {
-    const carouselElement = this.solutionsCarousel.nativeElement;
-    const itemWidth = carouselElement.querySelector('.carousel-item').clientWidth;
-    const translateX = -this.activeSlideSolution * itemWidth;
-    carouselElement.style.transform = `translateX(${translateX}px)`;
+    if (this.solutionsCarousel) {
+      const carouselElement = this.solutionsCarousel.nativeElement;
+      const itemWidth = carouselElement.querySelector('.carousel-item').clientWidth;
+      const translateX = -(this.activeSlideSolution * itemWidth * this.itemsPerPage);
+
+      carouselElement.style.transform = `translateX(${translateX}px)`;
+    }
   }
+
+
+
+
   industries = [
     { title: 'Mineria', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/Mining.WebP', url:'https://chesterton.com/industries/process/mining' },
     { title: 'Pulpa y Papel', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'assets/Industry/PulpAndPaper.WebP', url:'https://chesterton.com/industries/process/pulp-and-paper' },
