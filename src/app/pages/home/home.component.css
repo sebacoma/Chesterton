@@ -264,13 +264,12 @@ html {
   width: 44px; /* Ajusta el tamaño del ícono */
   height: 44px; /* Ajusta el tamaño del ícono */
 }
-
 /* Sección de Industrias */
 .industries-section {
   text-align: center;
-  background-color: #f5f5f5; /* Gris claro para un fondo más suave */
+  background-color: #f5f5f5;
   padding: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .industry-box {
@@ -278,21 +277,19 @@ html {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Esto asegura que la imagen se ajuste al contenedor */
   position: relative;
-  overflow: visible; /* Cambiado de 'hidden' a 'visible' */
-  height: auto; /* Asegura que la altura sea automática */
-}
-.industry-box img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  z-index: 0;
+  height: 100%; /* Asegura que el contenedor ocupe toda la altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.industry-box:hover img {
-  transform: scale(1.05);
+.industry-box img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa toda la altura del contenedor */
+  object-fit: cover; /* Asegura que la imagen se recorte si es necesario para llenar el espacio */
+  border-radius: 8px 8px 0 0; /* Solo aplica el redondeo en la parte superior */
 }
 
 .industry-info {
@@ -300,42 +297,14 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
   text-align: center;
   z-index: 2;
-}
-
-.industry-box:hover .industry-info {
-  opacity: 1;
+  color: #fff;
 }
 
 .industry-info h3 {
   font-size: 1.5rem;
-  color: #fff; /* Color del texto en blanco */
   margin-top: 10px;
-}
-
-.industry-info p {
-  font-size: 1rem;
-  color: #fff; /* Color del texto en blanco */
-}
-
-.industry-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(255,0,0,0.8) 0%, rgba(255,0,0,0.5) 50%, rgba(255,0,0,0) 100%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-}
-
-.industry-box:hover::before {
-  opacity: 1;
 }
 
 /* Sección de Introducción */
@@ -358,6 +327,7 @@ html {
 .intro-text {
   font-size: 2rem; /* Ajuste del tamaño del texto principal */
   font-weight: bold; /* Negrita para destacar */
+
   font-style: italic;
   padding-left: 10rem;
   padding-right: 10rem;
@@ -459,6 +429,14 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
 }
+.titulo-certificaciones {
+  font-size: 1.5rem; /* Ajusta el tamaño según sea necesario */
+  font-weight: bold;
+  text-align: center; /* Centra el título */
+  color: #333; /* Ajusta el color */
+  margin-bottom: 20px; /* Espacio entre el título y el contenido */
+}
+
 
 .certificaciones-logos {
   flex: 1;
@@ -468,27 +446,35 @@ html {
 }
 
 .logo-certificacion {
-  max-width: 200px; /* Ajusta el tamaño según sea necesario */
+  max-width: 230px; /* Ajusta el tamaño según sea necesario */
   height: 150px;
   margin-left: 100px;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
+
 .certificaciones-info strong {
   color: red; /* Cambia el color a rojo */
 }
-.certificaciones-info {
-  flex: 2;
-  text-align: left;
+.certificaciones-info ul {
+  list-style-type: disc;
+  padding-left: 80px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.certificaciones-info ul li {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #333;
-  padding-left: 40px;
 }
 
 .certificaciones-info p {
-  margin-right: 50px;
-  margin: auto ;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
 }
+
 
 
 /* Sección de Sobre Nosotros */

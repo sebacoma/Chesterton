@@ -91,16 +91,16 @@
 
 <!-- "Industrias"-->
 <div class="industries-section ">
-  <h2 class="text-center text-4xl font-bold mb-4 text-red-700">Industrias</h2>
+  <h2 class="text-center text-4xl font-bold mb-4 text-red-700" >Industrias</h2>
   <div class="relative">
     <div class="carousel-wrapper overflow-hidden">
       <div class="carousel-inner flex transition-transform duration-500" #industriesCarousel>
         <div *ngFor="let industry of industries; let i = index" class="carousel-item flex-shrink-0 w-1/3 p-2">
           <a [href]="industry.url" target="_blank" class="block">
-            <div class="industry-box bg-white shadow-lg rounded-lg p-4">
+            <div class="industry-box bg-white shadow-lg rounded-lg ">
               <img [src]="industry.image" [alt]="industry.title" class="object-cover rounded-t-lg">
               <div class="industry-info mt-2">
-                <h3 class="text-xl font-semibold">{{ industry.title }}</h3>
+                <h3 class="text-xl font-semibold"style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.742);">{{ industry.title }}</h3>
               </div>
             </div>
           </a>
@@ -109,10 +109,10 @@
         <div *ngFor="let industry of industries.slice(0, 3); let i = index"
           class="carousel-item flex-shrink-0 w-1/3 p-2">
           <a [href]="industry.url" target="_blank" class="block">
-            <div class="industry-box bg-white shadow-lg rounded-lg p-4">
+            <div class="industry-box bg-white shadow-lg rounded-lg ">
               <img [src]="industry.image" [alt]="industry.title" class="object-cover rounded-t-lg">
               <div class="industry-info mt-2">
-                <h3 class="text-xl font-semibold">{{ industry.title }}</h3>
+                <h3 class="text-xl font-semibold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.742);">{{ industry.title }}</h3>
               </div>
             </div>
           </a>
@@ -131,7 +131,7 @@
 
 <!-- "Sucursales"-->
 <div id="branches" class="branches-section p-4 mt-12">
-  <h2 class="text-center text-2xl font-bold mb-4 text-red-700">Sucursales</h2>
+  <h2 class="text-center text-4xl font-bold mb-4 text-red-700">Sucursales</h2>
   <div class="branches-grid grid grid-cols-1 md:grid-cols-3 gap-4">
     <div *ngFor="let branch of branches" class="branch-card text-center">
       <a [href]="getGoogleMapsLink(branch.address)" target="_blank">
@@ -146,19 +146,22 @@
 </div>
 <!-- "Sucursales"-->
 
-<!-- "Certificaciones"-->
+
 <div class="certificaciones-container">
   <div class="certificaciones-logos">
     <img src="../../../assets/sellos/ISO.png" alt="Certificación DNV GL" class="logo-certificacion">
     <img src="../../../assets/sellos/sicep.png" alt="Certificación SICEP" class="logo-certificacion">
   </div>
   <div class="certificaciones-info">
-    <p>
-      <strong color="">Chesterton</strong> posee las certificaciones ISO 9001, ISO 14001, ISO 45001 y SICEP Categoría A,
-      garantizando un sistema de gestión de calidad y seguridad ambiental efectivo.
-    </p>
+    <ul>
+      <p><strong>Chesterton</strong> posee las certificaciones:</p>
+      <li>ISO 9001</li>
+      <li>ISO 14001</li>
+      <li>ISO 45001</li>
+      <li>SICEP Categoría A</li>
+    </ul>
+    <p>Garantizando un sistema de gestión de calidad y seguridad ambiental efectivo.</p>
   </div>
 </div>
-
 
 <!-- "Certificaciones"-->

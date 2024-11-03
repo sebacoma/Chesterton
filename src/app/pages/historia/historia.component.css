@@ -70,7 +70,5 @@
 
 .video-section iframe {
     max-width: 100%;
-
-    border: 2px solid hsl(246, 74%, 42%); /* Tailwind's red-700 color */
     border-radius: 8px;
 }
