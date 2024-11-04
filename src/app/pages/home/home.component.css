@@ -254,11 +254,6 @@ html {
   margin-top: 10px;
 }
 
-.solution-info p {
-  font-size: 1rem;
-  margin-top: 10px;
-  color: #666;
-}
 
 .icon-img {
   width: 44px; /* Ajusta el tamaño del ícono */
@@ -277,35 +272,32 @@ html {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Esto asegura que la imagen se ajuste al contenedor */
+  overflow: hidden;
   position: relative;
-  height: 100%; /* Asegura que el contenedor ocupe toda la altura */
+  height: 300px; /* Fija una altura consistente */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .industry-box img {
   width: 100%; /* Ocupa todo el ancho del contenedor */
-  height: 100%; /* Ocupa toda la altura del contenedor */
-  object-fit: cover; /* Asegura que la imagen se recorte si es necesario para llenar el espacio */
-  border-radius: 8px 8px 0 0; /* Solo aplica el redondeo en la parte superior */
+  height: 200px; /* Ajusta esta altura según sea necesario */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+  border-radius: 8px 8px 0 0;
 }
 
 .industry-info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 10px;
   text-align: center;
-  z-index: 2;
-  color: #fff;
+  flex-grow: 1; /* Permite que el contenido crezca si es necesario */
 }
 
 .industry-info h3 {
   font-size: 1.5rem;
   margin-top: 10px;
+  color: #c52121;
 }
+
 
 /* Sección de Introducción */
 .intro-section {
