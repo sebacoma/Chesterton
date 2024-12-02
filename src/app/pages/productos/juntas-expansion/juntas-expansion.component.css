@@ -113,7 +113,7 @@
   
   .industry p {
     font-weight: bold;
-    color: #d41616;
+    color: rgba(0, 0, 0, 0.2);
     margin-top: 10px;
   }
   .cta-button {
