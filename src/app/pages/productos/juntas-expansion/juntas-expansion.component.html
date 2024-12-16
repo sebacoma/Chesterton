@@ -1,104 +1,134 @@
-<div class="mechanical-seals-container">
-  <h1>Juntas de Expansión</h1>
-  <div class="content-wrapper">
-    <ul class="styled-list">
-      <li>Juntas de expansión elastoméricas: concéntricas, excéntricas y personalizadas.</li>
-      <li>Juntas de expansión metálicas.</li>
-      <li>Juntas de expansión textiles.</li>
-    </ul>
-    <div class="image-section">
-      <img src="../../../../assets/JuntaExpansion/JuntaExpansion.jpg" alt="Junta de Expansión">
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntas de Expansión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Animaciones personalizadas */
+        @keyframes fade-in-down {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-  <div class="explore-section">
-    <h2>Movimientos</h2>
-    <ul class="styled-list">
-      <li><strong>Compresión axial:</strong> Reducción de longitud cara a cara sobre el eje axial.</li>
-      <li><strong>Extensión axial:</strong> Aumento de longitud cara a cara sobre el eje axial.</li>
-      <li><strong>Deflexión lateral:</strong> Movimiento perpendicular a los ejes principales.</li>
-      <li><strong>Absorción de vibración:</strong> Atenuación de movimientos causados por vibraciones.</li>
-      <li><strong>Angular:</strong> Compensa movimiento angular manteniendo un extremo fijo.</li>
-    </ul>
-  </div>
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-  <div class="explore-section">
-    <h2>Aplicaciones en la industria</h2>
-    
-    <div class="industry">
-      <h3>Plantas Termoeléctricas</h3>
-      <ul>
-        <li>Sistemas de circulación de aguas.</li>
-        <li>Escape vapor - entre las Turbinas.</li>
-        <li>Condensadores.</li>
-        <li>Bombas Condensado.</li>
-        <li>Líneas de alimentación de agua a las calderas.</li>
-      </ul>
-      <p><strong>Fabricamos Juntas de expansión Circulares y Rectangulares.</strong></p>
-    </div>
-  
-    <div class="industry">
-      <h3>Plantas Químicas</h3>
-      <ul>
-        <li>En sistemas de tuberías de proceso de diferentes tipos de fluidos: Ácidos, hidrocarburos, emulsiones, soluciones salinas, aire, gas, vapor y líquidos donde quiera que existan movimientos y expansiones térmicas.</li>
-      </ul>
-    </div>
-  
-    <div class="industry">
-      <h3>Plantas de Tratamientos de Aguas</h3>
-      <ul>
-        <li>Se utilizan en la succión y la descarga de Bombas en sistemas de tratamientos de agua para proceso y en tratamiento de aguas negras, bombas de lodos, etc.</li>
-      </ul>
-    </div>
-  
-    <div class="industry">
-      <h3>Aplicaciones Marinas</h3>
-      <ul>
-        <li>En barcos y buques son utilizadas en sistemas de enfriamiento, calefacción, aire acondicionado y ventilación, así como en sistemas de protección contra incendio y generación de electricidad.</li>
-      </ul>
-    </div>
-  
-    <div class="industry">
-      <h3>Plantas Petroquímicas y Refinerías</h3>
-      <ul>
-        <li>En sistemas de enfriamiento, bombeo de agua, compresión de aire, ductos de hidrocarburos, gas y otras aplicaciones.</li>
-      </ul>
-      <p><strong>Las juntas de expansión Chesterton eliminan los esfuerzos causados por cambios de temperatura así como la transmisión de vibración y ruido.</strong></p>
-    </div>
-  
-    <div class="industry">
-      <h3>Sistemas de Calefacción y Aire Acondicionado</h3>
-      <ul>
-        <li>En cuartos de máquina de hoteles, hospitales y edificios de calefacción y aire acondicionado, en sistemas de distribución de agua fría y caliente, succión y descarga de bombas y compresores.</li>
-      </ul>
-    </div>
-  
-    <div class="industry">
-      <h3>Plantas Siderúrgicas</h3>
-      <ul>
-        <li>En sistemas de gas del alto horno, de compresión de aire y agua industrial.</li>
-      </ul>
-    </div>
-  
-    <div class="industry">
-      <h3>Alimentos y Bebidas</h3>
-      <ul>
-        <li>Se usa en sistemas para manejo de agua purificada y otras bebidas como cerveza, leche, vino, aceite vegetal, refrescos, etc.</li>
-      </ul>
-    </div>
-  
-    <div class="industry">
-      <h3>Minería Cobre Fino</h3>
-      <ul>
-        <li>Se usan en sistemas de transporte de agua caliente, electrolito de cobre, refino, PLS, orgánico en planta EO-EW.</li>
-        <li>También en planta de aceite térmico, succión y descarga de bombas, tuberías, etc.</li>
-      </ul>
-    </div>
-    <div class="catalog-download">
-      <a href="../../../../assets/JuntaExpansion/Catalogo Juntas de Expansion Chesterton.pdf" target="_blank">
-        <button class="cta-button">Descargar Catálogo</button>
-      </a>
-    </div>
-    
-  </div>
-  
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .animate-fade-in-down { animation: fade-in-down 1s ease-out forwards; }
+        .animate-fade-in { animation: fade-in 1s ease-out 1s forwards; }
+        .cta-button { animation: bounce 2s infinite; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Sección Hero -->
+    <header class="hero-section bg-gradient-to-br from-red-500 to-red-700 text-white text-center py-20">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">Juntas de Expansión</h1>
+        <p class="text-lg md:text-2xl mb-6 animate-fade-in">La solución ideal para absorber vibraciones y movimientos en sistemas industriales.</p>
+        <a (click)="scrollToSection('#explore')" class="cta-button bg-white text-red-600 hover:bg-red-600 hover:text-white py-3 px-6 rounded-lg font-bold transition-all">Explorar Más</a>
+    </header>
+
+    <!-- Sección de contenido -->
+    <section class="py-16 px-8 md:px-20">
+        <div class="content-wrapper grid md:grid-cols-2 gap-10 items-center">
+          <ul class="styled-list space-y-4 list-disc list-inside">
+            <li class="hover:scale-105 transition-transform">
+                Juntas de expansión elastoméricas: concéntricas, excéntricas y personalizadas.
+            </li>
+            <li class="hover:scale-105 transition-transform">
+                Juntas de expansión metálicas.
+            </li>
+            <li class="hover:scale-105 transition-transform">
+                Juntas de expansión textiles.
+            </li>
+        </ul>
+            <div class="image-section overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <img src="../../../../assets/JuntaExpansion/JuntaExpansion.jpg" alt="Junta de Expansión" class="w-full hover:scale-110 transition-transform duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Movimientos -->
+    <section id="explore" class="py-16 px-8 md:px-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Tipos de Movimientos</h2>
+        <div class="explore-section grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-compress-alt text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Compresión Axial</h3>
+                </div>
+                <p>Reducción de longitud cara a cara sobre el eje axial.</p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-expand-arrows-alt text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Extensión Axial</h3>
+                </div>
+                <p>Aumento de longitud cara a cara sobre el eje axial.</p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+              <div class="flex items-center mb-4">
+                  <i class="fas fa-expand-arrows-alt text-red-600 text-3xl mr-4"></i>
+                  <h3 class="text-xl font-semibold">Deflexión lateral</h3>
+              </div>
+              <p> Movimiento perpendicular a los ejes principales</p>
+          </div>
+          <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-expand-arrows-alt text-red-600 text-3xl mr-4"></i>
+                <h3 class="text-xl font-semibold">Absorción de vibración</h3>
+            </div>
+            <p> Atenuación de movimientos causados por vibraciones.</p>
+        </div>
+        <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+          <div class="flex items-center mb-4">
+              <i class="fas fa-expand-arrows-alt text-red-600 text-3xl mr-4"></i>
+              <h3 class="text-xl font-semibold">Angular</h3>
+          </div>
+          <p> Compensa movimiento angular manteniendo un extremo fijo.</p>
+      </div>
+        </div>
+    </section>
+
+    <!-- Sección de Aplicaciones -->
+    <section class="py-16 px-8 md:px-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Aplicaciones en la Industria</h2>
+        <div class="industry-section space-y-6">
+            <div class="industry-card p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
+                <h3 class="text-lg font-bold text-red-600">🌿 Plantas Termoeléctricas</h3>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>Sistemas de circulación de aguas.</li>
+                    <li>Escape vapor - entre las Turbinas.</li>
+                    <li>Condensadores.</li>
+                </ul>
+            </div>
+            <div class="industry-card p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
+                <h3 class="text-lg font-bold text-red-600">🏭 Plantas Químicas</h3>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li>Sistemas de tuberías de proceso de diferentes tipos de fluidos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón de descarga -->
+    <section class="text-center mt-10">
+        <a href="../../../../assets/JuntaExpansion/Catalogo Juntas de Expansion Chesterton.pdf" target="_blank">
+            <button class="cta-button bg-red-600 text-white py-3 px-6 rounded-lg font-bold shadow-md hover:bg-red-700 hover:scale-105 transition-all ">
+                Descargar Catálogo 📘
+            </button>
+        </a>
+    </section>
+
+</body>
+</html>

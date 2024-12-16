@@ -22,6 +22,9 @@ export class JuntasExpansionComponent implements AfterViewInit {
       slide.appendChild(items[0]);
     }
   }
+  scrollToSection(section: string) {
+    document.querySelector(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 
   onPrevClick(): void {
     const items = document.querySelectorAll<HTMLElement>('.item');
