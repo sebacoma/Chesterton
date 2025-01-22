@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class EmpaquetadurasMecanicasJuntasComponent {
   seals = [
     { title: 'Sellado de Equipos Rotatorios', link: 'sellos-multiproposito'},
-    { title: 'Sellado de ', link: 'sellos-valvulas' },
+    { title: 'Sellado de Válvulas', link: 'sellos-valvulas' },
     { title: 'Sellado de Bridas', link: 'sellos-bridas' },
   ];
 }
