@@ -16,7 +16,10 @@ export class ContactoComponent {
       lastname: ['', [Validators.required, Validators.minLength(3)]],
       phone: ['', [Validators.required, Validators.pattern('^[0-9]{9}$')]],
       email: ['', [Validators.required, Validators.email]],
-      comment: ['', Validators.required]
+      comment: ['', Validators.required],
+      companyRut: ['', [Validators.required, Validators.pattern('^[0-9]{7,8}-[0-9kK]$')]], // Validación para RUT (Chile)
+      businessName: ['', Validators.required], // Campo obligatorio
+      address: ['', Validators.required] // Campo obligatorio
     });
   }
 
