@@ -1,88 +1,83 @@
-/* Existing styles */
 .mechanical-seals-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  .mechanical-seals-container h1{
-    font-size: 2em;
-    color: #d41616;
-    margin-bottom: 20px;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    align-items: flex-start;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.mechanical-seals-container h1 {
+  font-size: 2em;
+  color: #d41616;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center; /* Centra verticalmente la imagen con el texto */
+  justify-content: space-between; /* Espacia el texto y la imagen de forma uniforme */
+  gap: 40px; /* Espacio entre el texto y la imagen */
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.content-wrapper p {
+  flex: 1; /* Ocupa todo el espacio disponible del lado del texto */
+  text-align: justify;
+  margin: 0;
+}
+
+.image-section {
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  margin-right: 0; /* Reduce/elimina padding a la derecha */
+}
+
+.image-section img {
+  max-width: 150px; /* Ajusta el tamaño máximo de la imagen según el diseño */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  display: block; /* Asegura que la imagen no tenga espacios en línea */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
+    transform: translateY(20px);
   }
-  
-  .content-wrapper p {
-    flex: 1;
-    margin-right: 20px;
-    text-align: justify;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .content-wrapper h1 {
-    flex: 1;
-    font-size: 2em;
-    color: #d41616;
-    margin-bottom: 20px;
-  }
-  
-  /* New animation styles */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .explore-section {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    opacity: 0;
-    animation: fadeIn 3s ease-in-out forwards;
-  }
-  
-  .explore-section h2 {
-    font-size: 1.5em;
-    color: #000000;
-    margin-bottom: 10px;
-  }
-  
-  .explore-section ul {
-    list-style-type: disc;
-  }
-  
-  .explore-section ul li {
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-  
-  .explore-section ul li a {
-    color: #fc0000;
-    text-decoration: none;
-  }
-  
-  .explore-section ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .image-section {
-    flex-shrink: 0;
-    margin-right: 0;
-  }
-  
-  .image-section img {
-    max-width: 60%;
-    height: auto;
-  }
-  
+}
+
+.explore-section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+.explore-section h2 {
+  font-size: 1.5em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.explore-section ul {
+  list-style-type: disc;
+}
+
+.explore-section ul li {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.explore-section ul li a {
+  color: #fc0000;
+  text-decoration: none;
+}
+
+.explore-section ul li a:hover {
+  text-decoration: underline;
+}
