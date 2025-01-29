@@ -16,7 +16,15 @@
         <a href="/productos/juntas-expansion" class="block text-gray-700 hover:text-blue-500">Juntas de Expansión</a>
         <a href="/productos/monitoreo-de-equipos" class="block text-gray-700 hover:text-blue-500">Monitoreo de Equipos en la Nube</a>
       </div>
-      <a class="menu-item" (click)="scrollToSection('#about-section')">Soluciones</a>
+      <button (click)="toggleSubMenu('isServiciosOpen')" class="menu-item">Soluciones</button>
+      <div *ngIf="isServiciosOpen" class="desktop-submenu">
+        <a href="/soluciones/sellado-equipo-estacionario" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Estacionario</a>
+        <a href="/soluciones/sellado-equipo-rotatorio" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Rotatorio</a>
+        <a href="/soluciones/servicios-reparacion" class="block text-gray-700 hover:text-blue-500">Servicio de Reparación</a>
+        <a href="/soluciones/servicios-instalacion-detenciones-planta" class="block text-gray-700 hover:text-blue-500">Instalación en Detenciones de Planta</a>
+        <a href="/soluciones/servicios-monitoreo" class="block text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
+        <a href="/soluciones/diseno-fabricacion-local" class="block text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
+      </div>
       <a href="/historia" class="menu-item">Historia</a>
       <a href="/contacto" class="menu-item">Contacto</a>
     </nav>
@@ -47,7 +55,15 @@
         <a href="productos/juntas-expansion" class="block text-gray-700 hover:text-red-500">Juntas de Expansión</a>
         <a href="productos/monitoreo-de-equipos" class="block text-gray-700 hover:text-red-500">Monitoreo de Equipos en la Nube</a>
       </div>
-      <a (click)="scrollToSection('#about-section')" class="text-gray-700 hover:text-red-500 w-full text-left">Soluciones</a>
+      <button (click)="toggleSubMenu('isServiciosOpen')" class="text-gray-700 hover:text-red-500 w-full text-left">Soluciones</button>
+      <div *ngIf="isServiciosOpen" class="pl-2">
+        <a href="/soluciones/sellado-equipo-estacionario" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Estacionario</a>
+        <a href="/soluciones/sellado-equipo-rotatorio" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Rotatorio</a>
+        <a href="/soluciones/servicios-reparacion" class="block text-gray-700 hover:text-blue-500">Servicio de Reparación</a>
+        <a href="/soluciones/servicios-instalacion-detenciones-planta" class="block text-gray-700 hover:text-blue-500">Instalación en Detenciones de Planta</a>
+        <a href="/soluciones/servicios-monitoreo" class="block text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
+        <a href="/soluciones/diseno-fabricacion-local" class="block text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
+      </div>
       <a href="/historia" class="text-gray-700 hover:text-red-500 w-full text-left">Historia</a>
       <a href="/contacto" class="text-gray-700 hover:text-red-500 w-full text-left">Contacto</a>
     </nav>
