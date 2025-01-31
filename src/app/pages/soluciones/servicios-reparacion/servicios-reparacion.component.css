@@ -3,14 +3,18 @@
     padding: 2rem 0;
     background-color: #f8f9fa; /* Color de fondo claro */
     text-align: center;
+    position: relative;
 }
+
 .header-image {
     width: 100%;
-    max-height: 480px; /* Limita la altura máxima de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    max-height: 40px; /* Limita la altura máxima de la imagen */
+    object-fit: cover;
     display: block;
     margin-bottom: 1rem;
 }
+
+
 .back-button {
     position: absolute;
     top: 100px; /* Ajusta para alinearlo con el título */
@@ -36,35 +40,73 @@
 .solution-header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #d32f2f; /* Rojo oscuro */
+    color: #d32f2f;
 }
 
 .solution-header p {
     font-size: 1.25rem;
     color: #555;
     margin-top: 1rem;
-    max-width: 800px; /* Limita el ancho del párrafo */
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Estilo para la sección de beneficios */
+/* Contenedor de contenido con imagen a la derecha */
+/* Contenedor de contenido con imagen a la derecha */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Evita que se desborde en pantallas pequeñas */
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+    max-width: 600px; /* Ajusta el ancho del texto */
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Sección de beneficios */
 .benefits-section {
     padding: 2rem 0;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
     text-align: center;
 }
 
 .benefits-section h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #d32f2f; /* Rojo oscuro */
+    color: #d32f2f;
+}
+
+.benefits-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .benefits-section ul {
-    margin-top: 1.5rem;
     text-align: left;
-    display: inline-block;
     list-style-type: disc;
     margin-left: 2rem;
 }
@@ -75,35 +117,46 @@
     color: #333;
 }
 
-/* Estilo para la sección de casos de estudio */
+.benefits-section img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+/* Sección de casos de estudio */
 .case-studies-section {
     padding: 2rem 0;
-    background-color: #f8f9fa; /* Fondo claro */
+    background-color: #f8f9fa;
     text-align: center;
 }
 
 .case-studies-section h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #d32f2f; /* Rojo oscuro */
+    color: #d32f2f;
 }
 
 .case-study {
-    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 1.5rem auto;
     text-align: left;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .case-study h3 {
     font-size: 1.75rem;
     font-weight: semi-bold;
-    color: #d32f2f; /* Rojo oscuro */
+    color: #d32f2f;
 }
 
 .case-study p {
-    margin-top: 0.5rem;
     font-size: 1.125rem;
     color: #555;
+}
+
+.case-study img {
+    max-width: 50%;
+    border-radius: 10px;
 }

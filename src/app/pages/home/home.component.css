@@ -413,60 +413,85 @@ html {
 /* Sección de Certificaciones */
 .certificaciones-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Alinear logos y texto desde el principio */
-  padding: 20px;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 30px;
   background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  gap: 50px; /* Espacio entre los logos y el texto */
+  width: 100%; /* Ocupar todo el ancho */
+  margin: 0 auto; /* Centrar en el ancho disponible */
+  box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
 }
-.titulo-certificaciones {
-  font-size: 1.5rem; /* Ajusta el tamaño según sea necesario */
-  font-weight: bold;
-  text-align: center; /* Centra el título */
-  color: #333; /* Ajusta el color */
-  margin-bottom: 20px; /* Espacio entre el título y el contenido */
-}
-
 
 .certificaciones-logos {
-  flex: 1;
   display: flex;
-  flex-direction: column; /* Alinea los logos verticalmente */
-  gap: 20px; /* Espacio entre los logos */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .logo-certificacion {
-  max-width: 230px; /* Ajusta el tamaño según sea necesario */
-  height: 150px;
-  margin-left: 100px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  width: 200px; /* Tamaño de los logos */
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
 }
 
-.certificaciones-info strong {
-  color: red; /* Cambia el color a rojo */
+.logo-certificacion:hover {
+  transform: scale(1.1); /* Efecto de agrandamiento */
 }
+
+.certificaciones-info {
+  max-width: 600px; /* Limita el ancho del texto para mejor lectura */
+  text-align: center; /* Centrar el texto */
+}
+
+.titulo-certificaciones {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d04242; /* Rojo destacado */
+  margin-bottom: 16px;
+}
+
 .certificaciones-info ul {
   list-style-type: disc;
-  padding-left: 80px;
-  margin-top: 0;
-  margin-bottom: 10px;
+  padding-left: 20px;
   color: #333;
+  text-align: left; /* Para alinear las listas a la izquierda */
+  margin: 0 auto; /* Centrar dentro del contenedor */
 }
 
 .certificaciones-info ul li {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 .certificaciones-info p {
-  margin-top: 10px;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #333;
+  color: #555;
+  margin-top: 16px;
 }
 
+@media (max-width: 768px) {
+  .certificaciones-container {
+    flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+    padding: 20px;
+    gap: 20px; /* Reduce el espacio entre elementos */
+  }
+
+  .certificaciones-logos {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .certificaciones-info {
+    max-width: 100%; /* Permite que el texto ocupe todo el ancho en móviles */
+    text-align: center;
+  }
+}
 
 
 /* Sección de Sobre Nosotros */

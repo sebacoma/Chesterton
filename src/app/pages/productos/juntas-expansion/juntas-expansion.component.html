@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juntas de Expansión</title>
+    <title>Juntas de Expansión - Chesterton</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Animaciones personalizadas */
         @keyframes fade-in-down {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -33,35 +32,37 @@
 
     <!-- Sección Hero -->
     <header class="hero-section bg-gradient-to-br from-red-500 to-red-700 text-white text-center py-20">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">Juntas de Expansión</h1>
-        <p class="text-lg md:text-2xl mb-6 animate-fade-in">La solución ideal para absorber vibraciones y movimientos en sistemas industriales.</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">Juntas de Expansión Chesterton</h1>
+        <p class="text-lg md:text-2xl mb-6 animate-fade-in">Soluciones innovadoras para la absorción de vibraciones y movimientos en sistemas industriales.</p>
         <a (click)="scrollToSection('#explore')" class="cta-button bg-white text-red-600 hover:bg-red-600 hover:text-white py-3 px-6 rounded-lg font-bold transition-all">Explorar Más</a>
     </header>
 
-    <!-- Sección de contenido -->
+    <!-- Sección de Contenido -->
     <section class="py-16 px-8 md:px-20">
-        <div class="content-wrapper grid md:grid-cols-2 gap-10 items-center">
-          <ul class="styled-list space-y-4 list-disc list-inside">
-            <li class="hover:scale-105 transition-transform">
-                Juntas de expansión elastoméricas: concéntricas, excéntricas y personalizadas.
-            </li>
-            <li class="hover:scale-105 transition-transform">
-                Juntas de expansión metálicas.
-            </li>
-            <li class="hover:scale-105 transition-transform">
-                Juntas de expansión textiles.
-            </li>
-        </ul>
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <ul class="styled-list space-y-4 list-disc list-inside">
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Juntas de expansión elastoméricas:</strong> concéntricas, excéntricas y personalizadas. Son altamente flexibles y ofrecen resistencia química y mecánica para adaptarse a diversas aplicaciones industriales.
+                    </li>
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Juntas de expansión metálicas:</strong> fabricadas en acero inoxidable u otras aleaciones, son ideales para condiciones de alta temperatura y presión, proporcionando durabilidad y resistencia.
+                    </li>
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Juntas de expansión textiles:</strong> construidas con materiales como fibra de vidrio y silicona, están diseñadas para absorber vibraciones y compensar desplazamientos térmicos en ductos de aire y gases.
+                    </li>
+                </ul>
+            </div>
             <div class="image-section overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <img src="../../../../assets/JuntaExpansion/JuntaExpansion.jpg" alt="Junta de Expansión" class="w-full hover:scale-110 transition-transform duration-500">
+                <img src="../../../../assets/JuntaExpansion/JuntaExpansion.jpg" alt="Junta de Expansión" class="w-full h-auto max-h-96 object-contain hover:scale-110 transition-transform duration-500">
             </div>
         </div>
     </section>
 
-    <!-- Sección de Movimientos -->
+    <!-- Sección de Tipos de Movimientos -->
     <section id="explore" class="py-16 px-8 md:px-20">
         <h2 class="text-3xl font-bold text-center mb-12">Tipos de Movimientos</h2>
-        <div class="explore-section grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
                 <div class="flex items-center mb-4">
                     <i class="fas fa-compress-alt text-red-600 text-3xl mr-4"></i>
@@ -77,54 +78,19 @@
                 <p>Aumento de longitud cara a cara sobre el eje axial.</p>
             </div>
             <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-              <div class="flex items-center mb-4">
-                  <i class="fas fa-expand-arrows-alt text-red-600 text-3xl mr-4"></i>
-                  <h3 class="text-xl font-semibold">Deflexión lateral</h3>
-              </div>
-              <p> Movimiento perpendicular a los ejes principales</p>
-          </div>
-          <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-            <div class="flex items-center mb-4">
-                <i class="fas fa-expand-arrows-alt text-red-600 text-3xl mr-4"></i>
-                <h3 class="text-xl font-semibold">Absorción de vibración</h3>
-            </div>
-            <p> Atenuación de movimientos causados por vibraciones.</p>
-        </div>
-        <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-          <div class="flex items-center mb-4">
-              <i class="fas fa-expand-arrows-alt text-red-600 text-3xl mr-4"></i>
-              <h3 class="text-xl font-semibold">Angular</h3>
-          </div>
-          <p> Compensa movimiento angular manteniendo un extremo fijo.</p>
-      </div>
-        </div>
-    </section>
-
-    <!-- Sección de Aplicaciones -->
-    <section class="py-16 px-8 md:px-20">
-        <h2 class="text-3xl font-bold text-center mb-12">Aplicaciones en la Industria</h2>
-        <div class="industry-section space-y-6">
-            <div class="industry-card p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
-                <h3 class="text-lg font-bold text-red-600">🌿 Plantas Termoeléctricas</h3>
-                <ul class="list-disc ml-6 space-y-2">
-                    <li>Sistemas de circulación de aguas.</li>
-                    <li>Escape vapor - entre las Turbinas.</li>
-                    <li>Condensadores.</li>
-                </ul>
-            </div>
-            <div class="industry-card p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
-                <h3 class="text-lg font-bold text-red-600">🏭 Plantas Químicas</h3>
-                <ul class="list-disc ml-6 space-y-2">
-                    <li>Sistemas de tuberías de proceso de diferentes tipos de fluidos.</li>
-                </ul>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-sync-alt text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Deflexión Lateral</h3>
+                </div>
+                <p>Movimiento perpendicular a los ejes principales.</p>
             </div>
         </div>
     </section>
 
-    <!-- Botón de descarga -->
+    <!-- Sección de Descarga -->
     <section class="text-center mt-10">
-        <a href="../../../../assets/JuntaExpansion/Catalogo Juntas de Expansion Chesterton.pdf" target="_blank">
-            <button class="cta-button bg-red-600 text-white py-3 px-6 rounded-lg font-bold shadow-md hover:bg-red-700 hover:scale-105 transition-all ">
+        <a href="../../../../assets/JuntaExpansion/Catalogo_Juntas_Expansion_Chesterton.pdf" target="_blank">
+            <button class="cta-button bg-red-600 text-white py-3 px-6 rounded-lg font-bold shadow-md hover:bg-red-700 hover:scale-105 transition-all">
                 Descargar Catálogo 📘
             </button>
         </a>
