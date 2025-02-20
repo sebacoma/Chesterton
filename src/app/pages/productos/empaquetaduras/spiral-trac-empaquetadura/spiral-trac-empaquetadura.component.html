@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiralTrac FIRST - Empaquetadura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Sección Hero -->
+    <header class="hero-section bg-gradient-to-br from-red-500 to-red-700 text-white text-center py-20">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">SpiralTrac FIRST - Tecnología en Empaquetaduras</h1>
+        <p class="text-lg md:text-2xl mb-6 animate-fade-in">
+            Reducción de consumo de agua y mayor vida útil de empaquetaduras.
+        </p>
+        <a (click)="scrollToSection('#explore')" class="cta-button bg-white text-red-600 hover:bg-red-600 hover:text-white py-3 px-6 rounded-lg font-bold transition-all">
+            Explorar Más
+        </a>
+    </header>
+
+    <!-- Sección de Beneficios -->
+    <section class="py-16 px-8 md:px-20">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <ul class="styled-list space-y-4 list-disc list-inside">
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Ahorro de agua:</strong> Reduce el consumo de flush en un 60% o más.
+                    </li>
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Menos desgaste del eje:</strong> Captura partículas antes de que entren en la empaquetadura.
+                    </li>
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Menos fugas:</strong> Reduce la filtración a niveles mínimos, manteniendo el equipo más limpio.
+                    </li>
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Mayor vida útil:</strong> Diseñado para prolongar la vida útil de empaquetaduras y reducir costos de mantenimiento.
+                    </li>
+                </ul>
+            </div>
+            <div class="image-section overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <img src="../../../../assets/sellos/SpiralTracEmpaquetadura.png" alt="SpiralTrac Empaquetadura" class="w-full h-auto max-h-96 object-contain hover:scale-110 transition-transform duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Aplicaciones -->
+    <section id="explore" class="py-16 px-8 md:px-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Aplicaciones del SpiralTrac FIRST</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-industry text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Plantas de Pulpa y Papel</h3>
+                </div>
+                <p>Reduce el desgaste en bombas de pulpa y optimiza el uso de agua de flush.</p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-water text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Industria Minera</h3>
+                </div>
+                <p>Protege las empaquetaduras en entornos abrasivos y de alta presión.</p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-recycle text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Tratamiento de Aguas</h3>
+                </div>
+                <p>Reduce fugas y costos de mantenimiento en plantas de tratamiento de agua.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Descarga -->
+    <section class="text-center mt-10">
+        <button (click)="downloadBrochure()" class="cta-button bg-red-600 text-white py-3 px-6 rounded-lg font-bold shadow-md hover:bg-red-700 hover:scale-105 transition-all">
+            Descargar Catálogo 📘
+        </button>
+    </section>
+
+</body>
+</html>

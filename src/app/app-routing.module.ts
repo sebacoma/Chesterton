@@ -38,6 +38,7 @@ import { MonitoreoDeEquiposComponent } from './pages/productos/monitoreo-de-equi
 import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/sistema-chesterton-connect/sistema-chesterton-connect.component';
 import { NubeChestertonConnectComponent } from './pages/productos/monitoreo/nube-chesterton-connect/nube-chesterton-connect.component';
 import { SpiralTracMecanicoComponent } from './pages/productos/sellos/spiral-trac-mecanico/spiral-trac-mecanico.component';
+import { SpiralTracEmpaquetaduraComponent } from './pages/productos/empaquetaduras/spiral-trac-empaquetadura/spiral-trac-empaquetadura.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -79,6 +80,7 @@ const routes: Routes = [
   {path:'productos/monitoreo-de-equipos/sistema-chesterton-connect',component:SistemaChestertonConnectComponent},
   {path:'productos/monitoreo-de-equipos/nube-chesterton-connect',component:NubeChestertonConnectComponent},
   {path:'productos/sellos-mecanicos/spiral-trac-mecanico', component: SpiralTracMecanicoComponent},
+  {path:'productos/empaquetaduras-mecanicas-juntas/spiral-trac-empaquetadura', component: SpiralTracEmpaquetaduraComponent}
   
 ];
 

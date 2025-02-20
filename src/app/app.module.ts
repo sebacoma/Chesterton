@@ -45,6 +45,7 @@ import { MonitoreoDeEquiposComponent } from './pages/productos/monitoreo-de-equi
 import { NubeChestertonConnectComponent } from './pages/productos/monitoreo/nube-chesterton-connect/nube-chesterton-connect.component';
 import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/sistema-chesterton-connect/sistema-chesterton-connect.component';
 import { SpiralTracMecanicoComponent } from './pages/productos/sellos/spiral-trac-mecanico/spiral-trac-mecanico.component';
+import { SpiralTracEmpaquetaduraComponent } from './pages/productos/empaquetaduras/spiral-trac-empaquetadura/spiral-trac-empaquetadura.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +91,8 @@ import { SpiralTracMecanicoComponent } from './pages/productos/sellos/spiral-tra
     MonitoreoDeEquiposComponent,
     NubeChestertonConnectComponent,
     SistemaChestertonConnectComponent,
-    SpiralTracMecanicoComponent
+    SpiralTracMecanicoComponent,
+    SpiralTracEmpaquetaduraComponent
   ],
   imports: [
     BrowserModule,

@@ -11,5 +11,6 @@ export class EmpaquetadurasMecanicasJuntasComponent {
     { title: 'Sellado de Equipos Rotatorios', link: 'sellos-multiproposito'},
     { title: 'Sellado de Válvulas', link: 'sellos-valvulas' },
     { title: 'Sellado de Bridas', link: 'sellos-bridas' },
+    { title: 'SpiralTrac para Empaquetaduras Trenzadas', link: 'spiral-trac-empaquetadura'}
   ];
 }
