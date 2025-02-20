@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiralTrac - Sellos Mecánicos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Sección Hero -->
+    <header class="hero-section bg-gradient-to-br from-red-500 to-red-700 text-white text-center py-20">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">SpiralTrac™ - Tecnología de Sellado</h1>
+        <p class="text-lg md:text-2xl mb-6 animate-fade-in">
+            Optimizando la vida útil y el rendimiento de los sellos mecánicos.
+        </p>
+        <a (click)="scrollToSection('#explore')" class="cta-button bg-white text-red-600 hover:bg-red-600 hover:text-white py-3 px-6 rounded-lg font-bold transition-all">
+            Explorar Más
+        </a>
+    </header>
+
+    <!-- Sección de Contenido -->
+    <section class="py-16 px-8 md:px-20">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <ul class="styled-list space-y-4 list-disc list-inside">
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Mayor vida útil:</strong> Reduce la acumulación de contaminantes en los sellos mecánicos.
+                    </li>
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Ahorro en costos de mantenimiento:</strong> Minimiza la necesidad de flush y reduce fallas prematuras.
+                    </li>
+                    <li class="hover:scale-105 transition-transform">
+                        <strong>Compatibilidad amplia:</strong> Se adapta a distintos tipos de bombas y sellos mecánicos.
+                    </li>
+                </ul>
+            </div>
+            <div class="image-section overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <img src="../../../../assets/sellos/SpiralTrac.png" alt="SpiralTrac Sellos" class="w-full h-auto max-h-96 object-contain hover:scale-110 transition-transform duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Tipos de Aplicaciones -->
+    <section id="explore" class="py-16 px-8 md:px-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Aplicaciones de SpiralTrac™</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-water text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Industria Minera</h3>
+                </div>
+                <p>Protección contra erosión y abrasión en bombas de lodos y sellos mecánicos.</p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-industry text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Procesos Químicos</h3>
+                </div>
+                <p>Evita la acumulación de sólidos y mejora la vida útil en entornos corrosivos.</p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-recycle text-red-600 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold">Tratamiento de Agua</h3>
+                </div>
+                <p>Reduce la necesidad de flush y mantenimiento en sistemas de bombeo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Descarga -->
+    <section class="text-center mt-10">
+        <button (click)="downloadBrochure()" class="cta-button bg-red-600 text-white py-3 px-6 rounded-lg font-bold shadow-md hover:bg-red-700 hover:scale-105 transition-all">
+            Descargar Catálogo 📘
+        </button>
+    </section>
+
+</body>
+</html>

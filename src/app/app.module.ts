@@ -44,6 +44,7 @@ import { SellosRotatoriosComponent } from './pages/productos/empaquetaduras/sell
 import { MonitoreoDeEquiposComponent } from './pages/productos/monitoreo-de-equipos/monitoreo-de-equipos.component';
 import { NubeChestertonConnectComponent } from './pages/productos/monitoreo/nube-chesterton-connect/nube-chesterton-connect.component';
 import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/sistema-chesterton-connect/sistema-chesterton-connect.component';
+import { SpiralTracMecanicoComponent } from './pages/productos/sellos/spiral-trac-mecanico/spiral-trac-mecanico.component';
 
 @NgModule({
   declarations: [
@@ -88,13 +89,14 @@ import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/s
     SellosRotatoriosComponent,
     MonitoreoDeEquiposComponent,
     NubeChestertonConnectComponent,
-    SistemaChestertonConnectComponent
+    SistemaChestertonConnectComponent,
+    SpiralTracMecanicoComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

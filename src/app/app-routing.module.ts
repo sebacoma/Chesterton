@@ -37,6 +37,7 @@ import { SelladoBridasComponent } from './pages/productos/empaquetaduras/sellado
 import { MonitoreoDeEquiposComponent } from './pages/productos/monitoreo-de-equipos/monitoreo-de-equipos.component';
 import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/sistema-chesterton-connect/sistema-chesterton-connect.component';
 import { NubeChestertonConnectComponent } from './pages/productos/monitoreo/nube-chesterton-connect/nube-chesterton-connect.component';
+import { SpiralTracMecanicoComponent } from './pages/productos/sellos/spiral-trac-mecanico/spiral-trac-mecanico.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -77,10 +78,12 @@ const routes: Routes = [
   {path:'productos/monitoreo-de-equipos',component:MonitoreoDeEquiposComponent},
   {path:'productos/monitoreo-de-equipos/sistema-chesterton-connect',component:SistemaChestertonConnectComponent},
   {path:'productos/monitoreo-de-equipos/nube-chesterton-connect',component:NubeChestertonConnectComponent},
+  {path:'productos/sellos-mecanicos/spiral-trac-mecanico', component: SpiralTracMecanicoComponent},
+  
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'})],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { } 

@@ -16,6 +16,7 @@ export class SellosMecanicosComponent {
     { title: 'Sellos Mecánicos para Mezcladores/Agitadores', link: 'sellos-mezcla-agitadores' },
     { title: 'Sellos Mecánicos de Componentes', link: 'sellos-componentes' },
     { title: 'Sellos Mecánicos Especializados', link: 'sellos-especializados' },
+    { title: 'SpiralTrac para sellos Mecánicos', link: 'spiral-trac-mecanico' },
     { title: 'Sistema de Soporte de Sellado para Sellos Mecánicos (Plan Ambiental API)', link: 'sellos-soporte-sellado' }
   ];
 }
