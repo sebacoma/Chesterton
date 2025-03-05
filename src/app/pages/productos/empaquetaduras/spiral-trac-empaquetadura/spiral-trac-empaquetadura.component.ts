@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./spiral-trac-empaquetadura.component.css']
 })
 export class SpiralTracEmpaquetaduraComponent {
-  brochureUrl: string = 'assets/ST_first_EN_web.pdf';
+  brochureUrl: string = 'assets/SpiralTrac para Empaquetadura Trenzada.pdf';
 
   downloadBrochure() {
     const link = document.createElement('a');
     link.href = this.brochureUrl;
-    link.setAttribute('download', 'ST_first_EN_web.pdf');
+    link.setAttribute('download', 'assets/SpiralTrac para Empaquetadura Trenzada.pdf');
     link.setAttribute('target', '_blank'); 
     document.body.appendChild(link);
     link.click();
