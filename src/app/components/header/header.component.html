@@ -7,8 +7,8 @@
     </div>
     <!-- Menú de escritorio -->
     <nav class="desktop-menu hidden md:flex space-x-2">
-      <a href="/" class="menu-item">Inicio</a>
-      <button (click)="toggleSubMenu('isProductosOpen')" class="menu-item">Productos</button>
+      <a href="/" class="menu-item text-lg">Inicio</a>
+      <button (click)="toggleSubMenu('isProductosOpen')" class="menu-item text-lg">Productos</button>
       <div *ngIf="isProductosOpen" class="desktop-submenu">
         <a href="/productos/sellos-mecanicos" class="block text-gray-700 hover:text-blue-500">Sellos Mecánicos</a>
         <a href="/productos/sellos-hidraulicos-neumaticos" class="block text-gray-700 hover:text-blue-500">Sellos Hidráulicos y Neumáticos</a>
@@ -16,7 +16,7 @@
         <a href="/productos/juntas-expansion" class="block text-gray-700 hover:text-blue-500">Juntas de Expansión</a>
         <a href="/productos/monitoreo-de-equipos" class="block text-gray-700 hover:text-blue-500">Monitoreo de Equipos en la Nube</a>
       </div>
-      <button (click)="toggleSubMenu('isServiciosOpen')" class="menu-item">Soluciones</button>
+      <button (click)="toggleSubMenu('isServiciosOpen')" class="menu-item text-lg">Soluciones</button>
       <div *ngIf="isServiciosOpen" class="desktop-submenu">
         <a href="/soluciones/sellado-equipo-estacionario" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Estacionario</a>
         <a href="/soluciones/sellado-equipo-rotatorio" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Rotatorio</a>
@@ -25,8 +25,8 @@
         <a href="/soluciones/servicios-monitoreo" class="block text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
         <a href="/soluciones/diseno-fabricacion-local" class="block text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
       </div>
-      <a href="/historia" class="menu-item">Historia</a>
-      <a href="/contacto" class="menu-item">Contacto</a>
+      <a href="/historia" class="menu-item text-lg">Historia</a>
+      <a href="/contacto" class="menu-item text-lg">Contacto</a>
     </nav>
 
     <!-- Botón de menú en móvil -->

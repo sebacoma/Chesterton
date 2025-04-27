@@ -40,7 +40,7 @@ html {
 }
 
 .text-red-700 {
-  color: #d04242;
+  color: #555050;
 }
 
 .text-2xl {
@@ -295,7 +295,7 @@ html {
 .industry-info h3 {
   font-size: 1.5rem;
   margin-top: 10px;
-  color: #c52121;
+  color: #555050;
 }
 
 
@@ -451,7 +451,7 @@ html {
 .titulo-certificaciones {
   font-size: 2rem;
   font-weight: bold;
-  color: #d04242; /* Rojo destacado */
+  color: #2d3748; /* Rojo destacado */
   margin-bottom: 16px;
 }
 
