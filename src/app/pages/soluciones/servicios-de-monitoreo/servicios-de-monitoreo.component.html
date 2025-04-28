@@ -1,59 +1,72 @@
-<div class="solution-header text-center">
-    <h1 class="text-4xl font-bold">Servicio de Monitoreo</h1>
-    <p class="text-xl mt-4">
-        Implementamos soluciones integrales para asegurar el correcto funcionamiento de los equipos, logrando 
-        un significativo ahorro de agua y energía. Nuestra solución incluye un sistema de monitoreo remoto 
-        que detecta desviaciones operativas, evitando fallas prematuras y optimizando el rendimiento del sistema.
-    </p>
-</div>
-<button class="back-button" onclick="window.history.back()">&larr; Volver</button>
 
-<div class="benefits-section mt-12 text-center">
-    <h2 class="text-3xl font-bold">Dificultades Presentadas</h2>
-    <div class="flex flex-col items-center">
-        <ul class="list-disc mt-4 text-left">
-            <li class="mt-2">Fluido complejo con alto porcentaje de sólidos.</li>
-            <li class="mt-2">Solidificación a bajas temperaturas.</li>
-            <li class="mt-2">Operación intermitente del equipo.</li>
-            <li class="mt-2">Alta temperatura y presión de trabajo.</li>
-        </ul>
-
-    </div>
-</div>
-
-<div class="case-studies-section mt-12 text-center">
-    <h2 class="text-3xl font-bold">Caso de Estudio</h2>
-    <div class="case-study mt-4 flex flex-col items-center">
-        <div class="w-2/3 text-left">
-            <h3 class="text-2xl font-semibold">Optimización del Sistema de Sellado</h3>
-            <p class="mt-2">
-                Se realizó una actualización completa del sistema de sellado mediante la implementación de sellos mecánicos 
-                Chesterton 2810 de alto desempeño y bajo consumo de agua, junto con un plan API53 y el sistema de soporte 
-                Chesterton WSSC, logrando un 100% de ahorro en el consumo de agua de sellado.
-            </p>
-            <p class="mt-2">
-                Adicionalmente, se implementó el sistema de monitoreo Chesterton Connect, proporcionando información en tiempo 
-                real sobre las variables críticas del sistema de sellado y el equipo, optimizando su rendimiento y disponibilidad.
-            </p>
-        </div>
+  <body>
+  <div class="solution-header" data-aos="fade-up">
+      <h1>Servicio de Monitoreo</h1>
+      <p>
+          Implementamos soluciones integrales para asegurar el correcto funcionamiento de los equipos, logrando 
+          un significativo ahorro de agua y energía. Nuestra solución incluye un sistema de monitoreo remoto 
+          que detecta desviaciones operativas, evitando fallas prematuras y optimizando el rendimiento del sistema.
+      </p>
+      <button class="back-button" onclick="window.history.back()">← Volver</button>
+  </div>
+  
+  <section class="content-section" data-aos="fade-up">
+      <div class="text-content">
+          <h2>Dificultades Presentadas</h2>
+          <ul>
+              <li>Fluido complejo con alto porcentaje de sólidos.</li>
+              <li>Solidificación a bajas temperaturas.</li>
+              <li>Operación intermitente del equipo.</li>
+              <li>Alta temperatura y presión de trabajo.</li>
+          </ul>
+      </div>
         <div class="image-content">
-            <img src="../../../../assets/ChestertonCloud/chesterton_connect_system_1.WebP" alt="Sistema de monitoreo en acción" width="500">
-        </div>
-    </div>
-</div>
-
-<div class="benefits-section mt-12 text-center">
-    <h2 class="text-3xl font-bold">Alcance</h2>
-    <div class="flex flex-col items-center">
-        <ul class="list-disc mt-4 text-left">
-            <li class="mt-2">Reducción del consumo de energía.</li>
-            <li class="mt-2">Reducción del consumo de agua.</li>
-            <li class="mt-2">Disminución de costos operativos.</li>
-            <li class="mt-2">Reducción de costos de mantenimiento.</li>
-            <li class="mt-2">Incremento en la eficiencia del equipo.</li>
-            <li class="mt-2">Mayor tiempo medio entre fallas (MTBF).</li>
-            <li class="mt-2">Menor pérdida de producción.</li>
-            <li class="mt-2">Aumento de la seguridad operativa.</li>
-        </ul>
-    </div>
-</div>
+          <img src="./../../../../assets/ChestertonCloud/connect_cloud_product_image.WebP" alt="Dificultades operativas">
+      </div> 
+  </section>
+  
+  <section class="content-section reverse" data-aos="fade-up">
+      <div class="text-content">
+          <h2>Optimización del Sistema de Sellado</h2>
+          <h3>Implementación de Sellos y Monitoreo</h3>
+          <p>
+              Se realizó una actualización completa del sistema de sellado mediante la implementación de sellos mecánicos 
+              Chesterton 2810 de alto desempeño y bajo consumo de agua, junto con un plan API53 y el sistema de soporte 
+              Chesterton WSSC, logrando un 100% de ahorro en el consumo de agua de sellado.
+          </p>
+          <p>
+              Adicionalmente, se implementó el sistema de monitoreo Chesterton Connect, proporcionando información en tiempo 
+              real sobre las variables críticas del sistema de sellado y el equipo, optimizando su rendimiento y disponibilidad.
+          </p>
+      </div>
+      <div class="image-content">
+          <img src="../../../../assets/ChestertonCloud/chesterton_connect_system_1.WebP" alt="Sistema de monitoreo en acción" width="500">
+      </div>
+  </section>
+  
+  <section class="benefits-section" data-aos="fade-up">
+      <h2>Alcance</h2>
+      <div class="benefits-container">
+          <ul>
+              <li>Reducción del consumo de energía.</li>
+              <li>Reducción del consumo de agua.</li>
+              <li>Disminución de costos operativos.</li>
+              <li>Reducción de costos de mantenimiento.</li>
+              <li>Incremento en la eficiencia del equipo.</li>
+              <li>Mayor tiempo medio entre fallas (MTBF).</li>
+              <li>Menor pérdida de producción.</li>
+              <li>Aumento de la seguridad operativa.</li>
+          </ul>
+      </div>
+  </section>
+  
+  <!-- Script de AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  </body>
+  

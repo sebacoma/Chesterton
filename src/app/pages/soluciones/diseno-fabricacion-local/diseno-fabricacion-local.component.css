@@ -1,162 +1,122 @@
-/* Estilo para el título de la solución */
+/* Encabezado */
 .solution-header {
-    padding: 2rem 0;
-    background-color: #f8f9fa; /* Color de fondo claro */
+    background-color: #f8f9fa;
     text-align: center;
+    padding: 4rem 2rem;
     position: relative;
 }
 
-.header-image {
-    width: 100%;
-    max-height: 40px; /* Limita la altura máxima de la imagen */
-    object-fit: cover;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-
-.back-button {
-    position: absolute;
-    top: 100px; /* Ajusta para alinearlo con el título */
-    right: 20px;
-    background-color: #d32f2f;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .back-button:hover {
-    background-color: #d32f2f;
-    transform: scale(1.05);
-  }
-
-
 .solution-header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: #d32f2f;
+    color: #413737;
 }
 
 .solution-header p {
     font-size: 1.25rem;
     color: #555;
     margin-top: 1rem;
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Contenedor de contenido con imagen a la derecha */
-/* Contenedor de contenido con imagen a la derecha */
-.content-container {
+.back-button {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.05);
+}
+
+/* Secciones de contenido */
+.content-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 3rem;
     max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* Evita que se desborde en pantallas pequeñas */
+    margin: 4rem auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
 }
 
 .text-content {
     flex: 1;
     text-align: left;
-    max-width: 600px; /* Ajusta el ancho del texto */
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #574c4c;
+    margin-bottom: 1rem;
+}
+
+.text-content p, .text-content ul {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.text-content ul {
+    list-style: disc;
+    padding-left: 2rem;
 }
 
 .image-content {
     flex: 1;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .image-content img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-
-/* Sección de beneficios */
+/* Beneficios */
 .benefits-section {
-    padding: 2rem 0;
-    background-color: #ffffff;
+    background-color: #f8f9fa;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
 .benefits-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #d32f2f;
+    color: #413737;
+    margin-bottom: 2rem;
 }
 
 .benefits-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-}
-
-.benefits-section ul {
-    text-align: left;
-    list-style-type: disc;
-    margin-left: 2rem;
-}
-
-.benefits-section ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1.125rem;
-    color: #333;
-}
-
-.benefits-section img {
-    max-width: 50%;
-    border-radius: 10px;
-}
-
-/* Sección de casos de estudio */
-.case-studies-section {
-    padding: 2rem 0;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-.case-studies-section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #d32f2f;
-}
-
-.case-study {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 1.5rem auto;
     text-align: left;
 }
 
-.case-study h3 {
-    font-size: 1.75rem;
-    font-weight: semi-bold;
-    color: #d32f2f;
+.benefits-container ul {
+    list-style: disc;
+    padding-left: 2rem;
 }
 
-.case-study p {
+.benefits-container ul li {
     font-size: 1.125rem;
+    margin-bottom: 1rem;
     color: #555;
-}
-
-.case-study img {
-    max-width: 50%;
-    border-radius: 10px;
 }
