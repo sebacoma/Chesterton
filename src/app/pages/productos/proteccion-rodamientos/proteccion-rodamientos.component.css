@@ -1,88 +1,121 @@
-/* Existing styles */
+/* Contenedor principal */
 .mechanical-seals-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+  max-width: 1500px; /* Aumentamos ancho máximo */
+  margin: 40px auto;
+  padding: 40px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #555; /* Escala de grises */
+}
+
+/* Título principal */
+.mechanical-seals-container h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #333; /* Gris oscuro para títulos */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Contenido con flex */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  flex-wrap: wrap; /* Para que en móviles no se rompa */
+}
+
+/* Párrafo */
+.content-wrapper p {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #555;
+}
+
+/* Imagen */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  .mechanical-seals-container h1{
-    font-size: 2em;
-    color: #d41616;
-    margin-bottom: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+/* Sección de "Explore" */
+.explore-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #555;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Título explore */
+.explore-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Lista */
+.explore-section ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.explore-section ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Enlaces */
+.explore-section ul li a {
+  color: #555; /* Gris para los links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.explore-section ul li a:hover {
+  color: #544f4f; /* Más oscuro al pasar el mouse */
+  text-decoration: underline;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
   .content-wrapper {
-    display: flex;
-    align-items: flex-start;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .content-wrapper p {
-    flex: 1;
-    margin-right: 20px;
-    text-align: justify;
+    text-align: center;
   }
-  
-  .content-wrapper h1 {
-    flex: 1;
-    font-size: 2em;
-    color: #d41616;
-    margin-bottom: 20px;
-  }
-  
-  /* New animation styles */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .explore-section {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    opacity: 0;
-    animation: fadeIn 3s ease-in-out forwards;
-  }
-  
-  .explore-section h2 {
-    font-size: 1.5em;
-    color: #000000;
-    margin-bottom: 10px;
-  }
-  
-  .explore-section ul {
-    list-style-type: disc;
-  }
-  
-  .explore-section ul li {
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-  
-  .explore-section ul li a {
-    color: #fc0000;
-    text-decoration: none;
-  }
-  
-  .explore-section ul li a:hover {
-    text-decoration: underline;
-  }
-  
+
   .image-section {
-    flex-shrink: 0;
-    margin-right: 0;
+    margin-top: 2rem;
   }
-  
-  .image-section img {
-    max-width: 60%;
-    height: auto;
-  }
-  
+}
