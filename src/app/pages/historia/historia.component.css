@@ -1,104 +1,162 @@
+/* Contenedor principal */
 .cgv-container {
-    width: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #555; /* Texto general en gris medio */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 2rem;
 }
 
-.section {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
+/* Encabezados principales */
 .section h1 {
-    padding-bottom: 0.5em;
-    font-size: 2em;
-    color:#152373;
-}
-.section p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-bottom: 1em;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.intro {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Gris oscuro para los títulos */
+    margin-bottom: 1rem;
     text-align: center;
-    margin: 20px 0;
 }
 
-.intro img {
-    margin-top: 2px;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    align-items: center;
+/* Subtítulos */
+.section h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #444; /* Un gris más claro que el h1 */
+    margin-top: 1rem;
 }
 
-.intro p {
-    padding-bottom: 2em;
-    font-size: 1em;
-    line-height: 1.5;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 10rem auto;
+/* Secciones generales */
+.section {
+    margin: 4rem 0;
 }
+
+/* Video */
 .video-section {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente si el contenedor tiene suficiente altura */
-    flex-direction: column;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.video-section h2 {
-    margin-bottom: 20px;
-    color: #4515b6; /* Tailwind's red-700 color */
-    font-size: 1.5rem; /* Tailwind's text-2xl size */
-    font-weight: bold; /* Tailwind's font-bold */
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
 }
 
 .video-section iframe {
     max-width: 100%;
-    border-radius: 8px;
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+/* Intro sección */
+.intro-section {
+    margin: 4rem 0;
+    padding: 0 2rem;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.intro-text {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+}
+
+.intro-image {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Texto general */
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Core Values */
 .core-values {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
-  }
-  
-  .value {
+}
+
+.value {
+    flex: 1 1 220px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
     text-align: center;
-    max-width: 200px;
-  }
-  
-  .value img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 1rem;
-  }
-  
-  .value h2 {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.value h2 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .value p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
+    color: #444; /* Subtítulo en gris */
+    margin: 1rem 0 0.5rem 0;
+}
+
+.value p {
+    font-size: 1.1rem;
+    color: #666; /* Texto dentro de la tarjeta un poco más claro */
+}
+
+/* Íconos de valores */
+.core-values .material-icons {
+    font-size: 48px;
+    color: #888; /* Íconos en gris más claro */
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover en íconos */
+.core-values .material-icons:hover {
+    color: #555; /* Se oscurece un poco en hover */
+    transform: scale(1.1);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .core-values {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value {
+        width: 100%;
+    }
+
+    .video-section iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .section h1 {
+        font-size: 2rem;
+    }
+}
