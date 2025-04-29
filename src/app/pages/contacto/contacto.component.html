@@ -9,7 +9,7 @@
           </label>
           <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                  id="name" formControlName="name" placeholder="Juan">
-          <div *ngIf="contactForm.get('name')!.invalid && contactForm.get('name')!.touched" class="text-red-500 text-xs italic">
+          <div *ngIf="contactForm.get('name')!.invalid && contactForm.get('name')!.touched" class="text-gray-700 text-xs italic">
             Por favor, ingresa un nombre válido (mínimo 3 caracteres).
           </div>
         </div>
@@ -19,7 +19,7 @@
           </label>
           <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                  id="lastname" formControlName="lastname" placeholder="Pérez">
-          <div *ngIf="contactForm.get('lastname')!.invalid && contactForm.get('lastname')!.touched" class="text-red-500 text-xs italic">
+          <div *ngIf="contactForm.get('lastname')!.invalid && contactForm.get('lastname')!.touched" class="text-gray-700 text-xs italic">
             Por favor, ingresa un apellido válido (mínimo 3 caracteres).
           </div>
         </div>
@@ -31,7 +31,7 @@
           </label>
           <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                  id="companyRut" formControlName="companyRut" placeholder="12345678-9">
-          <div *ngIf="contactForm.get('companyRut')!.invalid && contactForm.get('companyRut')!.touched" class="text-red-500 text-xs italic">
+          <div *ngIf="contactForm.get('companyRut')!.invalid && contactForm.get('companyRut')!.touched" class="text-gray-700 text-xs italic">
             Por favor, ingresa un Rut válido.
           </div>
         </div>
@@ -41,7 +41,7 @@
           </label>
           <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                  id="businessName" formControlName="businessName" placeholder="Nombre de la empresa">
-          <div *ngIf="contactForm.get('businessName')!.invalid && contactForm.get('businessName')!.touched" class="text-red-500 text-xs italic">
+          <div *ngIf="contactForm.get('businessName')!.invalid && contactForm.get('businessName')!.touched" class="text-gray-700 text-xs italic">
             La Razón Social es obligatoria.
           </div>
         </div>
@@ -54,7 +54,7 @@
           </label>
           <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                  id="address" formControlName="address" placeholder="Dirección completa">
-          <div *ngIf="contactForm.get('address')!.invalid && contactForm.get('address')!.touched" class="text-red-500 text-xs italic">
+          <div *ngIf="contactForm.get('address')!.invalid && contactForm.get('address')!.touched" class="text-gray-700 text-xs italic">
             La Dirección es obligatoria.
           </div>
         </div>
@@ -67,7 +67,7 @@
           </label>
           <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                  id="phone" formControlName="phone" placeholder="1234567890">
-          <div *ngIf="contactForm.get('phone')!.invalid && contactForm.get('phone')!.touched" class="text-red-500 text-xs italic">
+          <div *ngIf="contactForm.get('phone')!.invalid && contactForm.get('phone')!.touched" class="text-gray-700 text-xs italic">
             Ingresa un número válido (9 dígitos).
           </div>
         </div>
@@ -80,7 +80,7 @@
           </label>
           <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                  id="email" formControlName="email" placeholder="correo@ejemplo.com">
-          <div *ngIf="contactForm.get('email')!.invalid && contactForm.get('email')!.touched" class="text-red-500 text-xs italic">
+          <div *ngIf="contactForm.get('email')!.invalid && contactForm.get('email')!.touched" class="text-gray-700 text-xs italic">
             Ingresa un correo válido.
           </div>
         </div>
@@ -93,7 +93,7 @@
           </label>
           <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                     id="comment" formControlName="comment" rows="5" placeholder="Escribe tu consulta"></textarea>
-          <div *ngIf="contactForm.get('comment')!.invalid && contactForm.get('comment')!.touched" class="text-red-500 text-xs italic">
+          <div *ngIf="contactForm.get('comment')!.invalid && contactForm.get('comment')!.touched" class="text-gray-700 text-xs italic">
             El campo consulta no puede estar vacío.
           </div>
         </div>
@@ -101,7 +101,7 @@
   
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">
-          <button type="submit" class="w-full bg-red-600 text-white font-bold py-3 px-4 rounded hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+          <button type="submit" class="w-full bg-red-600 text-white font-bold py-3 px-4 rounded hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-opacity-50"
                   [disabled]="contactForm.invalid">
             Enviar
           </button>

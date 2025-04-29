@@ -156,7 +156,7 @@ html {
 }
 
 .carousel-button {
-  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Degradado del botón */
+  background: linear-gradient(45deg, #4a4848, #262321); /* Degradado del botón */
   border: none;
   color: white; /* Color del texto */
   padding: 0.75rem; /* Tamaño del botón */
@@ -173,7 +173,7 @@ html {
 
 .carousel-button:hover {
   transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón */
-  background: linear-gradient(45deg, #ff6a5f, #fd9068); /* Cambio de color en el hover */
+  background: linear-gradient(45deg, #7b7a7a, #7b7a7a); /* Cambio de color en el hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumentar la sombra al hacer hover */
 }
 
@@ -198,7 +198,7 @@ html {
 }
 
 .indicators .indicator-line.active {
-  background-color: #feb47b; /* Rojo brillante */
+  background-color: #7b7a7a; /* Rojo brillante */
 }
 
 /* Sección de Nuestras Soluciones */
@@ -548,7 +548,7 @@ html {
 }
 
 .carousel-guide .indicator.active {
-  background-color: #d85151; /* Color del indicador activo */
+  background-color: #020101; /* Color del indicador activo */
 }
 
 html {

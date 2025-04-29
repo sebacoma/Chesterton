@@ -2,128 +2,152 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
 }
 
-nav a {
-  color: #4a5568; /* text-gray-700 */
+/* General de nav */
+nav a, nav button {
+  color: #555; /* Gris medio */
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #e53e3e; /* rojo */
-}
-
-.menu-item {
-  color: #4a5568; /* text-gray-700 */
-  padding: 0.5rem 1rem;
-  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem; /* Aumentamos la letra */
   transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover de menú principal */
+nav a:hover, nav button:hover {
+  color: #333; /* Gris oscuro al pasar el mouse */
+  background-color: #f2f2f2;
+}
+
+/* Menú item principal */
+.menu-item {
+  color: #555;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
   position: relative;
-  font-size: 0.875rem; 
 }
 
-.menu-item:hover {
-  color: #e53e3e; /* rojo */
-  background-color: #fef2f2; /* gris claro */
-}
-
+/* Submenús de escritorio */
 .desktop-submenu {
   max-height: 0;
   overflow: hidden;
   position: absolute;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 0 10px;
-  border-radius: 4px;
+  border-radius: 8px;
   z-index: 1000;
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
-.desktop-submenu .submenu-item {
+/* Estilo ítems del submenú */
+.desktop-submenu a {
   display: block;
-  color: #ed3030; /* text-gray-700 */
-  padding: 5px 10px;
-  text-decoration: none;
+  color: #555;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.desktop-submenu .submenu-item:hover {
-  color: #e14242; /* hover:text-blue-500 */
-  background-color: #edf2f7; /* hover:bg-gray-100 */
+.desktop-submenu a:hover {
+  color: #333;
+  background-color: #f5f5f5;
 }
 
-/* Show submenu when parent is hovered */
+/* Mostrar submenú */
 .menu-item:hover + .desktop-submenu,
 .desktop-submenu:hover {
-  max-height: 500px; /* Adjust based on the number of submenu items */
+  max-height: 500px;
   padding: 10px;
 }
 
+/* Estilos imagen del logo */
 img.h-10 {
-  height: 2rem; /* Reducir el tamaño del logo */
-  margin-right: 0.5rem; /* Ajustar el margen derecho del logo */
+  height: 2.5rem; /* ligeramente más grande para equilibrio */
+  margin-right: 1rem;
 }
 
-/* Estilo básico para el menú móvil */
+/* Menú móvil */
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para los elementos del menú móvil */
+/* Ítems de menú móvil */
 .mobile-menu a, .mobile-menu button {
+  color: #555;
   padding: 1rem;
+  font-size: 1.1rem;
   text-align: left;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .mobile-menu a:hover, .mobile-menu button:hover {
-  background-color: #fef2f2; /* Gris claro para contraste */
+  color: #333;
+  background-color: #f5f5f5;
 }
-/* src/app/components/header/header.component.css */
 
-
-/* Estilo para el submenú móvil */
+/* Submenús de móvil */
 .mobile-submenu {
   display: none;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.mobile-menu .text-gray-700 {
-  color: #4a5568; /* text-gray-700 */
-}
-
-.mobile-menu .text-gray-700:hover {
-  color: #f56565; /* hover:text-red-500 */
-}
-
-/* Mostrar submenú cuando se hace clic en el botón */
+/* Activar submenú móvil */
 .mobile-menu button.active + .mobile-submenu {
   display: block;
 }
+/* Efecto de subrayado animado en los enlaces del menú */
+.menu-item::after, 
+nav a::after, 
+nav button::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #555; /* Gris medio */
+  transition: width 0.3s ease, background-color 0.3s ease;
+  margin: 0 auto;
+}
+
+/* Estilo para el enlace activo */
+.active-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #333; /* Gris oscuro */
+  margin: 0 auto;
+}
+
+/* Cuando haces hover */
+.menu-item:hover::after, 
+nav a:hover::after, 
+nav button:hover::after {
+  width: 100%;
+  background: #333; /* Gris oscuro en hover */
+}
 
 
-
+/* Responsive ajustes */
 @media (max-width: 768px) {
-  .md\\:hidden {
+  .md\:hidden {
     display: none;
-    width: 1.25rem; /* Reducir tamaño del ícono de menú móvil */
-    height: 1.25rem; /* Reducir tamaño del ícono de menú móvil */
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
-  .md\\:flex {
+  .md\:flex {
     display: flex;
   }
 
-  .md\\:hidden + div {
+  .md\:hidden + div {
     display: none;
   }
 }
