@@ -23,9 +23,9 @@
 
 .back-button {
     position: absolute;
-    top: 2rem;
-    left: 2rem;
-    background-color: #d32f2f;
+    top: 1rem;
+    left: 1rem;
+    background-color: #464545;
     color: white;
     border: none;
     padding: 10px 20px;
