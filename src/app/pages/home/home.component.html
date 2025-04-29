@@ -53,13 +53,14 @@
   <div class="carousel-wrapper overflow-hidden w-full">
     <div class="carousel-inner flex transition-transform duration-500 w-full" #solutionsCarousel>
       <div *ngFor="let solution of solutions" class="carousel-item flex-shrink-0 w-1/3 p-2">
-        <a [routerLink]="['soluciones/', solution.id]" class="solution-card bg-white shadow-lg rounded-lg p-4">
-          <div class="solution-info mt-2">
-            <img [src]="solution.icon" [alt]="solution.title" class="icon-img">
-            <h3 class="text-xl font-semibold">{{ solution.title }}</h3>
+        <a [routerLink]="['soluciones/', solution.id]" class="solution-card bg-white shadow-lg rounded-lg overflow-hidden block">
+          <img [src]="solution.icon" [alt]="solution.title" class="object-cover h-48 w-full rounded-t-lg">
+          <div class="solution-info p-4">
+            <h3 class="text-xl font-semibold text-center">{{ solution.title }}</h3>
           </div>
         </a>
       </div>
+      
     </div>
   </div>
 

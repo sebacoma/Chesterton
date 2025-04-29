@@ -77,15 +77,15 @@ export class HomeComponent implements OnInit, OnDestroy {
   currentIndex = 0;
   itemsPerPage = 5;
   solutions = [
-    { id: 'sellado-equipo-estacionario', title: 'Sellado Equipo estacionario', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/valvula-de-aceite.png' },
-    { id: 'sellado-equipo-rotatorio', title: 'Sellado Equipo rotatorio', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/ingenieria.png' },
+    { id: 'sellado-equipo-estacionario', title: 'Sellado Equipo estacionario', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/imgenessoluciones/EquipoEstacionarioSolucion.jpg' },
+    { id: 'sellado-equipo-rotatorio', title: 'Sellado Equipo rotatorio', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/imgenessoluciones/EquipoRotatorioSolucion.jpg' },
     // { id: 'sellado-valvulas',title: 'Sellado de Válvulas', image: 'assets/SelladoEquipoEstacionario.png' },
     // { id: 'sellado-cilindros-hidraulicos',title: 'Sellado Cilindros Hidráulicos', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/neumatico.png' },
     // { id: 'proteccion-rodamientos',title: 'Protección de rodamiento', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/ingenieria.png'},
-    { id: 'servicios-reparacion', title: 'Servicios de reparación', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/recuperacion-de-desastres.png' },
-    { id: 'servicios-instalacion-detenciones-planta', title: 'Servicios instalación en detenciones de planta', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/fabrica.png' },
-    { id: 'servicios-monitoreo', title: 'Servicios de monitoreo', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/supervision.png' },
-    { id: 'diseno-fabricacion-local', title: 'Diseño y fabricación local', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/brazo-mecanico.png' }
+    { id: 'servicios-reparacion', title: 'Servicios de reparación', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/imgenessoluciones/servicioReparacion.jpg' },
+    { id: 'servicios-instalacion-detenciones-planta', title: 'Servicios instalación en detenciones de planta', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/imgenessoluciones/InstalacionDetencionSolucion.jpg' },
+    { id: 'servicios-monitoreo', title: 'Servicios de monitoreo', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/imgenessoluciones/Monitoreosolucion.jpg' },
+    { id: 'diseno-fabricacion-local', title: 'Diseño y fabricación local', image: 'assets/SelladoEquipoEstacionario.png', icon: 'assets/imgenessoluciones/fabricacionLocal.jpg' }
   ];
   currentSolutions = this.solutions.slice(0, this.itemsPerPage);
   @ViewChild('industriesCarousel', { static: true }) industriesCarousel!: ElementRef;
