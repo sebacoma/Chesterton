@@ -39,6 +39,12 @@ import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/s
 import { NubeChestertonConnectComponent } from './pages/productos/monitoreo/nube-chesterton-connect/nube-chesterton-connect.component';
 import { SpiralTracMecanicoComponent } from './pages/productos/sellos/spiral-trac-mecanico/spiral-trac-mecanico.component';
 import { SpiralTracEmpaquetaduraComponent } from './pages/productos/empaquetaduras/spiral-trac-empaquetadura/spiral-trac-empaquetadura.component';
+import { ChestertonIIOTComponent } from './pages/productos/monitoreo/chesterton-iiot/chesterton-iiot.component';
+import { ChestertonConnectPumpConfigurationComponent } from './pages/productos/monitoreo/chesterton-connect-pump-configuration/chesterton-connect-pump-configuration.component';
+import { ChestertonConnectSensorsComponent } from './pages/productos/monitoreo/chesterton-connect-sensors/chesterton-connect-sensors.component';
+import { ChestertonConnectRemoteAccessibilityComponent } from './pages/productos/monitoreo/chesterton-connect-remote-accessibility/chesterton-connect-remote-accessibility.component';
+import { ChestertonConnectCaseStudiesComponent } from './pages/productos/monitoreo/chesterton-connect-case-studies/chesterton-connect-case-studies.component';
+import { ChestertonConnectWhatIsComponent } from './pages/productos/monitoreo/chesterton-connect-what-is/chesterton-connect-what-is.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -80,8 +86,13 @@ const routes: Routes = [
   {path:'productos/monitoreo-de-equipos/sistema-chesterton-connect',component:SistemaChestertonConnectComponent},
   {path:'productos/monitoreo-de-equipos/nube-chesterton-connect',component:NubeChestertonConnectComponent},
   {path:'productos/sellos-mecanicos/spiral-trac-mecanico', component: SpiralTracMecanicoComponent},
-  {path:'productos/empaquetaduras-mecanicas-juntas/spiral-trac-empaquetadura', component: SpiralTracEmpaquetaduraComponent}
-  
+  {path:'productos/empaquetaduras-mecanicas-juntas/spiral-trac-empaquetadura', component: SpiralTracEmpaquetaduraComponent},
+  {path:'productos/monitoreo-de-equipos/chesterton-iiot', component: ChestertonIIOTComponent},
+  {path:'productos/monitoreo-de-equipos/chesterton-connect-pump-configuration', component: ChestertonConnectPumpConfigurationComponent},
+  {path:'productos/monitoreo-de-equipos/chesterton-connect-sensors', component: ChestertonConnectSensorsComponent},
+  {path:'productos/monitoreo-de-equipos/chesterton-connect-remote-accessibility', component: ChestertonConnectRemoteAccessibilityComponent},
+  {path:'productos/monitoreo-de-equipos/chesterton-connect-case-studies', component: ChestertonConnectCaseStudiesComponent},
+  {path:'productos/monitoreo-de-equipos/chesterton-connect-what-is', component: ChestertonConnectWhatIsComponent}
 ];
 
 @NgModule({

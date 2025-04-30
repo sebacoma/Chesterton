@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class MonitoreoDeEquiposComponent {
   seals = [
-    { title: 'Nube Chesterton Connect™', link: 'nube-chesterton-connect' },
     { title: 'Sistema Chesterton Connect™', link: 'sistema-chesterton-connect' },
+    { title: 'Chesterton IIOT™', link: 'chesterton-iiot' },
+    { title: 'Chesterton Connect™ - Configuración de Bomba', link: 'chesterton-connect-pump-configuration' },
+    { title: 'Chesterton Connect™ - Sensores', link: 'chesterton-connect-sensors' },
+    { title: 'Chesterton Connect™ - Accesibilidad Remota', link: 'chesterton-connect-remote-accessibility' },
+    { title: 'Chesterton Connect™ - Casos de Estudio', link: 'chesterton-connect-case-studies' },
+    { title: 'Chesterton Connect™ - ¿Qué es?', link: 'chesterton-connect-what-is' }
   ]; 
 }

@@ -46,6 +46,12 @@ import { NubeChestertonConnectComponent } from './pages/productos/monitoreo/nube
 import { SistemaChestertonConnectComponent } from './pages/productos/monitoreo/sistema-chesterton-connect/sistema-chesterton-connect.component';
 import { SpiralTracMecanicoComponent } from './pages/productos/sellos/spiral-trac-mecanico/spiral-trac-mecanico.component';
 import { SpiralTracEmpaquetaduraComponent } from './pages/productos/empaquetaduras/spiral-trac-empaquetadura/spiral-trac-empaquetadura.component';
+import { ChestertonIIOTComponent } from './pages/productos/monitoreo/chesterton-iiot/chesterton-iiot.component';
+import { ChestertonConnectPumpConfigurationComponent } from './pages/productos/monitoreo/chesterton-connect-pump-configuration/chesterton-connect-pump-configuration.component';
+import { ChestertonConnectSensorsComponent } from './pages/productos/monitoreo/chesterton-connect-sensors/chesterton-connect-sensors.component';
+import { ChestertonConnectRemoteAccessibilityComponent } from './pages/productos/monitoreo/chesterton-connect-remote-accessibility/chesterton-connect-remote-accessibility.component';
+import { ChestertonConnectCaseStudiesComponent } from './pages/productos/monitoreo/chesterton-connect-case-studies/chesterton-connect-case-studies.component';
+import { ChestertonConnectWhatIsComponent } from './pages/productos/monitoreo/chesterton-connect-what-is/chesterton-connect-what-is.component';
 
 @NgModule({
   declarations: [
@@ -92,7 +98,13 @@ import { SpiralTracEmpaquetaduraComponent } from './pages/productos/empaquetadur
     NubeChestertonConnectComponent,
     SistemaChestertonConnectComponent,
     SpiralTracMecanicoComponent,
-    SpiralTracEmpaquetaduraComponent
+    SpiralTracEmpaquetaduraComponent,
+    ChestertonIIOTComponent,
+    ChestertonConnectPumpConfigurationComponent,
+    ChestertonConnectSensorsComponent,
+    ChestertonConnectRemoteAccessibilityComponent,
+    ChestertonConnectCaseStudiesComponent,
+    ChestertonConnectWhatIsComponent
   ],
   imports: [
     BrowserModule,
