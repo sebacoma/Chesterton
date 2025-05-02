@@ -13,8 +13,8 @@ export class HeaderComponent {
   isServiciosOpen = false;
   isBlogOpen = false;
   isContactoOpen = false;
-
-  toggleSubMenu(menu: 'isNosotrosOpen' | 'isProductosOpen' | 'isServiciosOpen' | 'isBlogOpen' | 'isContactoOpen') {
+  isHistoriaOpen = false;
+  toggleSubMenu(menu: 'isNosotrosOpen' | 'isProductosOpen' | 'isServiciosOpen' | 'isBlogOpen' | 'isContactoOpen' | 'isHistoriaOpen') {
     this[menu] = !this[menu];
   }
   scrollToSection(section: string) {

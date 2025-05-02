@@ -25,7 +25,11 @@
         <a href="/soluciones/servicios-monitoreo" class="block text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
         <a href="/soluciones/diseno-fabricacion-local" class="block text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
       </div>
-      <a href="/historia" class="menu-item text-lg active-link">Historia</a>
+      <button (click)="toggleSubMenu('isHistoriaOpen')" class="menu-item text-lg active-link">Historia</button>
+      <div *ngIf="isHistoriaOpen" class="desktop-submenu">
+        <a href="https://chesterton.com/resources/product-literature?PageSize=48&RequestType=UpdateList&Search=chile&ProductLine=[Corporate+Certifications]&DocumentType=[Certification]" class="menu-item text-lg active-link">Certificaciones ISO</a>
+        <a href="/historia" class="menu-item text-lg active-link">Historia</a>
+      </div>
       <a href="/contacto" class="menu-item text-lg active-link">Contacto</a>
     </nav>
 
