@@ -1,52 +1,86 @@
-<div class="container mx-auto p-6">
-    <section class="intro text-center my-12">
-        <button class="back-button" onclick="window.history.back()">← Volver</button>
-      <h1 class="text-4xl font-bold">Sistema Chesterton Connect™</h1>
-      <p class="text-lg mt-4">
-        El Sistema Chesterton Connect es una solución simplificada de monitoreo de equipos basada en la nube que proporciona visibilidad 24/7 sobre la condición de un equipo. Este monitoreo de equipos en tiempo real puede ayudarte a correlacionar e identificar anomalías temprano para realizar mejoras operativas que aumenten la confiabilidad y minimicen el tiempo de inactividad no planificado.
+<!-- Hero Section -->
+<section class="hero-section">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <h1 class="animate-fade-in-down">Chesterton Connect™ System</h1>
+  <p class="animate-fade-in">Monitoreo inteligente y confiable de condiciones para bombas industriales.</p>
+  <a href="#features" class="cta-button" onclick="document.getElementById('features').scrollIntoView({ behavior: 'smooth' }); return false;">Explorar características</a>
+</section>
 
-El Sistema Chesterton Connect está diseñado para bombas y sistemas de sellado, pero también se puede utilizar para monitorear vibraciones en otros equipos rotativos, como motores y cajas de engranajes.
-      </p>
-      <img src="../../../../../assets/ChestertonCloud/chesterton_connect_system_1.WebP" alt="Chesterton Connect System" class="centered-image mt-6  max-w-full" />
-    </section>
-  
-    <section class="features">
-      <h2 class="text-3xl font-semibold text-center">Características del Producto</h2>
-      <ul class="mt-6 space-y-4">
-        <li class="flex items-center">
-          <span class="icon text-red-500 mr-4">
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a4 4 0 100 8 4 4 0 000-8zm0 10a10 10 0 10-10 10 10 10 0 0010-10z"></path></svg>
-          </span>
-          <p>Temperatura del proceso</p>
-        </li>
-        <li class="flex items-center">
-          <span class="icon text-red-500 mr-4">
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"></path></svg>
-          </span>
-          <p>Presión del proceso</p>
-        </li>
-        <li class="flex items-center">
-          <span class="icon text-red-500 mr-4">
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M16 10a4 4 0 00-3.33-3.95A5.5 5.5 0 0010 4a5.5 5.5 0 00-4.67 8.12A4 4 0 0016 10z"></path></svg>
-          </span>
-          <p>Vibración en 3 ejes (Aceleración, Pico y Velocidad RMS)</p>
-        </li>
-        <li class="flex items-center">
-          <span class="icon text-red-500 mr-4">
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a4 4 0 100 8 4 4 0 000-8zm0 10a6 6 0 110-12 6 6 0 010 12z"></path></svg>
-          </span>
-          <p>Temperatura de superficie</p>
-        </li>
-        <li class="flex items-center">
-          <span class="icon text-red-500 mr-4">
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"></path></svg>
-          </span>
-          <p>Batería reemplazable</p>
-        </li>
+<!-- Descripción general -->
+<section>
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <ul class="styled-list space-y-4 list-disc list-inside">
+        <li><strong>Confiabilidad 24/7:</strong> Supervisión continua del sistema de bombeo sin intervención humana constante.</li>
+        <li><strong>Diagnóstico anticipado:</strong> Detecta fallas potenciales antes de que afecten la operación.</li>
+        <li><strong>Conectividad global:</strong> Opera de forma segura con red celular independiente de la red de planta.</li>
       </ul>
-    </section>
-    <a href="../../../../../assets/ChestertonCloud/Product Brochure_ Chesterton Connect System (Espanol).pdf" target="_blank">
-        <button class="cta-button">Información del producto</button>
-      </a>
+    </div>
+    <div class="image-section">
+      <img src="../../../../assets/ChestertonCloud/ChestertonConnect.png" alt="Sistema Chesterton Connect">
+    </div>
   </div>
-  
+</section>
+
+<!-- Características -->
+<section id="features" >
+  <h2>Características del Sistema</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="card">
+      <i class="fas fa-tools"></i>
+      <h3>Optimización del mantenimiento</h3>
+      <p>Evita fallas inesperadas mediante alertas tempranas y análisis proactivo de condiciones.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-plug"></i>
+      <h3>Instalación sencilla</h3>
+      <p>Sensor con soporte magnético y conectores estándar NPT, sin necesidad de herramientas especiales.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-eye"></i>
+      <h3>Vistas intuitivas</h3>
+      <p>Datos codificados por color para una rápida interpretación visual del estado del equipo.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-bell"></i>
+      <h3>Alertas automatizadas</h3>
+      <p>Notificaciones vía correo electrónico y visualización de anomalías mediante luces e indicadores.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Diseño robusto</h3>
+      <p>Equipos resistentes a ambientes agresivos con clasificación IP66 y opción para áreas peligrosas.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-network-wired"></i>
+      <h3>Integración con planta</h3>
+      <p>Compatible con SCADA vía MODBUS TCP, ampliable con conectividad remota segura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Monitoreo local y remoto -->
+<section>
+  <h2>Opciones de Monitoreo</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Modo Local</h3>
+      <p>Consulta tendencias y alarmas desde tu smartphone sin necesidad de conexión a internet o nube.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-cloud"></i>
+      <h3>Modo Remoto</h3>
+      <p>Sincronización automática en la nube con acceso en tiempo real desde la aplicación móvil.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Botón de descarga -->
+<section class="text-center mt-10">
+  <a href="../../../../assets/ChestertonCloud/ES350655_Chesterton_Connect_System_Bro (1).pdf" download>
+    <button class="cta-button">
+      Descargar Catálogo <i class="fas fa-file-download ml-2"></i>
+    </button>
+  </a>
+</section>

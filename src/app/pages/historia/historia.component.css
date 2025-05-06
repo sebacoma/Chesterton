@@ -27,6 +27,7 @@
 /* Secciones generales */
 .section {
     margin: 4rem 0;
+    justify-content: justify;
 }
 
 /* Video */
