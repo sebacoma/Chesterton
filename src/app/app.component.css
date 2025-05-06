@@ -1,0 +1,21 @@
+/* Justificar textos solo en áreas de contenido */
+main, article, section, .content, .text-content, .body-text, .intro, .paragraphs, .descripcion, .texto {
+    text-align: justify;
+  }
+  
+  /* También justificar párrafos y listas dentro de esas secciones */
+  main p,
+  article p,
+  section p,
+  .content p,
+  .text-content p,
+  .body-text p,
+  .intro p,
+  .descripcion p,
+  .texto p,
+  main li,
+  article li,
+  section li {
+    text-align: justify;
+  }
+  

@@ -25,10 +25,14 @@
 }
 
 /* Secciones generales */
+
 .section {
-    margin: 4rem 0;
-    justify-content: justify;
-}
+    text-align: justify;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem; /* opcional para espacio lateral */
+  }
 
 /* Video */
 .video-section {
@@ -48,8 +52,11 @@
 
 /* Intro sección */
 .intro-section {
-    margin: 4rem 0;
-    padding: 0 2rem;
+    text-align: justify;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem; /* opcional para espacio lateral */
 }
 
 .intro-container {

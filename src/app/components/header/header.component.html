@@ -6,32 +6,47 @@
       </a>
     </div>
     <!-- Menú de escritorio -->
-    <nav class="desktop-menu hidden md:flex space-x-2">
-      <a href="/" class="menu-item text-lg active-link">Inicio</a>
-      <button (click)="toggleSubMenu('isProductosOpen')" class="menu-item text-lg active-link">Productos</button>
-      <div *ngIf="isProductosOpen" class="desktop-submenu">
-        <a href="/productos/sellos-mecanicos" class="block text-gray-700 hover:text-blue-500">Sellos Mecánicos</a>
-        <a href="/productos/sellos-hidraulicos-neumaticos" class="block text-gray-700 hover:text-blue-500">Sellos Hidráulicos y Neumáticos</a>
-        <a href="/productos/empaquetaduras-mecanicas-juntas" class="block text-gray-700 hover:text-blue-500">Empaquetaduras Trenzadas y Láminas</a>
-        <a href="/productos/juntas-expansion" class="block text-gray-700 hover:text-blue-500">Juntas de Expansión</a>
-        <a href="/productos/monitoreo-de-equipos" class="block text-gray-700 hover:text-blue-500">Chesterton Connect</a>
-      </div>
-      <button (click)="toggleSubMenu('isServiciosOpen')" class="menu-item text-lg active-link">Soluciones</button>
-      <div *ngIf="isServiciosOpen" class="desktop-submenu">
-        <a href="/soluciones/sellado-equipo-estacionario" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Estacionario</a>
-        <a href="/soluciones/sellado-equipo-rotatorio" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Rotatorio</a>
-        <a href="/soluciones/servicios-reparacion" class="block text-gray-700 hover:text-blue-500">Servicio de Reparación</a>
-        <a href="/soluciones/servicios-instalacion-detenciones-planta" class="block text-gray-700 hover:text-blue-500">Instalación en Detenciones de Planta</a>
-        <a href="/soluciones/servicios-monitoreo" class="block text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
-        <a href="/soluciones/diseno-fabricacion-local" class="block text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
-      </div>
-      <button (click)="toggleSubMenu('isHistoriaOpen')" class="menu-item text-lg active-link">Historia</button>
-      <div *ngIf="isHistoriaOpen" class="desktop-submenu">
-        <a href="https://chesterton.com/resources/product-literature?PageSize=48&RequestType=UpdateList&Search=chile&ProductLine=[Corporate+Certifications]&DocumentType=[Certification]" class="menu-item text-lg active-link">Certificaciones ISO</a>
-        <a href="/historia" class="menu-item text-lg active-link">Historia</a>
-      </div>
-      <a href="/contacto" class="menu-item text-lg active-link">Contacto</a>
-    </nav>
+<!-- Menú de escritorio -->
+<nav class="desktop-menu hidden md:flex space-x-2">
+  <a href="/" class="menu-item text-lg active-link">Inicio</a>
+
+  <!-- Productos -->
+  <div class="relative">
+    <button (click)="toggleSubMenu('isProductosOpen')" class="menu-item text-lg active-link">Productos</button>
+    <div *ngIf="isProductosOpen" class="desktop-submenu">
+      <a href="/productos/sellos-mecanicos" class="block text-gray-700 hover:text-blue-500">Sellos Mecánicos</a>
+      <a href="/productos/sellos-hidraulicos-neumaticos" class="block text-gray-700 hover:text-blue-500">Sellos Hidráulicos y Neumáticos</a>
+      <a href="/productos/empaquetaduras-mecanicas-juntas" class="block text-gray-700 hover:text-blue-500">Empaquetaduras Trenzadas y Láminas</a>
+      <a href="/productos/juntas-expansion" class="block text-gray-700 hover:text-blue-500">Juntas de Expansión</a>
+      <a href="/productos/monitoreo-de-equipos" class="block text-gray-700 hover:text-blue-500">Chesterton Connect</a>
+    </div>
+  </div>
+
+  <!-- Soluciones -->
+  <div class="relative">
+    <button (click)="toggleSubMenu('isServiciosOpen')" class="menu-item text-lg active-link">Soluciones</button>
+    <div *ngIf="isServiciosOpen" class="desktop-submenu">
+      <a href="/soluciones/sellado-equipo-estacionario" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Estacionario</a>
+      <a href="/soluciones/sellado-equipo-rotatorio" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Rotatorio</a>
+      <a href="/soluciones/servicios-reparacion" class="block text-gray-700 hover:text-blue-500">Servicio de Reparación</a>
+      <a href="/soluciones/servicios-instalacion-detenciones-planta" class="block text-gray-700 hover:text-blue-500">Instalación en Detenciones de Planta</a>
+      <a href="/soluciones/servicios-monitoreo" class="block text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
+      <a href="/soluciones/diseno-fabricacion-local" class="block text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
+    </div>
+  </div>
+
+  <!-- Historia -->
+  <div class="relative">
+    <button (click)="toggleSubMenu('isHistoriaOpen')" class="menu-item text-lg active-link">Nosotros</button>
+    <div *ngIf="isHistoriaOpen" class="desktop-submenu">
+      <a href="https://chesterton.com/resources/product-literature?PageSize=48&RequestType=UpdateList&Search=chile&ProductLine=[Corporate+Certifications]&DocumentType=[Certification]" class="block text-gray-700 hover:text-blue-500">Certificaciones ISO</a>
+      <a href="/historia" class="block text-gray-700 hover:text-blue-500">Historia</a>
+    </div>
+  </div>
+
+  <a href="/contacto" class="menu-item text-lg active-link">Contacto</a>
+</nav>
+
 
     <!-- Botón de menú en móvil -->
     <div class="md:hidden">
@@ -64,7 +79,11 @@
         <a href="/soluciones/servicios-monitoreo" class="block text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
         <a href="/soluciones/diseno-fabricacion-local" class="block text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
       </div>
-      <a href="/historia" class="text-gray-700 hover:text-red-500 w-full text-left active-link">Historia</a>
+      <button (click)="toggleSubMenu('isHistoriaOpen')" class="menu-item text-lg active-link">Nosotros</button>
+      <div *ngIf="isHistoriaOpen" class="desktop-submenu">
+        <a href="https://chesterton.com/resources/product-literature?PageSize=48&RequestType=UpdateList&Search=chile&ProductLine=[Corporate+Certifications]&DocumentType=[Certification]" class="block text-gray-700 hover:text-blue-500">Certificaciones ISO</a>
+        <a href="/historia" class="block text-gray-700 hover:text-blue-500">Historia</a>
+      </div>
       <a href="/contacto" class="text-gray-700 hover:text-red-500 w-full text-left active-link">Contacto</a>
     </nav>
   </div>
