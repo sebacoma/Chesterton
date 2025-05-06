@@ -7,6 +7,31 @@
 html {
   scroll-behavior: smooth;
 }
+.spec-list dl {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.spec-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.spec-row dt {
+  min-width: 160px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.5;
+}
+
+.spec-row dd {
+  margin: 0;
+  text-align: justify;
+  flex: 1;
+  color: #555;
+  line-height: 1.5;
+}
 
 
 .hero-section h1 {
