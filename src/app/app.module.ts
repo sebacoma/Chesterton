@@ -52,6 +52,7 @@ import { ChestertonConnectSensorsComponent } from './pages/productos/monitoreo/c
 import { ChestertonConnectRemoteAccessibilityComponent } from './pages/productos/monitoreo/chesterton-connect-remote-accessibility/chesterton-connect-remote-accessibility.component';
 import { ChestertonConnectCaseStudiesComponent } from './pages/productos/monitoreo/chesterton-connect-case-studies/chesterton-connect-case-studies.component';
 import { ChestertonConnectWhatIsComponent } from './pages/productos/monitoreo/chesterton-connect-what-is/chesterton-connect-what-is.component';
+import { ClientesComponent } from './pages/clientes/clientes.component';
 
 @NgModule({
   declarations: [
@@ -104,7 +105,8 @@ import { ChestertonConnectWhatIsComponent } from './pages/productos/monitoreo/ch
     ChestertonConnectSensorsComponent,
     ChestertonConnectRemoteAccessibilityComponent,
     ChestertonConnectCaseStudiesComponent,
-    ChestertonConnectWhatIsComponent
+    ChestertonConnectWhatIsComponent,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,

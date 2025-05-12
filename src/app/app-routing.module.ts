@@ -45,12 +45,14 @@ import { ChestertonConnectSensorsComponent } from './pages/productos/monitoreo/c
 import { ChestertonConnectRemoteAccessibilityComponent } from './pages/productos/monitoreo/chesterton-connect-remote-accessibility/chesterton-connect-remote-accessibility.component';
 import { ChestertonConnectCaseStudiesComponent } from './pages/productos/monitoreo/chesterton-connect-case-studies/chesterton-connect-case-studies.component';
 import { ChestertonConnectWhatIsComponent } from './pages/productos/monitoreo/chesterton-connect-what-is/chesterton-connect-what-is.component';
+import { ClientesComponent } from './pages/clientes/clientes.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'condiciones', component: CondicionesComponent},
   {path:'historia', component: HistoriaComponent},
   {path:'contacto', component: ContactoComponent},
+  {path:'clientes', component: ClientesComponent},
   {path:'productos/sellos-mecanicos', component: SellosMecanicosComponent},
   {path:'productos/sellos-hidraulicos-neumaticos', component: SellosHidraulicosNeumaticosComponent},
   {path:'productos/empaquetaduras-mecanicas-juntas', component: EmpaquetadurasMecanicasJuntasComponent},
