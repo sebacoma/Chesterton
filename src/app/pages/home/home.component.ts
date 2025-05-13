@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.checkScroll();
     this.startAutoplay();
-    this.startIndustryAutoplay();
   }
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -209,11 +208,11 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.updateCurrentSolutions();
   }
 
-  startIndustryAutoplay(): void {
-    this.industryAutoplayInterval = setInterval(() => {
-      this.nextSlideIndustry();
-    }, 3000);
-  }
+  // startIndustryAutoplay(): void {
+  //   this.industryAutoplayInterval = setInterval(() => {
+  //     this.nextSlideIndustry();
+  //   }, 3000);
+  // }
 
   stopIndustryAutoplay(): void {
     if (this.industryAutoplayInterval) {
