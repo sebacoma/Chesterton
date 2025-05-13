@@ -91,14 +91,15 @@
 
 
 <!-- "Industrias"-->
-<div class="industries-section ">
-  <h2 class="text-center text-4xl font-bold mb-4 text-red-700" >Industrias</h2>
+<!-- "Industrias"-->
+<div class="industries-section">
+  <h2 class="text-center text-4xl font-bold mb-4 text-red-700">Industrias</h2>
   <div class="relative">
     <div class="carousel-wrapper overflow-hidden">
       <div class="carousel-inner flex transition-transform duration-500" #industriesCarousel>
         <div *ngFor="let industry of industries; let i = index" class="carousel-item flex-shrink-0 w-1/3 p-2">
           <a [href]="industry.url" target="_blank" class="block">
-            <div class="industry-box bg-white shadow-lg rounded-lg ">
+            <div class="industry-box bg-white shadow-lg rounded-lg">
               <img [src]="industry.image" [alt]="industry.title" class="object-cover rounded-t-lg">
               <div class="industry-info mt-2">
                 <h3 class="text-xl font-semibold">{{ industry.title }}</h3>
@@ -106,14 +107,12 @@
             </div>
           </a>
         </div>
-        <!-- Clonación de los primeros 2 items para el bucle infinito -->
-        <div *ngFor="let industry of industries.slice(0, 3); let i = index"
-          class="carousel-item flex-shrink-0 w-1/3 p-2">
+        <div *ngFor="let industry of industries.slice(0, 3)" class="carousel-item flex-shrink-0 w-1/3 p-2">
           <a [href]="industry.url" target="_blank" class="block">
-            <div class="industry-box bg-white shadow-lg rounded-lg ">
+            <div class="industry-box bg-white shadow-lg rounded-lg">
               <img [src]="industry.image" [alt]="industry.title" class="object-cover rounded-t-lg">
               <div class="industry-info mt-2">
-                <h3 class="text-xl font-semibold" >{{ industry.title }}</h3>
+                <h3 class="text-xl font-semibold">{{ industry.title }}</h3>
               </div>
             </div>
           </a>
@@ -121,7 +120,17 @@
       </div>
     </div>
 
-    <!-- Indicadores del carrusel -->
+    <!-- Botones de navegación -->
+    <button (click)="prevSlideIndustry()"
+      class="carousel-button absolute top-1/2 left-2 transform -translate-y-1/2 bg-red-600 text-white p-3 rounded-full shadow-md hover:bg-red-700 focus:outline-none z-20">
+      <span>&lt;</span>
+    </button>
+    <button (click)="nextSlideIndustry()"
+      class="carousel-button absolute top-1/2 right-2 transform -translate-y-1/2 bg-red-600 text-white p-3 rounded-full shadow-md hover:bg-red-700 focus:outline-none z-20">
+      <span>&gt;</span>
+    </button>
+
+    <!-- Indicadores -->
     <div class="indicators flex justify-center mt-4">
       <div *ngFor="let industry of industries; let i = index" class="indicator-line mx-1"
         [class.active]="i === activeIndustrySlide">
@@ -130,21 +139,6 @@
   </div>
 </div>
 
-<!-- "Sucursales"-->
-<div id="branches" class="branches-section p-4 mt-12">
-  <h2 class="text-center text-4xl font-bold mb-4 text-red-700">Sucursales</h2>
-  <div class="branches-grid grid grid-cols-1 md:grid-cols-3 gap-4">
-    <div *ngFor="let branch of branches" class="branch-card text-center">
-      <a [href]="getGoogleMapsLink(branch.address)" target="_blank">
-        <img [src]="branch.image" alt="{{branch.title}}" class="w-full h-48 object-contain mx-auto">
-        <h3 class="text-lg font-semibold text-red-700 mt-4">{{branch.title}}</h3>
-        <p class="text-gray-800">{{branch.address}}</p>
-        <p class="text-gray-800">{{branch.phone}}</p>
-        <p class="text-gray-800">{{branch.email}}</p>
-      </a>
-    </div>
-  </div>
-</div>
 <!-- "Sucursales"-->
 
 
