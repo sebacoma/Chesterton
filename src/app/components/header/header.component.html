@@ -23,15 +23,18 @@
   </div>
 
   <!-- Soluciones -->
-  <div class="relative">
+  <div class="relative group">
     <button (click)="toggleSubMenu('isServiciosOpen')" class="menu-item text-lg active-link">Soluciones</button>
-    <div *ngIf="isServiciosOpen" class="desktop-submenu">
-      <a href="/soluciones/sellado-equipo-estacionario" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Estacionario</a>
-      <a href="/soluciones/sellado-equipo-rotatorio" class="block text-gray-700 hover:text-blue-500">Sellado de Equipo Rotatorio</a>
-      <a href="/soluciones/servicios-reparacion" class="block text-gray-700 hover:text-blue-500">Servicio de Reparación</a>
-      <a href="/soluciones/servicios-instalacion-detenciones-planta" class="block text-gray-700 hover:text-blue-500">Instalación en Detenciones de Planta</a>
-      <a href="/soluciones/servicios-monitoreo" class="block text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
-      <a href="/soluciones/diseno-fabricacion-local" class="block text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
+    <div
+      *ngIf="isServiciosOpen"
+      class="desktop-submenu z-50 absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded shadow-lg flex flex-col max-h-96 overflow-y-auto"
+    >
+      <a href="/soluciones/sellado-equipo-estacionario" class="block px-4 py-2 text-gray-700 hover:text-blue-500">Sellado de Equipo Estacionario</a>
+      <a href="/soluciones/sellado-equipo-rotatorio" class="block px-4 py-2 text-gray-700 hover:text-blue-500">Sellado de Equipo Rotatorio</a>
+      <a href="/soluciones/servicios-reparacion" class="block px-4 py-2 text-gray-700 hover:text-blue-500">Servicio de Reparación</a>
+      <a href="/soluciones/servicios-instalacion-detenciones-planta" class="block px-4 py-2 text-gray-700 hover:text-blue-500">Instalación en Detenciones de Planta</a>
+      <a href="/soluciones/servicios-monitoreo" class="block px-4 py-2 text-gray-700 hover:text-blue-500">Servicio de Monitoreo</a>
+      <a href="/soluciones/diseno-fabricacion-local" class="block px-4 py-2 text-gray-700 hover:text-blue-500">Diseño y Fabricación Local</a>
     </div>
   </div>
 
